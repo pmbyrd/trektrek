@@ -39,7 +39,7 @@
         </div>
         <div class="left-frame-top">
             <div class="panel-1"><a href="/">HOME</a></div>
-            <div class="panel-2"><a href="{{url_for('main.profile')}}">PROFILE</a></div>
+            <div class="panel-2"><a href="">PROFILE</a></div>
         </div>
         <div class="right-frame-top">
             <div class="banner">LCARS &#149; Online</div>
@@ -145,20 +145,20 @@
                     </div>
                 </div>
                 <div class="button-col">
-                    <div class="button" id="top-left"><a href="/media">Media</a></div>
-                    <div class="button" id="bottom-left"><a href="/universe">Universe</a></div>
+                    <div class="button" id="top-left"><a href="">Media</a></div>
+                    <div class="button" id="bottom-left"><a href="">Universe</a></div>
                 </div>
              
 
                 <div class="button-col">
-                    <div class="button" id="top-right"><a href="/posts">Post</a></div>
+                    <div class="button" id="top-right"><a href="">Post</a></div>
                     <!-- If the user is logged in I want a logout button, else I want a Login in button-->
                     {% if user %}
-                    <div class="button" id="bottom-right"><a href="{{url_for('auth.logout')}}">Logout</a></div>
+                    <div class="button" id="bottom-right"><a href="">Logout</a></div>
                     {% else %}
-                    <div class="button" id="bottom-right"><a href="{{url_for('auth.login')}}">Login</a></div>
+                    <div class="button" id="bottom-right"><a href="">Login</a></div>
                     {% endif %}
-                    <!-- <div class="button" id="bottom-right"><a href="{{url_for('auth.login')}}">signup/login</a></div> -->
+                    <!-- <div class="button" id="bottom-right"><a href="">signup/login</a></div> -->
                 </div>
             </div>
             <div class="runner">

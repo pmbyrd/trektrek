@@ -1,3 +1,8 @@
+"""
+This files initializes the main package.
+Handles routes that do not need authentication throughout the application.
+"""
+
 from flask import Blueprint
 
 bp = Blueprint('main', __name__)
