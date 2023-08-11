@@ -1,0 +1,4769 @@
+[
+  {
+    "uid": "OCMA0000249981",
+    "name": "Abuser",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000213514",
+    "name": "Accessory",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000114998",
+    "name": "Accountant",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000093638",
+    "name": "Actor",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000198772",
+    "name": "Administrator",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000047367",
+    "name": "Advocate",
+    "legalOccupation": true,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000092232",
+    "name": "Aerospace engineer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000170105",
+    "name": "Agent",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000084594",
+    "name": "Aggressor",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000092233",
+    "name": "Agricultural engineer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000198589",
+    "name": "Aide-de-camp",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000005850",
+    "name": "Ambassador",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000221088",
+    "name": "Analyst",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000237308",
+    "name": "Animal trainer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000069502",
+    "name": "Anthropologist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000250954",
+    "name": "Anti-grav rigger",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000122103",
+    "name": "Apothecary",
+    "legalOccupation": false,
+    "medicalOccupation": true,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000132464",
+    "name": "Apprentice",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000202445",
+    "name": "Aquanaut",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000066428",
+    "name": "Arbiter",
+    "legalOccupation": true,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000022119",
+    "name": "Archaeologist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000162643",
+    "name": "Archaeology and anthropology officer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000109930",
+    "name": "Architect",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000204385",
+    "name": "Archivist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000010148",
+    "name": "Armory officer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000097009",
+    "name": "Arms dealer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000204260",
+    "name": "Art critic",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000147521",
+    "name": "Artisan",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000024313",
+    "name": "Artist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000054666",
+    "name": "Assassin",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000111564",
+    "name": "Assayer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000225078",
+    "name": "Assistant",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000094626",
+    "name": "Assistant Manager of Policy and Clientele",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000222243",
+    "name": "Assistant astrophysics officer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000225081",
+    "name": "Assistant communications officer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000225097",
+    "name": "Assistant manager",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000225075",
+    "name": "Assistant ship's counselor",
+    "legalOccupation": false,
+    "medicalOccupation": true,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000203941",
+    "name": "Asteroid locator",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000103549",
+    "name": "Astrogation plotter",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000227361",
+    "name": "Astromycologist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000038802",
+    "name": "Astronomer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000092293",
+    "name": "Astrophysicist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000237309",
+    "name": "Astrotheorist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000238855",
+    "name": "Athlete",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000243717",
+    "name": "Attaché",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000241128",
+    "name": "Attacker",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000244564",
+    "name": "Attendant",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000147534",
+    "name": "Author",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000238605",
+    "name": "Aviation expert",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000199729",
+    "name": "Babysitter",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000202075",
+    "name": "Bailiff",
+    "legalOccupation": true,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000205808",
+    "name": "Baker",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000054186",
+    "name": "Ballerina",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000051671",
+    "name": "Barber",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000033170",
+    "name": "Bartender",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000251031",
+    "name": "Baseball player",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000283065",
+    "name": "Baseman",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000283058",
+    "name": "Batter",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000274445",
+    "name": "Beggar",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000119547",
+    "name": "Bellboy",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000282905",
+    "name": "Benefactor",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000282576",
+    "name": "Billiard player",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000015133",
+    "name": "Biochemist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000092422",
+    "name": "Biologist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000163287",
+    "name": "Biomolecular physiologist",
+    "legalOccupation": false,
+    "medicalOccupation": true,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000202397",
+    "name": "Biosphere designer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000097007",
+    "name": "Black marketeer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000067711",
+    "name": "Blacksmith",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000249593",
+    "name": "Boatswain",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000108196",
+    "name": "Bodyguard",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000147520",
+    "name": "Bookkeeper",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000238411",
+    "name": "Bookworm",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000011726",
+    "name": "Borg drone",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000031815",
+    "name": "Boss",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000199211",
+    "name": "Botanical surveyor",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000091813",
+    "name": "Botanist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000271490",
+    "name": "Bouncer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000069580",
+    "name": "Bounty hunter",
+    "legalOccupation": true,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000209201",
+    "name": "Boxer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000219719",
+    "name": "Breeder",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000129478",
+    "name": "Bricklayer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000198489",
+    "name": "Bridge assistant",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000017617",
+    "name": "Bridge officer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000237813",
+    "name": "Broker",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000029239",
+    "name": "Builder",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000110088",
+    "name": "Bureaucrat",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000199912",
+    "name": "Busboy",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000123583",
+    "name": "Businessman",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000123669",
+    "name": "Butcher",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000112983",
+    "name": "Butler",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000189118",
+    "name": "CEO",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000180832",
+    "name": "Candy striper",
+    "legalOccupation": false,
+    "medicalOccupation": true,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000206162",
+    "name": "Captain",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000043557",
+    "name": "Car salesman",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000275148",
+    "name": "Card player",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000274860",
+    "name": "Card shark",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000236915",
+    "name": "Cargo handler",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000248487",
+    "name": "Cargo hauler",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000278798",
+    "name": "Cashier",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000188079",
+    "name": "Caterer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000219818",
+    "name": "Cavalry",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000221372",
+    "name": "Cello player",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000252371",
+    "name": "Censor",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000022052",
+    "name": "Chairman",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000277785",
+    "name": "Chancellor of Starfleet Academy",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000001276",
+    "name": "Chancellor of the Klingon High Council",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000005689",
+    "name": "Chef",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000093248",
+    "name": "Chemist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000203347",
+    "name": "Chess master",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000028349",
+    "name": "Chief Archon",
+    "legalOccupation": true,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000282370",
+    "name": "Chief botanist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000002824",
+    "name": "Chief engineering officer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000035104",
+    "name": "Chief financial officer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000003807",
+    "name": "Chief medical officer",
+    "legalOccupation": false,
+    "medicalOccupation": true,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000225141",
+    "name": "Chief of Medicine",
+    "legalOccupation": false,
+    "medicalOccupation": true,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000009248",
+    "name": "Chief of operations",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000204527",
+    "name": "Chief of surgery",
+    "legalOccupation": false,
+    "medicalOccupation": true,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000215027",
+    "name": "Chief officer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000006841",
+    "name": "Chief science officer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000200103",
+    "name": "Chief scientist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000200004",
+    "name": "Child specialist",
+    "legalOccupation": false,
+    "medicalOccupation": true,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000013292",
+    "name": "Chirurgeon",
+    "legalOccupation": false,
+    "medicalOccupation": true,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000245777",
+    "name": "Claimant",
+    "legalOccupation": true,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000231225",
+    "name": "Clerk",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000094280",
+    "name": "Clothier",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000204952",
+    "name": "Coach",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000093554",
+    "name": "Cobbler",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000284986",
+    "name": "Cognition pirate",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000021877",
+    "name": "Collaborator",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000250292",
+    "name": "Collector",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000003466",
+    "name": "Colonist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000021436",
+    "name": "Comedian",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000010219",
+    "name": "Comfort woman",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000023458",
+    "name": "Commandant",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000016198",
+    "name": "Commissioner",
+    "legalOccupation": true,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000221052",
+    "name": "Communications clerk",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000078474",
+    "name": "Communications master",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000009014",
+    "name": "Communications officer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000109666",
+    "name": "Composer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000238996",
+    "name": "Computer expert",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000052818",
+    "name": "Con artist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000123274",
+    "name": "Concierge",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000204951",
+    "name": "Conductor",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000239431",
+    "name": "Conference coordinator",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000254446",
+    "name": "Congressman",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000021171",
+    "name": "Conservator",
+    "legalOccupation": true,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000005009",
+    "name": "Constable",
+    "legalOccupation": true,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000216462",
+    "name": "Consultant",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000198711",
+    "name": "Contractor",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000028956",
+    "name": "Convoy liaison officer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000013833",
+    "name": "Core laborer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000245815",
+    "name": "Corner man",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000224699",
+    "name": "Coroner",
+    "legalOccupation": true,
+    "medicalOccupation": true,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000249578",
+    "name": "Corpsman",
+    "legalOccupation": false,
+    "medicalOccupation": true,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000102611",
+    "name": "Cosmologist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000198709",
+    "name": "Costume designer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000123805",
+    "name": "Council Regent",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000006564",
+    "name": "Counselor",
+    "legalOccupation": false,
+    "medicalOccupation": true,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000071737",
+    "name": "Courier",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000213069",
+    "name": "Court buffoon",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000206469",
+    "name": "Court recorder",
+    "legalOccupation": true,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000231224",
+    "name": "Court reporter",
+    "legalOccupation": true,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000128043",
+    "name": "Cowboy",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000237907",
+    "name": "Craftsman",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000225082",
+    "name": "Creditor",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000245860",
+    "name": "Criminal",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000211839",
+    "name": "Critic",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000147871",
+    "name": "Croupier",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000198640",
+    "name": "Cryptologist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000091424",
+    "name": "Cultural observer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000198935",
+    "name": "Curator",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000199603",
+    "name": "Customs inspector",
+    "legalOccupation": true,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000076765",
+    "name": "Cutter",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000102598",
+    "name": "Cyberneticist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000271566",
+    "name": "DJ",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000251170",
+    "name": "Dabo player",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000239579",
+    "name": "Dance instructor",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000241422",
+    "name": "Dancer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000147888",
+    "name": "Dealer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000221491",
+    "name": "Debtor",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000199580",
+    "name": "Decorator",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000207624",
+    "name": "Deep sea diver",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000083585",
+    "name": "Defector",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000202119",
+    "name": "Delegate",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000204121",
+    "name": "Delivery man",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000030126",
+    "name": "Dentist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000032090",
+    "name": "Deputy",
+    "legalOccupation": true,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000219879",
+    "name": "Deputy liaison officer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000196357",
+    "name": "Deserter",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000221770",
+    "name": "Designer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000147530",
+    "name": "Detective",
+    "legalOccupation": true,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000270851",
+    "name": "Diagnostic engineer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000021123",
+    "name": "Diplomat",
+    "legalOccupation": true,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000215034",
+    "name": "Director",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000111568",
+    "name": "Dishwasher",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000051062",
+    "name": "District Sub-Nagus",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000213164",
+    "name": "Diving horse",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000219620",
+    "name": "Dock worker",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000020245",
+    "name": "Dockmaster",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000091413",
+    "name": "Doctor of Medicine",
+    "legalOccupation": false,
+    "medicalOccupation": true,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000206098",
+    "name": "Double agent",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000204255",
+    "name": "Drama critic",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000241646",
+    "name": "Drill instructor",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000240155",
+    "name": "Drill thrall",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000111994",
+    "name": "Driver",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000245814",
+    "name": "Drug broker",
+    "legalOccupation": false,
+    "medicalOccupation": true,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000211693",
+    "name": "Duty engineer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000042161",
+    "name": "Duty officer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000241150",
+    "name": "Duty personnel",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000102264",
+    "name": "EPS control specialist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000121921",
+    "name": "Editor",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000086811",
+    "name": "Efficiency monitor",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000241489",
+    "name": "Electronics engineer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000008852",
+    "name": "Eliminator",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000253598",
+    "name": "Emergency Hospitality Hologram",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000045007",
+    "name": "Emergency Medical Holographic program",
+    "legalOccupation": false,
+    "medicalOccupation": true,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000276241",
+    "name": "Emergency Training Hologram",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000141330",
+    "name": "Emergency medical technician",
+    "legalOccupation": false,
+    "medicalOccupation": true,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000026286",
+    "name": "Emperor",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000206119",
+    "name": "Engineer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000106628",
+    "name": "Engineer's assistant",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000200423",
+    "name": "Engineering advisor",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000110174",
+    "name": "Engineering physicist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000252133",
+    "name": "Engineering specialist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000034451",
+    "name": "Enslaver",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000218453",
+    "name": "Entertainment director",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000091819",
+    "name": "Entomologist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000224671",
+    "name": "Entrepreneur",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000208061",
+    "name": "Escape artist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000040586",
+    "name": "Ethno-botanist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000199012",
+    "name": "Executioner",
+    "legalOccupation": true,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000080063",
+    "name": "Exobiologist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000115514",
+    "name": "Exolinguist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000037430",
+    "name": "Exopsychologist",
+    "legalOccupation": false,
+    "medicalOccupation": true,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000091862",
+    "name": "Exozoologist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000249683",
+    "name": "Expert",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000246268",
+    "name": "Explorer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000087429",
+    "name": "Exterminator",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000245118",
+    "name": "Farm boy",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000240130",
+    "name": "Farmer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000024821",
+    "name": "Field docent",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000245140",
+    "name": "Field hand",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000091653",
+    "name": "Field medic",
+    "legalOccupation": false,
+    "medicalOccupation": true,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000199190",
+    "name": "Field supervisor",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000072758",
+    "name": "File clerk",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000202260",
+    "name": "Financial advisor",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000225093",
+    "name": "Financial assistant",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000021737",
+    "name": "First Clerk",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000230524",
+    "name": "First contact specialist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000190107",
+    "name": "Fisherman",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000039380",
+    "name": "Fleet liaison officer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000166009",
+    "name": "Flight Surgeon",
+    "legalOccupation": false,
+    "medicalOccupation": true,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000100641",
+    "name": "Flight control officer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000199188",
+    "name": "Flight instructor",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000198863",
+    "name": "Flight officer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000204258",
+    "name": "Food critic",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000122089",
+    "name": "Food taster",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000282836",
+    "name": "Foreman",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000198986",
+    "name": "Forger",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000105677",
+    "name": "Fortune teller",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000273008",
+    "name": "Founder",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000229615",
+    "name": "Funkmaster",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000229377",
+    "name": "Gambler",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000250727",
+    "name": "Gambling foreman",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000017525",
+    "name": "Gangster",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000198607",
+    "name": "Garbage man",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000045781",
+    "name": "Gardener",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000282565",
+    "name": "Gatekeeper",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000061763",
+    "name": "Geisha",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000224272",
+    "name": "Generalist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000201083",
+    "name": "Geneticist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000163249",
+    "name": "Geochemist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000092234",
+    "name": "Geological engineer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000026088",
+    "name": "Geological technician",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000021467",
+    "name": "Geologist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000093316",
+    "name": "Geophysicist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000212277",
+    "name": "GhojmoK",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000025491",
+    "name": "Gladiator",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000198579",
+    "name": "Goalie",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000201170",
+    "name": "Godfather",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000068198",
+    "name": "Governess",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000004731",
+    "name": "Grand Nagus",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000285375",
+    "name": "Grave robber",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000204820",
+    "name": "Gravedigger",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000147522",
+    "name": "Grocer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000148554",
+    "name": "Groundskeeper",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000038410",
+    "name": "Guard",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000205329",
+    "name": "Guard",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000053877",
+    "name": "Guerrilla",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000198950",
+    "name": "Guest lecturer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000250258",
+    "name": "Gun moll",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000106946",
+    "name": "Gun runner",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000145252",
+    "name": "Gunner",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000284859",
+    "name": "Gymnast",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000249934",
+    "name": "Handmaiden",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000017365",
+    "name": "Healer",
+    "legalOccupation": false,
+    "medicalOccupation": true,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000013181",
+    "name": "Helmsman",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000091847",
+    "name": "Hematologist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000238874",
+    "name": "Henchman",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000110671",
+    "name": "High advisor",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000200253",
+    "name": "High priestess",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000207494",
+    "name": "Highway patrolman",
+    "legalOccupation": true,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000020143",
+    "name": "Historian",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000215125",
+    "name": "Holo-engineer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000184180",
+    "name": "Holophotographer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000093549",
+    "name": "Homemaker",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000060912",
+    "name": "Honatta",
+    "legalOccupation": false,
+    "medicalOccupation": true,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000282364",
+    "name": "Hostile witness",
+    "legalOccupation": true,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000123683",
+    "name": "Housekeeper",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000197405",
+    "name": "Huckster",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000201079",
+    "name": "Human cannonball",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000218180",
+    "name": "Hunter",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000221528",
+    "name": "Hustler",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000163121",
+    "name": "Hydraulics specialist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000196807",
+    "name": "Hygienist",
+    "legalOccupation": false,
+    "medicalOccupation": true,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000260419",
+    "name": "Impostor",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000268218",
+    "name": "Infielder",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000063087",
+    "name": "Informant",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000148395",
+    "name": "Information dealer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000064516",
+    "name": "Inquisitor",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000208063",
+    "name": "Inquisitor",
+    "legalOccupation": true,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000005780",
+    "name": "Inspector",
+    "legalOccupation": true,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000083270",
+    "name": "Inspector general",
+    "legalOccupation": true,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000049202",
+    "name": "Intelligence officer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000252666",
+    "name": "Interfacer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000196866",
+    "name": "Internship",
+    "legalOccupation": false,
+    "medicalOccupation": true,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000207781",
+    "name": "Interpreter of Laws",
+    "legalOccupation": true,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000108228",
+    "name": "Inventor",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000054185",
+    "name": "Investigator",
+    "legalOccupation": true,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000149353",
+    "name": "Investor",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000056018",
+    "name": "Iron weaver",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000209234",
+    "name": "Jack of all trades",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000122143",
+    "name": "Janitor",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000132512",
+    "name": "Journalist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000039420",
+    "name": "Judge",
+    "legalOccupation": true,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000014796",
+    "name": "Judge Advocate General",
+    "legalOccupation": true,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000187069",
+    "name": "Juggler",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000113303",
+    "name": "Junior adjutant",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000106774",
+    "name": "Junior science officer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000199566",
+    "name": "Junk dealer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000286462",
+    "name": "Justice",
+    "legalOccupation": true,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000204574",
+    "name": "Kidnapper",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000193975",
+    "name": "Kitchen Goddess",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000198529",
+    "name": "Knight",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000237204",
+    "name": "Lab assistant",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000225589",
+    "name": "Lab technician",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000237307",
+    "name": "Laborer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000273826",
+    "name": "Landlord",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000248126",
+    "name": "Landowner",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000237876",
+    "name": "Launch director",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000244144",
+    "name": "Law enforcement officer",
+    "legalOccupation": true,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000011847",
+    "name": "Lawgiver",
+    "legalOccupation": true,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000034450",
+    "name": "Lawyer",
+    "legalOccupation": true,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000262567",
+    "name": "Leader",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000237299",
+    "name": "Leech",
+    "legalOccupation": false,
+    "medicalOccupation": true,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000249961",
+    "name": "Legal expert",
+    "legalOccupation": true,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000177099",
+    "name": "Legal guardian",
+    "legalOccupation": true,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000033378",
+    "name": "Legal intercessor",
+    "legalOccupation": true,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000198510",
+    "name": "Liaison",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000022122",
+    "name": "Liaison officer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000246463",
+    "name": "Liar",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000091991",
+    "name": "Librarian",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000105707",
+    "name": "Linguist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000013946",
+    "name": "Liquidator",
+    "legalOccupation": true,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000277862",
+    "name": "Loan shark",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000199525",
+    "name": "Lockpick",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000206264",
+    "name": "Logistics officer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000237833",
+    "name": "Looter",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000023280",
+    "name": "Lucasian Chair",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000195979",
+    "name": "Made man",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000221369",
+    "name": "Maestro",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000108229",
+    "name": "Magician",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000035185",
+    "name": "Magistrate",
+    "legalOccupation": true,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000200251",
+    "name": "Maid",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000198480",
+    "name": "Mail carrier",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000199919",
+    "name": "Maintenance engineer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000239948",
+    "name": "Manager",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000198490",
+    "name": "Manicurist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000073458",
+    "name": "Marine biologist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000165655",
+    "name": "Mascot",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000223785",
+    "name": "Mass murderer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000222978",
+    "name": "Masseur",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000042937",
+    "name": "Matador",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000118822",
+    "name": "Mechanic",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000243868",
+    "name": "Mediator",
+    "legalOccupation": true,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000054295",
+    "name": "Medic",
+    "legalOccupation": false,
+    "medicalOccupation": true,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000048833",
+    "name": "Medical assistant",
+    "legalOccupation": false,
+    "medicalOccupation": true,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000198610",
+    "name": "Medical examiner",
+    "legalOccupation": false,
+    "medicalOccupation": true,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000058669",
+    "name": "Medical repair drone",
+    "legalOccupation": false,
+    "medicalOccupation": true,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000237860",
+    "name": "Medical specialist",
+    "legalOccupation": false,
+    "medicalOccupation": true,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000259642",
+    "name": "Medical student",
+    "legalOccupation": false,
+    "medicalOccupation": true,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000234335",
+    "name": "Medical supervisor",
+    "legalOccupation": false,
+    "medicalOccupation": true,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000026086",
+    "name": "Medical technician",
+    "legalOccupation": false,
+    "medicalOccupation": true,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000198609",
+    "name": "Medical trustee",
+    "legalOccupation": false,
+    "medicalOccupation": true,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000185460",
+    "name": "Medicine man",
+    "legalOccupation": false,
+    "medicalOccupation": true,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000061638",
+    "name": "Mercenary",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000090749",
+    "name": "Merchant",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000159536",
+    "name": "Mess officer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000202724",
+    "name": "Messenger",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000085634",
+    "name": "Metallurgical scientist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000093747",
+    "name": "Meteorologist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000092567",
+    "name": "Microbiologist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000093339",
+    "name": "Micropaleontologist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000261038",
+    "name": "Middle management",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000122122",
+    "name": "Midwife",
+    "legalOccupation": false,
+    "medicalOccupation": true,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000087206",
+    "name": "Military advisor",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000221135",
+    "name": "Millionaire",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000049484",
+    "name": "Miner",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000106379",
+    "name": "Mineralogist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000092235",
+    "name": "Mining engineer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000222855",
+    "name": "Minstrel",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000147905",
+    "name": "Mission specialist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000139205",
+    "name": "Missionary",
+    "legalOccupation": false,
+    "medicalOccupation": true,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000105756",
+    "name": "Mistress",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000198712",
+    "name": "Molecular paleontologist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000080394",
+    "name": "Monk",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000280565",
+    "name": "Monster expert",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000195685",
+    "name": "Moon shuttle conductor",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000056470",
+    "name": "Murderer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000053009",
+    "name": "Muse",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000221376",
+    "name": "Musician",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000245887",
+    "name": "Mutineer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000013174",
+    "name": "Navigator",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000054817",
+    "name": "Negotiator",
+    "legalOccupation": true,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000019496",
+    "name": "Nestor",
+    "legalOccupation": true,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000012660",
+    "name": "Net-girl",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000237365",
+    "name": "Network relay technician",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000198951",
+    "name": "Neuro-specialist",
+    "legalOccupation": false,
+    "medicalOccupation": true,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000159631",
+    "name": "Neurologist",
+    "legalOccupation": false,
+    "medicalOccupation": true,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000198590",
+    "name": "Neurosurgeon",
+    "legalOccupation": false,
+    "medicalOccupation": true,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000273514",
+    "name": "Nurse maid",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000251471",
+    "name": "Nursing student",
+    "legalOccupation": false,
+    "medicalOccupation": true,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000284685",
+    "name": "OR nurse",
+    "legalOccupation": false,
+    "medicalOccupation": true,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000124431",
+    "name": "Observer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000080559",
+    "name": "Obstetrician",
+    "legalOccupation": false,
+    "medicalOccupation": true,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000037363",
+    "name": "Oceanographer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000282360",
+    "name": "Officer of the court",
+    "legalOccupation": true,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000254740",
+    "name": "Officers candidate",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000145394",
+    "name": "Ombudsman",
+    "legalOccupation": true,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000250096",
+    "name": "Operator",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000237042",
+    "name": "Orator",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000092236",
+    "name": "Orbital engineer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000203270",
+    "name": "Orderly",
+    "legalOccupation": false,
+    "medicalOccupation": true,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000100895",
+    "name": "Ordnance officer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000011371",
+    "name": "Orion slave girl",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000198591",
+    "name": "Orthodontist",
+    "legalOccupation": false,
+    "medicalOccupation": true,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000245804",
+    "name": "Outlaw",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000285999",
+    "name": "Outpost scientist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000093653",
+    "name": "Oyster pirate",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000054268",
+    "name": "Paleontologist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000200249",
+    "name": "Parking enforcement officer",
+    "legalOccupation": true,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000200250",
+    "name": "Parking lot attendant",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000121817",
+    "name": "Parole officer",
+    "legalOccupation": true,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000251865",
+    "name": "Parrises player",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000208319",
+    "name": "Pastry chef",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000093308",
+    "name": "Pathologist",
+    "legalOccupation": false,
+    "medicalOccupation": true,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000212735",
+    "name": "Patroller",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000192809",
+    "name": "Patron",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000240165",
+    "name": "People doctor",
+    "legalOccupation": false,
+    "medicalOccupation": true,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000246375",
+    "name": "Performer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000197406",
+    "name": "Personal assistant",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000081960",
+    "name": "Personnel director",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000078035",
+    "name": "Personnel officer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000124044",
+    "name": "Philanthropist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000211350",
+    "name": "Philosopher king",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000091682",
+    "name": "Physician",
+    "legalOccupation": false,
+    "medicalOccupation": true,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000029015",
+    "name": "Physicist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000221371",
+    "name": "Piano player",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000179860",
+    "name": "Pilgrim",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000197572",
+    "name": "Pilot",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000004898",
+    "name": "Pirate",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000213391",
+    "name": "Pit boss",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000205326",
+    "name": "Pitcher",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000200404",
+    "name": "Plant manager",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000093760",
+    "name": "Plasma specialist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000198953",
+    "name": "Plastic surgeon",
+    "legalOccupation": false,
+    "medicalOccupation": true,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000113685",
+    "name": "Playwright",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000129474",
+    "name": "Plumber",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000269998",
+    "name": "Poacher",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000221388",
+    "name": "Poet",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000147528",
+    "name": "Police officer",
+    "legalOccupation": true,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000102727",
+    "name": "Politician",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000198933",
+    "name": "Potter",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000051592",
+    "name": "Preacher",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000110057",
+    "name": "President",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000225065",
+    "name": "President of the Court",
+    "legalOccupation": true,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000149795",
+    "name": "Principal",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000227183",
+    "name": "Prison guard",
+    "legalOccupation": true,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000218178",
+    "name": "Prisoner",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000049655",
+    "name": "Prisoner of war",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000207843",
+    "name": "Prizefighter",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000257500",
+    "name": "Professional",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000021401",
+    "name": "Professor",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000202434",
+    "name": "Programmer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000111907",
+    "name": "Promoter",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000211807",
+    "name": "Prophet",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000073451",
+    "name": "Prosecutor",
+    "legalOccupation": true,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000206547",
+    "name": "Prospector",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000043210",
+    "name": "Prostitute",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000286489",
+    "name": "Protein specialist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000146809",
+    "name": "Protocol officer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000021285",
+    "name": "Psychiatrist",
+    "legalOccupation": false,
+    "medicalOccupation": true,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000090774",
+    "name": "Psychologist",
+    "legalOccupation": false,
+    "medicalOccupation": true,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000198954",
+    "name": "Publicist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000206160",
+    "name": "Puppeteer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000252265",
+    "name": "Qalankhkai",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000129254",
+    "name": "Quack",
+    "legalOccupation": false,
+    "medicalOccupation": true,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000204601",
+    "name": "Quantum theorist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000240131",
+    "name": "Quarterback",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000029871",
+    "name": "Quartermaster",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000239433",
+    "name": "Race coordinator",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000278796",
+    "name": "Receptionist",
+    "legalOccupation": false,
+    "medicalOccupation": true,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000199643",
+    "name": "Record keeper",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000026279",
+    "name": "Records officer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000216647",
+    "name": "Referee",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000275001",
+    "name": "Registered nurse",
+    "legalOccupation": false,
+    "medicalOccupation": true,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000263049",
+    "name": "Regulator",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000245730",
+    "name": "Renegade",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000212114",
+    "name": "Repeat offender",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000087958",
+    "name": "Reporter",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000246058",
+    "name": "Rescuer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000213125",
+    "name": "Research engineer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000129964",
+    "name": "Researcher",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000069430",
+    "name": "Resistance fighter",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000217749",
+    "name": "Restaurateur",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000239607",
+    "name": "Rider",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000241146",
+    "name": "Robber",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000199071",
+    "name": "Roboticist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000239582",
+    "name": "Runner",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000024559",
+    "name": "Saboteur",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000120086",
+    "name": "Sailor",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000266227",
+    "name": "Salesman",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000057506",
+    "name": "Samurai",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000198952",
+    "name": "Sanitation engineer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000091479",
+    "name": "Saturnius harem girl",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000198593",
+    "name": "Scholar",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000197575",
+    "name": "Science specialist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000253077",
+    "name": "Science teacher",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000113232",
+    "name": "Scientific advisor",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000253074",
+    "name": "Scientific diplomat",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000253075",
+    "name": "Scientific technician",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000106796",
+    "name": "Scout",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000104695",
+    "name": "Sculptor",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000104163",
+    "name": "Sea rancher",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000092337",
+    "name": "Secretary",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000094816",
+    "name": "Sector commander",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000006152",
+    "name": "Security officer",
+    "legalOccupation": true,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000206733",
+    "name": "Senior medical director",
+    "legalOccupation": false,
+    "medicalOccupation": true,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000152075",
+    "name": "Senior mission officer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000245566",
+    "name": "Sensor technician",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000139200",
+    "name": "Servant",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000246330",
+    "name": "Server",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000263141",
+    "name": "Shalankhkai",
+    "legalOccupation": true,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000129985",
+    "name": "Shepherd",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000041584",
+    "name": "Sheriff",
+    "legalOccupation": true,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000101627",
+    "name": "Shieldmaiden",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000282297",
+    "name": "Ship's archaeologist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000212302",
+    "name": "Shoeblack",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000257140",
+    "name": "Shoeshine boy",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000015991",
+    "name": "Shopkeeper",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000237706",
+    "name": "Shrink",
+    "legalOccupation": false,
+    "medicalOccupation": true,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000222210",
+    "name": "Sidekick",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000147538",
+    "name": "Singer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000146577",
+    "name": "Slavemaster",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000097017",
+    "name": "Smuggler",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000238333",
+    "name": "Snake oil salesman",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000218807",
+    "name": "Sniper",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000249841",
+    "name": "Soccer player",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000113665",
+    "name": "Social worker",
+    "legalOccupation": false,
+    "medicalOccupation": true,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000220559",
+    "name": "Socialite",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000092572",
+    "name": "Sociologist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000087898",
+    "name": "Soldier",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000245154",
+    "name": "Soldier boy",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000106626",
+    "name": "Solicitor",
+    "legalOccupation": true,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000215473",
+    "name": "Sorcerer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000053299",
+    "name": "Sorcerer-contractor",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000251864",
+    "name": "Sparring partner",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000249764",
+    "name": "Speaker of the holy words",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000207119",
+    "name": "Spokesman",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000216593",
+    "name": "Sponsor",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000249843",
+    "name": "Springball player",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000276470",
+    "name": "Stargazer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000110689",
+    "name": "Statesman",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000199916",
+    "name": "Station manager",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000081908",
+    "name": "Stellar cartographer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000197485",
+    "name": "Stellar physicist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000038789",
+    "name": "Steward",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000205193",
+    "name": "Stockboy",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000201260",
+    "name": "Stockbroker",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000131202",
+    "name": "Storyteller",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000198022",
+    "name": "Stowaway",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000220765",
+    "name": "Straight man",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000202255",
+    "name": "Strategist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000131472",
+    "name": "Student",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000205659",
+    "name": "Subspace theoretician",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000045785",
+    "name": "Substitute teacher",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000146687",
+    "name": "Superintendent",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000105985",
+    "name": "Supervisor",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000198439",
+    "name": "Supplier",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000088458",
+    "name": "Surgeon",
+    "legalOccupation": false,
+    "medicalOccupation": true,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000132276",
+    "name": "Surgical Chancellor",
+    "legalOccupation": false,
+    "medicalOccupation": true,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000282622",
+    "name": "Surgical chancellor",
+    "legalOccupation": false,
+    "medicalOccupation": true,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000202327",
+    "name": "Surveyor",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000213445",
+    "name": "Swashbuckler",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000238812",
+    "name": "Swordsman",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000093318",
+    "name": "Systems engineer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000044057",
+    "name": "TAC officer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000006838",
+    "name": "Tactical officer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000104475",
+    "name": "Tactician",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000064097",
+    "name": "Teacher",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000205282",
+    "name": "Technical aide",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000219524",
+    "name": "Technical clerk",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000015827",
+    "name": "Technician",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000148082",
+    "name": "Temporal agent",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000249842",
+    "name": "Tennis player",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000039771",
+    "name": "Terraformer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000046036",
+    "name": "Terrorist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000193726",
+    "name": "Test conductor",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000248414",
+    "name": "Test pilot",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000238604",
+    "name": "Test taster",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000091849",
+    "name": "Thanatologist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000198934",
+    "name": "Theologian",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000205242",
+    "name": "Therapist",
+    "legalOccupation": false,
+    "medicalOccupation": true,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000237859",
+    "name": "Thermionics specialist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000202726",
+    "name": "Thermologist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000236967",
+    "name": "Thief",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000010457",
+    "name": "Thrall",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000263804",
+    "name": "Time soldier",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000198987",
+    "name": "Titanium smith",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000252448",
+    "name": "Tongo player",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000197369",
+    "name": "Torpedo technician",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000150608",
+    "name": "Tour guide",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000211320",
+    "name": "Town marshal",
+    "legalOccupation": true,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000080456",
+    "name": "Tracer",
+    "legalOccupation": true,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000243861",
+    "name": "Tragedian",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000274090",
+    "name": "Training advisor",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000245908",
+    "name": "Traitor",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000203940",
+    "name": "Translator",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000221280",
+    "name": "Transport attendant",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000006839",
+    "name": "Transporter chief",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000198526",
+    "name": "Truant officer",
+    "legalOccupation": true,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000198708",
+    "name": "Tutor",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000238484",
+    "name": "Two meter man",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000200190",
+    "name": "US Marshal",
+    "legalOccupation": true,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000054249",
+    "name": "Umpire",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000198781",
+    "name": "Undertaker",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000103040",
+    "name": "Vagrant",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000052167",
+    "name": "Valet",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000218314",
+    "name": "Vandal",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000061287",
+    "name": "Veterinarian",
+    "legalOccupation": false,
+    "medicalOccupation": true,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000171490",
+    "name": "Vintner",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000221370",
+    "name": "Violinist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000064603",
+    "name": "Waiter",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000052816",
+    "name": "War criminal",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000133661",
+    "name": "Warden",
+    "legalOccupation": true,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000219205",
+    "name": "Warlock",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000052866",
+    "name": "Warlord",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000091804",
+    "name": "Warp engineer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000077978",
+    "name": "Warp field specialist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000091801",
+    "name": "Warp field theorist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000106388",
+    "name": "Warrior",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000013847",
+    "name": "Waste controller",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000209241",
+    "name": "Waste processor",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000280003",
+    "name": "Watcher",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000199059",
+    "name": "Weapons specialist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000081694",
+    "name": "Weather coordinator",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000208666",
+    "name": "Weatherman",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000099562",
+    "name": "Welder",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000236602",
+    "name": "Wet nurse",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000181077",
+    "name": "Whale hunter",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000279822",
+    "name": "Whistleblower",
+    "legalOccupation": true,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000014580",
+    "name": "Witch",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000218952",
+    "name": "Wizard",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000185479",
+    "name": "Writer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000226325",
+    "name": "Xenoanthropologist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000251381",
+    "name": "Xenobotanist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000037490",
+    "name": "Xenologist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000194376",
+    "name": "Yard engineer",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000082905",
+    "name": "Yard superintendent",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": false
+  },
+  {
+    "uid": "OCMA0000093540",
+    "name": "Zookeeper",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  },
+  {
+    "uid": "OCMA0000091860",
+    "name": "Zoologist",
+    "legalOccupation": false,
+    "medicalOccupation": false,
+    "scientificOccupation": true
+  }
+]

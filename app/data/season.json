@@ -1,0 +1,462 @@
+[
+  {
+    "uid": "SAMA0000212566",
+    "title": "DIS Season 1",
+    "series": {
+      "uid": "SEMA0000201665",
+      "title": "Star Trek: Discovery"
+    },
+    "seasonNumber": 1,
+    "numberOfEpisodes": 15
+  },
+  {
+    "uid": "SAMA0000229213",
+    "title": "DIS Season 2",
+    "series": {
+      "uid": "SEMA0000201665",
+      "title": "Star Trek: Discovery"
+    },
+    "seasonNumber": 2,
+    "numberOfEpisodes": 14
+  },
+  {
+    "uid": "SAMA0000244009",
+    "title": "DIS Season 3",
+    "series": {
+      "uid": "SEMA0000201665",
+      "title": "Star Trek: Discovery"
+    },
+    "seasonNumber": 3,
+    "numberOfEpisodes": 13
+  },
+  {
+    "uid": "SAMA0000254126",
+    "title": "DIS Season 4",
+    "series": {
+      "uid": "SEMA0000201665",
+      "title": "Star Trek: Discovery"
+    },
+    "seasonNumber": 4,
+    "numberOfEpisodes": 13
+  },
+  {
+    "uid": "SAMA0000276062",
+    "title": "DIS Season 5",
+    "series": {
+      "uid": "SEMA0000201665",
+      "title": "Star Trek: Discovery"
+    },
+    "seasonNumber": 5,
+    "numberOfEpisodes": null
+  },
+  {
+    "uid": "SAMA0000001735",
+    "title": "DS9 Season 1",
+    "series": {
+      "uid": "SEMA0000073238",
+      "title": "Star Trek: Deep Space Nine"
+    },
+    "seasonNumber": 1,
+    "numberOfEpisodes": 19
+  },
+  {
+    "uid": "SAMA0000001736",
+    "title": "DS9 Season 2",
+    "series": {
+      "uid": "SEMA0000073238",
+      "title": "Star Trek: Deep Space Nine"
+    },
+    "seasonNumber": 2,
+    "numberOfEpisodes": 26
+  },
+  {
+    "uid": "SAMA0000001737",
+    "title": "DS9 Season 3",
+    "series": {
+      "uid": "SEMA0000073238",
+      "title": "Star Trek: Deep Space Nine"
+    },
+    "seasonNumber": 3,
+    "numberOfEpisodes": 26
+  },
+  {
+    "uid": "SAMA0000001738",
+    "title": "DS9 Season 4",
+    "series": {
+      "uid": "SEMA0000073238",
+      "title": "Star Trek: Deep Space Nine"
+    },
+    "seasonNumber": 4,
+    "numberOfEpisodes": 25
+  },
+  {
+    "uid": "SAMA0000001739",
+    "title": "DS9 Season 5",
+    "series": {
+      "uid": "SEMA0000073238",
+      "title": "Star Trek: Deep Space Nine"
+    },
+    "seasonNumber": 5,
+    "numberOfEpisodes": 26
+  },
+  {
+    "uid": "SAMA0000001740",
+    "title": "DS9 Season 6",
+    "series": {
+      "uid": "SEMA0000073238",
+      "title": "Star Trek: Deep Space Nine"
+    },
+    "seasonNumber": 6,
+    "numberOfEpisodes": 26
+  },
+  {
+    "uid": "SAMA0000001741",
+    "title": "DS9 Season 7",
+    "series": {
+      "uid": "SEMA0000073238",
+      "title": "Star Trek: Deep Space Nine"
+    },
+    "seasonNumber": 7,
+    "numberOfEpisodes": 25
+  },
+  {
+    "uid": "SAMA0000001756",
+    "title": "ENT Season 1",
+    "series": {
+      "uid": "SEMA0000103435",
+      "title": "Star Trek: Enterprise"
+    },
+    "seasonNumber": 1,
+    "numberOfEpisodes": 25
+  },
+  {
+    "uid": "SAMA0000001757",
+    "title": "ENT Season 2",
+    "series": {
+      "uid": "SEMA0000103435",
+      "title": "Star Trek: Enterprise"
+    },
+    "seasonNumber": 2,
+    "numberOfEpisodes": 26
+  },
+  {
+    "uid": "SAMA0000001758",
+    "title": "ENT Season 3",
+    "series": {
+      "uid": "SEMA0000103435",
+      "title": "Star Trek: Enterprise"
+    },
+    "seasonNumber": 3,
+    "numberOfEpisodes": 24
+  },
+  {
+    "uid": "SAMA0000003604",
+    "title": "ENT Season 4",
+    "series": {
+      "uid": "SEMA0000103435",
+      "title": "Star Trek: Enterprise"
+    },
+    "seasonNumber": 4,
+    "numberOfEpisodes": 22
+  },
+  {
+    "uid": "SAMA0000247983",
+    "title": "LD Season 1",
+    "series": {
+      "uid": "SEMA0000240166",
+      "title": "Star Trek: Lower Decks"
+    },
+    "seasonNumber": 1,
+    "numberOfEpisodes": 10
+  },
+  {
+    "uid": "SAMA0000250142",
+    "title": "LD Season 2",
+    "series": {
+      "uid": "SEMA0000240166",
+      "title": "Star Trek: Lower Decks"
+    },
+    "seasonNumber": 2,
+    "numberOfEpisodes": 10
+  },
+  {
+    "uid": "SAMA0000267336",
+    "title": "LD Season 3",
+    "series": {
+      "uid": "SEMA0000240166",
+      "title": "Star Trek: Lower Decks"
+    },
+    "seasonNumber": 3,
+    "numberOfEpisodes": 10
+  },
+  {
+    "uid": "SAMA0000276060",
+    "title": "LD Season 4",
+    "series": {
+      "uid": "SEMA0000240166",
+      "title": "Star Trek: Lower Decks"
+    },
+    "seasonNumber": 4,
+    "numberOfEpisodes": null
+  },
+  {
+    "uid": "SAMA0000246418",
+    "title": "PIC Season 1",
+    "series": {
+      "uid": "SEMA0000238047",
+      "title": "Star Trek: Picard"
+    },
+    "seasonNumber": 1,
+    "numberOfEpisodes": 10
+  },
+  {
+    "uid": "SAMA0000250097",
+    "title": "PIC Season 2",
+    "series": {
+      "uid": "SEMA0000238047",
+      "title": "Star Trek: Picard"
+    },
+    "seasonNumber": 2,
+    "numberOfEpisodes": 10
+  },
+  {
+    "uid": "SAMA0000261414",
+    "title": "PIC Season 3",
+    "series": {
+      "uid": "SEMA0000238047",
+      "title": "Star Trek: Picard"
+    },
+    "seasonNumber": 3,
+    "numberOfEpisodes": null
+  },
+  {
+    "uid": "SAMA0000257714",
+    "title": "PRO Season 1",
+    "series": {
+      "uid": "SEMA0000242790",
+      "title": "Star Trek: Prodigy"
+    },
+    "seasonNumber": 1,
+    "numberOfEpisodes": 19
+  },
+  {
+    "uid": "SAMA0000257983",
+    "title": "PRO Season 2",
+    "series": {
+      "uid": "SEMA0000242790",
+      "title": "Star Trek: Prodigy"
+    },
+    "seasonNumber": 2,
+    "numberOfEpisodes": null
+  },
+  {
+    "uid": "SAMA0000255378",
+    "title": "SNW Season 1",
+    "series": {
+      "uid": "SEMA0000255370",
+      "title": "Star Trek: Strange New Worlds"
+    },
+    "seasonNumber": 1,
+    "numberOfEpisodes": 10
+  },
+  {
+    "uid": "SAMA0000276057",
+    "title": "SNW Season 2",
+    "series": {
+      "uid": "SEMA0000255370",
+      "title": "Star Trek: Strange New Worlds"
+    },
+    "seasonNumber": 2,
+    "numberOfEpisodes": null
+  },
+  {
+    "uid": "SAMA0000000767",
+    "title": "TAS Season 1",
+    "series": {
+      "uid": "SEMA0000034504",
+      "title": "Star Trek: The Animated Series"
+    },
+    "seasonNumber": 1,
+    "numberOfEpisodes": 16
+  },
+  {
+    "uid": "SAMA0000000768",
+    "title": "TAS Season 2",
+    "series": {
+      "uid": "SEMA0000034504",
+      "title": "Star Trek: The Animated Series"
+    },
+    "seasonNumber": 2,
+    "numberOfEpisodes": 6
+  },
+  {
+    "uid": "SAMA0000001633",
+    "title": "TNG Season 1",
+    "series": {
+      "uid": "SEMA0000062876",
+      "title": "Star Trek: The Next Generation"
+    },
+    "seasonNumber": 1,
+    "numberOfEpisodes": 25
+  },
+  {
+    "uid": "SAMA0000001634",
+    "title": "TNG Season 2",
+    "series": {
+      "uid": "SEMA0000062876",
+      "title": "Star Trek: The Next Generation"
+    },
+    "seasonNumber": 2,
+    "numberOfEpisodes": 22
+  },
+  {
+    "uid": "SAMA0000001635",
+    "title": "TNG Season 3",
+    "series": {
+      "uid": "SEMA0000062876",
+      "title": "Star Trek: The Next Generation"
+    },
+    "seasonNumber": 3,
+    "numberOfEpisodes": 26
+  },
+  {
+    "uid": "SAMA0000001636",
+    "title": "TNG Season 4",
+    "series": {
+      "uid": "SEMA0000062876",
+      "title": "Star Trek: The Next Generation"
+    },
+    "seasonNumber": 4,
+    "numberOfEpisodes": 26
+  },
+  {
+    "uid": "SAMA0000001637",
+    "title": "TNG Season 5",
+    "series": {
+      "uid": "SEMA0000062876",
+      "title": "Star Trek: The Next Generation"
+    },
+    "seasonNumber": 5,
+    "numberOfEpisodes": 26
+  },
+  {
+    "uid": "SAMA0000001638",
+    "title": "TNG Season 6",
+    "series": {
+      "uid": "SEMA0000062876",
+      "title": "Star Trek: The Next Generation"
+    },
+    "seasonNumber": 6,
+    "numberOfEpisodes": 26
+  },
+  {
+    "uid": "SAMA0000001639",
+    "title": "TNG Season 7",
+    "series": {
+      "uid": "SEMA0000062876",
+      "title": "Star Trek: The Next Generation"
+    },
+    "seasonNumber": 7,
+    "numberOfEpisodes": 25
+  },
+  {
+    "uid": "SAMA0000001732",
+    "title": "TOS Season 1",
+    "series": {
+      "uid": "SEMA0000097474",
+      "title": "Star Trek: The Original Series"
+    },
+    "seasonNumber": 1,
+    "numberOfEpisodes": 29
+  },
+  {
+    "uid": "SAMA0000001733",
+    "title": "TOS Season 2",
+    "series": {
+      "uid": "SEMA0000097474",
+      "title": "Star Trek: The Original Series"
+    },
+    "seasonNumber": 2,
+    "numberOfEpisodes": 26
+  },
+  {
+    "uid": "SAMA0000001734",
+    "title": "TOS Season 3",
+    "series": {
+      "uid": "SEMA0000097474",
+      "title": "Star Trek: The Original Series"
+    },
+    "seasonNumber": 3,
+    "numberOfEpisodes": 24
+  },
+  {
+    "uid": "SAMA0000001742",
+    "title": "VOY Season 1",
+    "series": {
+      "uid": "SEMA0000000029",
+      "title": "Star Trek: Voyager"
+    },
+    "seasonNumber": 1,
+    "numberOfEpisodes": 15
+  },
+  {
+    "uid": "SAMA0000001743",
+    "title": "VOY Season 2",
+    "series": {
+      "uid": "SEMA0000000029",
+      "title": "Star Trek: Voyager"
+    },
+    "seasonNumber": 2,
+    "numberOfEpisodes": 26
+  },
+  {
+    "uid": "SAMA0000001744",
+    "title": "VOY Season 3",
+    "series": {
+      "uid": "SEMA0000000029",
+      "title": "Star Trek: Voyager"
+    },
+    "seasonNumber": 3,
+    "numberOfEpisodes": 26
+  },
+  {
+    "uid": "SAMA0000001745",
+    "title": "VOY Season 4",
+    "series": {
+      "uid": "SEMA0000000029",
+      "title": "Star Trek: Voyager"
+    },
+    "seasonNumber": 4,
+    "numberOfEpisodes": 26
+  },
+  {
+    "uid": "SAMA0000001753",
+    "title": "VOY Season 5",
+    "series": {
+      "uid": "SEMA0000000029",
+      "title": "Star Trek: Voyager"
+    },
+    "seasonNumber": 5,
+    "numberOfEpisodes": 25
+  },
+  {
+    "uid": "SAMA0000001754",
+    "title": "VOY Season 6",
+    "series": {
+      "uid": "SEMA0000000029",
+      "title": "Star Trek: Voyager"
+    },
+    "seasonNumber": 6,
+    "numberOfEpisodes": 26
+  },
+  {
+    "uid": "SAMA0000001755",
+    "title": "VOY Season 7",
+    "series": {
+      "uid": "SEMA0000000029",
+      "title": "Star Trek: Voyager"
+    },
+    "seasonNumber": 7,
+    "numberOfEpisodes": 24
+  }
+]

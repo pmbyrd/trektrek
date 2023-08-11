@@ -1,0 +1,222 @@
+[
+  {
+    "uid": "SEMA0000073238",
+    "title": "Star Trek: Deep Space Nine",
+    "abbreviation": "DS9",
+    "productionStartYear": 1992,
+    "productionEndYear": null,
+    "originalRunStartDate": "1993-01-03",
+    "originalRunEndDate": "1999-06-02",
+    "seasonsCount": 7,
+    "episodesCount": 173,
+    "featureLengthEpisodesCount": 3,
+    "productionCompany": {
+      "uid": "COMA0000001845",
+      "name": "Paramount Pictures"
+    },
+    "originalBroadcaster": {
+      "uid": "COMA0000052430",
+      "name": "CBS Studios"
+    }
+  },
+  {
+    "uid": "SEMA0000062876",
+    "title": "Star Trek: The Next Generation",
+    "abbreviation": "TNG",
+    "productionStartYear": 1987,
+    "productionEndYear": 1994,
+    "originalRunStartDate": "1987-09-28",
+    "originalRunEndDate": "1994-05-23",
+    "seasonsCount": 7,
+    "episodesCount": 176,
+    "featureLengthEpisodesCount": 2,
+    "productionCompany": {
+      "uid": "COMA0000001845",
+      "name": "Paramount Pictures"
+    },
+    "originalBroadcaster": {
+      "uid": "COMA0000052430",
+      "name": "CBS Studios"
+    }
+  },
+  {
+    "uid": "SEMA0000034504",
+    "title": "Star Trek: The Animated Series",
+    "abbreviation": "TAS",
+    "productionStartYear": 1973,
+    "productionEndYear": 1974,
+    "originalRunStartDate": "1973-09-08",
+    "originalRunEndDate": "1974-10-12",
+    "seasonsCount": 2,
+    "episodesCount": 22,
+    "featureLengthEpisodesCount": 0,
+    "productionCompany": {
+      "uid": "COMA0000026671",
+      "name": "Filmation"
+    },
+    "originalBroadcaster": {
+      "uid": "COMA0000006521",
+      "name": "NBC"
+    }
+  },
+  {
+    "uid": "SEMA0000097474",
+    "title": "Star Trek: The Original Series",
+    "abbreviation": "TOS",
+    "productionStartYear": 1964,
+    "productionEndYear": null,
+    "originalRunStartDate": "1966-09-08",
+    "originalRunEndDate": "1969-06-03",
+    "seasonsCount": 3,
+    "episodesCount": 79,
+    "featureLengthEpisodesCount": 0,
+    "productionCompany": {
+      "uid": "COMA0000062916",
+      "name": "Desilu"
+    },
+    "originalBroadcaster": {
+      "uid": "COMA0000006521",
+      "name": "NBC"
+    }
+  },
+  {
+    "uid": "SEMA0000201665",
+    "title": "Star Trek: Discovery",
+    "abbreviation": "DIS",
+    "productionStartYear": 2017,
+    "productionEndYear": null,
+    "originalRunStartDate": "2017-09-24",
+    "originalRunEndDate": null,
+    "seasonsCount": 4,
+    "episodesCount": 55,
+    "featureLengthEpisodesCount": 0,
+    "productionCompany": {
+      "uid": "COMA0000052430",
+      "name": "CBS Studios"
+    },
+    "originalBroadcaster": {
+      "uid": "COMA0000201662",
+      "name": "Paramount+"
+    }
+  },
+  {
+    "uid": "SEMA0000238047",
+    "title": "Star Trek: Picard",
+    "abbreviation": "PIC",
+    "productionStartYear": 2019,
+    "productionEndYear": 2021,
+    "originalRunStartDate": "2020-01-23",
+    "originalRunEndDate": null,
+    "seasonsCount": 2,
+    "episodesCount": 20,
+    "featureLengthEpisodesCount": 0,
+    "productionCompany": {
+      "uid": "COMA0000052430",
+      "name": "CBS Studios"
+    },
+    "originalBroadcaster": {
+      "uid": "COMA0000201662",
+      "name": "Paramount+"
+    }
+  },
+  {
+    "uid": "SEMA0000255370",
+    "title": "Star Trek: Strange New Worlds",
+    "abbreviation": "SNW",
+    "productionStartYear": null,
+    "productionEndYear": null,
+    "originalRunStartDate": "2022-05-05",
+    "originalRunEndDate": null,
+    "seasonsCount": 1,
+    "episodesCount": 10,
+    "featureLengthEpisodesCount": 0,
+    "productionCompany": {
+      "uid": "COMA0000052430",
+      "name": "CBS Studios"
+    },
+    "originalBroadcaster": {
+      "uid": "COMA0000201662",
+      "name": "Paramount+"
+    }
+  },
+  {
+    "uid": "SEMA0000240166",
+    "title": "Star Trek: Lower Decks",
+    "abbreviation": "LD",
+    "productionStartYear": null,
+    "productionEndYear": null,
+    "originalRunStartDate": "2020-08-06",
+    "originalRunEndDate": null,
+    "seasonsCount": 3,
+    "episodesCount": 30,
+    "featureLengthEpisodesCount": 0,
+    "productionCompany": {
+      "uid": "COMA0000240172",
+      "name": "CBS Eye Animation Productions"
+    },
+    "originalBroadcaster": {
+      "uid": "COMA0000201662",
+      "name": "Paramount+"
+    }
+  },
+  {
+    "uid": "SEMA0000242790",
+    "title": "Star Trek: Prodigy",
+    "abbreviation": "PRO",
+    "productionStartYear": 2019,
+    "productionEndYear": null,
+    "originalRunStartDate": "2021-10-28",
+    "originalRunEndDate": null,
+    "seasonsCount": 1,
+    "episodesCount": 19,
+    "featureLengthEpisodesCount": 0,
+    "productionCompany": {
+      "uid": "COMA0000240172",
+      "name": "CBS Eye Animation Productions"
+    },
+    "originalBroadcaster": {
+      "uid": "COMA0000201662",
+      "name": "Paramount+"
+    }
+  },
+  {
+    "uid": "SEMA0000103435",
+    "title": "Star Trek: Enterprise",
+    "abbreviation": "ENT",
+    "productionStartYear": 2001,
+    "productionEndYear": 2005,
+    "originalRunStartDate": "2001-09-26",
+    "originalRunEndDate": "2005-05-13",
+    "seasonsCount": 4,
+    "episodesCount": 97,
+    "featureLengthEpisodesCount": 1,
+    "productionCompany": {
+      "uid": "COMA0000001845",
+      "name": "Paramount Pictures"
+    },
+    "originalBroadcaster": {
+      "uid": "COMA0000021844",
+      "name": "UPN"
+    }
+  },
+  {
+    "uid": "SEMA0000000029",
+    "title": "Star Trek: Voyager",
+    "abbreviation": "VOY",
+    "productionStartYear": 1994,
+    "productionEndYear": null,
+    "originalRunStartDate": "1995-01-16",
+    "originalRunEndDate": "2001-05-23",
+    "seasonsCount": 7,
+    "episodesCount": 168,
+    "featureLengthEpisodesCount": 4,
+    "productionCompany": {
+      "uid": "COMA0000001845",
+      "name": "Paramount Pictures"
+    },
+    "originalBroadcaster": {
+      "uid": "COMA0000021844",
+      "name": "UPN"
+    }
+  }
+]
