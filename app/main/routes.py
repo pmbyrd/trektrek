@@ -1,10 +1,11 @@
 from app.main import bp as main
+from flask import render_template, url_for, flash, redirect, request, Blueprint
 
 
 
 @main.route('/')
 def index():
-    return 'Hello, world! This is the main blueprint.'
+    return render_template('index.html')    
 
 @main.route('/test/')
 def test_page():

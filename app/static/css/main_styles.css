@@ -1,0 +1,101 @@
+/* NOTE for universal styles to be implemented throughout the application */
+
+
+
+a {
+    text-decoration: none;
+    color: #007bff;
+    position: relative;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+a:hover {
+    color: #6cf;
+    transform: translateY(-3px);
+}
+
+a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: #6cf;
+    transform: scaleX(0);
+    transition: transform 0.2s ease;
+}
+
+a:hover::after {
+    transform: scaleX(1);
+}
+
+
+p,
+.main-content-container,
+.main-banner,
+.container
+ {
+    border-radius: 20px;
+}
+
+.main-banner {
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+    color:#6cf;
+}
+
+.main-content-container {
+    padding: 20px;
+    background-image: url('/app/static/img/warp.jpg');
+    background-color: #455580;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px; 
+}
+
+.image-li-symbols {
+   list-style: georgian inside url('/media/examples/rocket.svg');
+}
+
+.image-li-ships {
+    list-style: georgian outside url('/non-existent.svg');
+}
+
+.paragraph-info {
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #fff;
+}
+
+#div-info {
+    background-color: #79d;
+}
+
+.bg-img {
+    background-image: url("static/img/warp.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+}
+
+.simple {
+    background-color: #79d;
+    color: #fff;
+    padding: 10px;
+    border-top-left-radius: 25px;
+}
+
+
+
+.smaller-img {
+    max-height: 150px; /* Adjust the max-height as needed */
+    width: auto;
+    object-fit: contain;
+}
