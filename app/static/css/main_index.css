@@ -1,0 +1,33 @@
+
+.main-page,
+.quotes {
+    display: flex;
+    /* flex both items to be side by side and equal size */
+    flex-direction: row;
+    flex-wrap: wrap;
+   justify-content: space-around;
+   align-content: space-around;
+   align-items: center;
+}
+
+.main-page {
+   background-color: black;
+}
+.image {
+    /* Add some styles for the image container if needed */
+    /* set the width to be  */
+   display: flex;
+   flex-direction: column;
+}
+
+
+.quotes {
+    background-color: #455580;
+    color: #6cf;
+    padding: 20px;
+    border-radius: 20px;
+    width: 50%;
+    height: 50%;
+    margin: 20px;
+    
+}
