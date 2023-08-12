@@ -20,15 +20,15 @@ class User(db.Model, UserMixin):
     __tablename__ = 'users'
     
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
-    username = db.Column(db.Text(32), nullable=True, unique=True)
-    first_name= db.Column(db.Text(32), nullable=True)
-    last_name = db.Column(db.Text(32), nullable=True)
+    username = db.Column(db.String(64), nullable=True, unique=True)
+    first_name= db.Column(db.String(64), nullable=True)
+    last_name = db.Column(db.String(64), nullable=True)
     email = db.Column(db.Text, nullable=False, unique=True)
     profile_pic = db.Column(db.Text, nullable=True, default=DEFAULT_IMAGE_URL)
     bio = db.Column(db.Text, nullable=True)
     location = db.Column(db.Text, nullable=True)
     joined_at = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
-    pwd = db.Column(db.Text, nullable=False)
+    pwd = db.Column(db.Text, nullable=True)
     
     @property
     # create a property that returns the full name of the user

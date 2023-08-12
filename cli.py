@@ -47,3 +47,13 @@ def register(app):
             print(f"Table '{table_name}' dropped.")
         else:
             print(f"Table '{table_name}' not found in the database.")
+            
+    @app.cli.command("seed")
+    def seed_db():
+        """Seed the database."""
+        
+        db.create_all()
+        from app.seeds.seed import seed_users
+        seed_users()
+        
+        print('Database seeded.')

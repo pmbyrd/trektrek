@@ -6,7 +6,6 @@ Populates the database with users made from a csv file of phony user data.
 import csv
 import random
 import requests
-from faker import Faker as fake
 from datetime import datetime
 import string
 from json_trek import JSONTrek 
