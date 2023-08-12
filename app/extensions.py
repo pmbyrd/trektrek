@@ -5,5 +5,5 @@ from authlib.integrations.flask_client import OAuth
 
 db = SQLAlchemy()
 migrate = Migrate()
-login = LoginManager()
+login_manager = LoginManager()
 oauth = OAuth()

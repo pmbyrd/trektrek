@@ -1,15 +1,9 @@
 """_summary_ = This file contains the models for creating users for the application.
 """
 
-from app.extensions import db, login
+from app.extensions import db
 from datetime import datetime
-from flask_login import (
-    current_user,
-    login_required,
-    login_user,
-    logout_user,
-    UserMixin,
-)
+from flask_login import UserMixin
 
 
 DEFAULT_IMAGE_URL = "https://loading.io/icon/tpi8gu"

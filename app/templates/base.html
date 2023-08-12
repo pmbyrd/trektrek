@@ -150,11 +150,11 @@
                 <div class="button-col">
                     <div class="button" id="top-right"><a href="">Post</a></div>
                     <!-- If the user is logged in I want a logout button, else I want a Login in button-->
-                    {% if user %}
+                    <div class="button" id="bottom-right"><a href="{{url_for('auth.login')}}">Login</a></div>
+                    <!-- {% if user %}
                     <div class="button" id="bottom-right"><a href="">Logout</a></div>
                     {% else %}
-                    <div class="button" id="bottom-right"><a href="">Login</a></div>
-                    {% endif %}
+                    {% endif %} -->
                     <!-- <div class="button" id="bottom-right"><a href="">signup/login</a></div> -->
                 </div>
             </div>
