@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Testing logout page</h1>
+<h3>
+    Welcome, Perriesha!
+</h3>
+<!-- if the user is in the session I want to log them out -->
+<!-- {% if user %}
+  <h1 class="title">
+    Welcome, {{ user.first_name }}!
+  </h1>
+  <h2>Test</h2>
+  {{user.first_name}}
+  <a href="{{ url_for('auth.logout') }}">Logout</a>
+{% else %}
+  <h1 class="title">
+    Welcome, Stranger!
+  </h1>
+  <a href="{{ url_for('auth.login') }}">Login</a>
+{% endif %} -->
+{% endblock %}
