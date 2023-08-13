@@ -51,9 +51,15 @@ def register(app):
     @app.cli.command("seed")
     def seed_db():
         """Seed the database."""
-        
-        db.create_all()
-        from app.seeds.seed import seed_users
-        seed_users()
-        
-        print('Database seeded.')
+
+        # run the whole seed file
+        from app.seeds.seed import seed_all
+        try:
+            seed_all()
+        except Exception as e:
+            if os.environ.get("FLASK_ENV") == "production":
+                print("Error in seeding the database.")
+                print(e)
+            else:
+                print(e)
+                
