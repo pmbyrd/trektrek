@@ -1,0 +1,28 @@
+{% extends "base.html" %} {% block title %} {{title}} {% endblock %} {% block
+content %}
+
+<h1 class="main-banner">{{ title }}</h1>
+<ul>
+    {% for title in paginated_titles.items %}
+</ul>
+
+<li class="image-li-ships"><a href="{{url_for('universe.title', name=title.name)}}">{{ title.name }}</a></li>
+<!-- Add other attributes as needed -->
+{% endfor %}
+</ul>
+<div class="pagination">
+    {% if paginated_titles.has_prev %}
+    <li><a href="{{ url_for(request.endpoint, page=paginated_titles.prev_num) }}">Previous</a></li>
+    {% endif %}
+    {% for page_num in paginated_titles.iter_pages() %}
+    {% if page_num %}
+    <li><a href="{{ url_for(request.endpoint, page=page_num) }}">{{ page_num }}</a></li>
+    {% else %}
+    <li><span class="current">{{ paginated_titles.page }}</span></li>
+    {% endif %}
+    {% endfor %}
+    {% if paginated_titles.has_next %}
+    <li><a href="{{ url_for(request.endpoint, page=paginated_titles.next_num) }}">Next</a></li>
+    {% endif %}
+</div>
+{% endblock %}

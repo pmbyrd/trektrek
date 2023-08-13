@@ -1,0 +1,26 @@
+{% extends "base.html" %} {% block title %} {{ title }} {% endblock %} {% block
+    content %}
+    
+    <h1 class="banner">{{ organization.name }}</h1>
+    <div class="simple">
+        <div class="bg-img">
+            <div class="card inner-card">
+                <div class="card-body">
+                    <h2 class="card-title">{{organization.name}}</h2>
+                    {% if summary %}
+                    {% for heading, info in summary %}
+                    <!-- if heading does ==None I want the heading else print a line break -->
+                    {% if heading == None %}
+                    <hr>
+                    {% else %}
+                    <h3>{{heading}}</h3>
+                    {% endif %}
+                    <p>{{info}}</p>
+                    {% endfor%}
+                    {%endif%}
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    {% endblock %}

@@ -29,5 +29,7 @@ def create_app(config_class=Config):
     app.register_blueprint(main_bp)
     from app.auth import auth
     app.register_blueprint(auth)
+    from app.universe import universe
+    app.register_blueprint(universe)
     
     return app

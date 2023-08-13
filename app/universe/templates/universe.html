@@ -1,0 +1,20 @@
+{% extends "base.html" %} {% block title %} Universe {% endblock %} {% block
+content %}
+<div class="main-content-container">
+  <h1 class="button main-banner">Universe</h1>
+<!-- This link should take us to an animal page -->
+<div class="container text-justify" id="div-info">
+  <p class="paragraph-info">
+    Learn more about the Star Trek universe by clicking on the links below.
+  </p>
+  <p class="paragraph-info">
+    From animals to spaceships to weapons, the Star Trek universe is vast and
+    varied.
+  </p>
+</div>
+<ul>
+  <li class="image-li-ships"><a href="{{url_for('universe.animals')}}">animals</a></li>
+
+</ul>
+</div>
+{% endblock %}

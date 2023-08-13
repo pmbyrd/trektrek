@@ -1,0 +1,43 @@
+{% extends "base.html" %} {% block title %} {{title}} {% endblock %} {% block
+content %}
+
+
+
+
+<h1 class="main-banner">{{ title }}</h1>
+<ul>
+	{% for animal in paginated_animals.items %}
+</ul>
+
+<li class="image-li-ships"><a href="{{url_for('universe.animal', name=animal.name)}}">{{ animal.name }}</a></li>
+	<!-- Add other attributes as needed -->
+	{% endfor %}
+</ul>
+<div class="pagination">
+	{% if paginated_animals.has_prev %}
+	<li><a href="{{ url_for(request.endpoint, page=paginated_animals.prev_num) }}">Previous</a></li>
+{% endif %}
+{% for page_num in paginated_animals.iter_pages() %}
+	{% if page_num %}
+		<li><a href="{{ url_for(request.endpoint, page=page_num) }}">{{ page_num }}</a></li>
+	{% else %}
+		<li><span class="current">{{ paginated_animals.page }}</span></li>
+	{% endif %}
+{% endfor %}
+{% if paginated_animals.has_next %}
+	<li><a href="{{ url_for(request.endpoint, page=paginated_animals.next_num) }}">Next</a></li>
+{% endif %}
+</div>
+
+
+
+		<!-- Add the javascript to this page -->
+		{% block scripts %}
+		<script
+			src="{{ url_for('universe.static', filename='js/animals.js')}}"
+			defer
+		></script>
+
+		{% endblock %} {% endblock %}
+	</div>
+</div>

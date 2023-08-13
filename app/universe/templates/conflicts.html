@@ -1,0 +1,28 @@
+{% extends "base.html" %} {% block title %} {{title}} {% endblock %} {% block
+content %}
+
+<h1 class="main-banner">{{ title }}</h1>
+<ul>
+	{% for conflict in paginated_conflicts.items %}
+</ul>
+
+<li class="image-li-ships"><a href="{{url_for('universe.conflict', name=conflict.name)}}">{{ conflict.name }}</a></li>
+	<!-- Add other attributes as needed -->
+	{% endfor %}
+</ul>
+<div class="pagination">
+	{% if paginated_conflicts.has_prev %}
+	<li><a href="{{ url_for(request.endpoint, page=paginated_conflicts.prev_num) }}">Previous</a></li>
+{% endif %}
+{% for page_num in paginated_conflicts.iter_pages() %}
+	{% if page_num %}
+		<li><a href="{{ url_for(request.endpoint, page=page_num) }}">{{ page_num }}</a></li>
+	{% else %}
+		<li><span class="current">{{ paginated_conflicts.page }}</span></li>
+	{% endif %}
+{% endfor %}
+{% if paginated_conflicts.has_next %}
+	<li><a href="{{ url_for(request.endpoint, page=paginated_conflicts.next_num) }}">Next</a></li>
+{% endif %}
+</div>
+{% endblock %}

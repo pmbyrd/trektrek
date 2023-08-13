@@ -1,0 +1,28 @@
+{% extends "base.html" %} {% block title %} {{title}} {% endblock %} {% block
+	content %}
+	
+	<h1 class="main-banner">{{ title }}</h1>
+	<ul>
+		{% for material in paginated_materials.items %}
+	</ul>
+	
+	<li class="image-li-ships"><a href="{{url_for('universe.material', name=material.name)}}">{{ material.name }}</a></li>
+		<!-- Add other attributes as needed -->
+		{% endfor %}
+	</ul>
+	<div class="pagination">
+		{% if paginated_materials.has_prev %}
+		<li><a href="{{ url_for(request.endpoint, page=paginated_materials.prev_num) }}">Previous</a></li>
+	{% endif %}
+	{% for page_num in paginated_materials.iter_pages() %}
+		{% if page_num %}
+			<li><a href="{{ url_for(request.endpoint, page=page_num) }}">{{ page_num }}</a></li>
+		{% else %}
+			<li><span class="current">{{ paginated_materials.page }}</span></li>
+		{% endif %}
+	{% endfor %}
+	{% if paginated_materials.has_next %}
+		<li><a href="{{ url_for(request.endpoint, page=paginated_materials.next_num) }}">Next</a></li>
+	{% endif %}
+	</div>
+	{% endblock %}

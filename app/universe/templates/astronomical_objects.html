@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %} Astronomical Objects {% endblock %}
+{% block content %}
+
+<h1 class="banner">{{ title }}</h1>
+<ul>
+	{% for astronomical_object in paginated_astronomical_objects.items %}
+</ul>
+
+<li class="image-li-ships"><a href="{{url_for('universe.astronomical_object', name=astronomical_object.name)}}">{{ astronomical_object.name }}</a></li>
+	<!-- Add other attributes as needed -->
+	{% endfor %}
+</ul>
+<div class="pagination">
+	{% if paginated_astronomical_objects.has_prev %}
+	<li><a href="{{ url_for(request.endpoint, page=paginated_astronomical_objects.prev_num) }}">Previous</a></li>
+{% endif %}
+{% for page_num in paginated_astronomical_objects.iter_pages() %}
+	{% if page_num %}
+		<li><a href="{{ url_for(request.endpoint, page=page_num) }}">{{ page_num }}</a></li>
+	{% else %}
+		<li><span class="current">{{ paginated_astronomical_objects.page }}</span></li>
+	{% endif %}
+{% endfor %}
+{% if paginated_astronomical_objects.has_next %}
+	<li><a href="{{ url_for(request.endpoint, page=paginated_astronomical_objects.next_num) }}">Next</a></li>
+{% endif %}
+</div>
+
+{% endblock %}
