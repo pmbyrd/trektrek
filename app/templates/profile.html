@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Profile{% endblock %}
+{% block content %}
+{{user.name}}
+<!-- {{name}} -->
+<!-- {% if user %}
+  Hi {{ user.name }}!
+  {% else %}
+  <a href="{{ url_for('auth.login') }}">Login</a>
+{% endif %} -->
+{% endblock %}

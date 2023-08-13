@@ -4,6 +4,7 @@
 from app.extensions import db
 from datetime import datetime
 from flask_login import UserMixin
+from flask import session
 
 
 DEFAULT_IMAGE_URL = "https://loading.io/icon/tpi8gu"
@@ -37,3 +38,47 @@ class User(db.Model, UserMixin):
     def __repr__(self):
         return f"<User #{self.id}: {self.username}, {self.email}>"
      
+    @classmethod
+    def create(cls, sub, name, email, picture):
+        """
+        Create a new User instance based on Google authentication data.
+        
+        :param sub: Subject identifier from Google response (sub field).
+        :param name: User's name from Google response (name field).
+        :param email: User's email from Google response (email field).
+        :param picture: User's profile picture URL from Google response (picture field).
+        :return: New User instance.
+        """
+        new_user = cls(
+            username=None,  # You might set this based on your app's logic
+            first_name=None,  # You might set this based on your app's logic
+            last_name=None,  # You might set this based on your app's logic
+            email=email,
+            profile_pic=picture,
+            bio=None,  # You might set this based on your app's logic
+            location=None,  # You might set this based on your app's logic
+            joined_at=datetime.utcnow(),
+            pwd=None,  # You might set this based on your app's logic
+        )
+        db.session.add(new_user)
+        db.session.commit()
+        return new_user
+    
+    @classmethod
+    def authenticate_session_user(cls, user):
+        if 'user' in session:
+            new_user = cls(
+                email = user['email']
+            )
+            db.session.add(new_user)
+            db.session.commit()
+            return new_user
+        
+    @classmethod
+    def authenticate(cls, email, pwd):
+        """Find a user with the given email and password."""
+        user = cls.query.filter_by(email=email).first()
+        if user:
+            return user
+        else:
+            return False
