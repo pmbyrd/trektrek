@@ -31,4 +31,5 @@ def create_app(config_class=Config):
     from app.universe import universe
     app.register_blueprint(universe)
     print(app.config)
+    print("app created")
     return app
