@@ -14,7 +14,6 @@ def create_app(config_class=Config):
     app = Flask(__name__)
     app.config.from_object(config_class)
     
-    SQLALCHEMY_DATABASE_URI = "postgresql:///trektrek"
     db.init_app(app)
     # NOTE schemas must be initialized after db
     migrate.init_app(app, db)
@@ -31,5 +30,5 @@ def create_app(config_class=Config):
     app.register_blueprint(auth)
     from app.universe import universe
     app.register_blueprint(universe)
-    
+    print(app.config)
     return app
