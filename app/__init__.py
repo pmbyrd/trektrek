@@ -32,5 +32,4 @@ def create_app(config_class=Config):
     app.register_blueprint(universe)
     print(app.config)
     print("app created")
-    db.create_all(app=app)
     return app

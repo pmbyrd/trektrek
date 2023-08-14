@@ -31,6 +31,10 @@ app.app_context().push()
 # Register the custom commands with the application
 cli.register(app)
 
+# make sure the database is created
+# use the click command to create the database instance for the application for deployment
+@app.cli.command("create")
+
 @app.shell_context_processor
 def make_shell_context():
     """Makes a shell context that adds the database instance and models to the shell session."""
