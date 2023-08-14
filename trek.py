@@ -26,7 +26,7 @@ from app.models.star_trek_models import (
     Weapon
     )
 
-app = create_app()
+app = create_app('flask.cfg')
 app.app_context().push()
 # Register the custom commands with the application
 cli.register(app)
