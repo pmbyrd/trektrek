@@ -32,7 +32,7 @@ app.app_context().push()
 # Register the custom commands with the application
 cli.register(app)
 # Check if the environment is "development" or "production"
-port = int(os.environ.get("PORT", 5000))
+port = int(os.environ.get("PORT", 10000))
 host = os.environ.get("HOST", "0.0.0.0")
 
 
