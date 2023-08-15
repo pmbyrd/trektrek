@@ -1,4 +1,5 @@
 import cli
+import os
 from app import create_app
 from app.extensions import db
 from app.models.models import User
@@ -30,6 +31,10 @@ app = create_app()
 app.app_context().push()
 # Register the custom commands with the application
 cli.register(app)
+# Check if the environment is "development" or "production"
+
+
+
 
 # make sure the database is created
 # use the click command to create the database instance for the application for deployment
@@ -64,4 +69,6 @@ def make_shell_context():
         'User': User,
     }
 if __name__ == '__main__':
+    app.run(host=host, port=port)
+    print(os.environ.get("FLASK_ENV"))
     print('Running the application!')

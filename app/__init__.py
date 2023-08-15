@@ -30,6 +30,8 @@ def create_app(config_class=Config):
     app.register_blueprint(auth)
     from app.universe import universe
     app.register_blueprint(universe)
-    print(app.config)
+    # print(app.config)
     print("app created")
+    print(os.environ.get("FLASK_ENV"))
+    print('Running the application!')
     return app
