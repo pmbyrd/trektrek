@@ -39,13 +39,9 @@ def create_app(config_filename=None):
     app.register_blueprint(universe)
     from app.media import media
     app.register_blueprint(media)
-<<<<<<< HEAD
-    
-=======
     from app.api import api
     app.register_blueprint(api)
         
->>>>>>> development
     @login_manager.user_loader
     def load_user(user_id):
         return User.query.filter(User.id == int(user_id)).first()

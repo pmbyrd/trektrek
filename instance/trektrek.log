@@ -149,3 +149,4 @@
 2023-08-16 16:13:11,234 INFO MainThread-140439907012608: Starting the TrekTrek App... [in helpers.py:27]
 2023-08-16 16:13:12,717 INFO MainThread-140439907012608: Database tables created [in trek.py:33]
 >>>>>>> development
+2023-08-16 16:23:13,452 INFO MainThread-140203597877248: Starting the TrekTrek App... [in helpers.py:27]
