@@ -17,6 +17,7 @@ def create_app(config_class=Config):
     # Configure the Flask application
     config_type = os.getenv('CONFIG_TYPE', default='config.DevelopmentConfig')
     app.config.from_object(config_type)
+    # app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL')
     # app.config['SQLALCHEMY_BINDS'] = {
     #     'users': f"postgresql://{app.config['SQLALCHEMY_DATABASE_URI']}/users"
     # }   
@@ -31,6 +32,7 @@ def create_app(config_class=Config):
     login_manager.init_app(app)
     oauth.init_app(app)
     configure_logging(app)
+    register_cli_commands(app)
     engine = sa.create_engine(app.config['SQLALCHEMY_DATABASE_URI'])
     inspector = sa.inspect(engine)
     if 'users' not in inspector.get_table_names():
@@ -68,3 +70,10 @@ def create_app(config_class=Config):
     # print('Running the application!')
     return app
 
+def register_cli_commands(app):
+    @app.cli.command('init_db')
+    def initialize_database():
+        """Initialize the database."""
+        db.drop_all()
+        db.create_all()
+        echo('Initialized the database!')

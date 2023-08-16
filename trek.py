@@ -1,6 +1,6 @@
+from app import create_app
 import cli
 import os
-from app import create_app
 from app.extensions import db
 from app.models.models import User
 from app.models.star_trek_models import (
@@ -28,28 +28,19 @@ from app.models.star_trek_models import (
     )
 
 app = create_app()
+cli.register(app)
 app.app_context().push()
 app.logger.info("Database tables created")
 
 
 # Register the custom commands with the application
-cli.register(app)
 # Check if the environment is "development" or "production"
-port = int(os.environ.get("PORT", 10000))
-host = os.environ.get("HOST", "0.0.0.0")
-
-
-
-# make sure the database is created
-# use the click command to create the database instance for the application for deployment
-# make sure to create the database instance before running the application
 if os.environ.get("FLASK_ENV") == "production":
     print("Creating the database instance for the application.")
     db.create_all()
     print("Database instance created.")
 
 @app.cli.command('print')
-
 
 @app.shell_context_processor
 def make_shell_context():
@@ -79,9 +70,9 @@ def make_shell_context():
         'Weapon': Weapon,
         'User': User,
     }
+    
 if __name__ == '__main__':
-    app.run(host=host, port=port)
+    app.run(host='0.0.0.0', port=10000)
     # create the database if it doesn't exist
-
     print(os.environ.get("FLASK_ENV"))
     print('Running the application!')
