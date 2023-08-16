@@ -35,7 +35,8 @@ def create_app(config_class=Config):
     if 'users' not in inspector.get_table_names():
         with app.app_context():
             db.create_all()
-        
+            print('Database created.')
+    
     
     # @login_manager.user_loader
     # def load_user(user_id):
@@ -54,11 +55,7 @@ def create_app(config_class=Config):
 
     # print(app.config)
     # print("app created")
-    # print(os.environ.get("FLASK_ENV"))
+    print(os.environ.get("FLASK_ENV"))
     # print('Running the application!')
     return app
 
-if __name__ == '__main__':
-    app.run(host=host, port=port)
-    print(os.environ.get("FLASK_ENV"))
-    print('Running the application!')

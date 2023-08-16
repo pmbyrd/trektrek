@@ -17,6 +17,7 @@ class Config(object):
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     # Logging
     LOG_WITH_GUNICORN = os.getenv('LOG_WITH_GUNICORN', default=False)
+    
 
 
 class ProductionConfig(Config):

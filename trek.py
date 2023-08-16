@@ -39,7 +39,6 @@ host = os.environ.get("HOST", "0.0.0.0")
 
 # make sure the database is created
 # use the click command to create the database instance for the application for deployment
-@app.cli.command("create")
 
 @app.shell_context_processor
 def make_shell_context():
@@ -71,5 +70,6 @@ def make_shell_context():
     }
 if __name__ == '__main__':
     app.run(host=host, port=port)
+    # create the database if it doesn't exist
     print(os.environ.get("FLASK_ENV"))
     print('Running the application!')
