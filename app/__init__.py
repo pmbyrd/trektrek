@@ -16,6 +16,7 @@ def create_app(config_class=Config):
     app = Flask(__name__)
     # Configure the Flask application
     config_type = os.getenv('CONFIG_TYPE', default='config.DevelopmentConfig')
+    print(f"Using config class: {config_type}")
     app.config.from_object(config_type)
     db.init_app(app)
     # NOTE schemas must be initialized after db
