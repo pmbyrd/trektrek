@@ -1,5 +1,6 @@
-import cli
 from app import create_app
+import cli
+import os
 from app.extensions import db
 from app.models.models import User
 from app.models.star_trek_models import (
@@ -26,10 +27,26 @@ from app.models.star_trek_models import (
     Weapon
     )
 
+<<<<<<< HEAD
 app = create_app('flask.cfg')
 app.app_context().push()
 # Register the custom commands with the application
+=======
+app = create_app()
+>>>>>>> something
 cli.register(app)
+app.app_context().push()
+app.logger.info("Database tables created")
+
+
+# Register the custom commands with the application
+# Check if the environment is "development" or "production"
+if os.environ.get("FLASK_ENV") == "production":
+    print("Creating the database instance for the application.")
+    db.create_all()
+    print("Database instance created.")
+
+@app.cli.command('print')
 
 @app.shell_context_processor
 def make_shell_context():
@@ -59,5 +76,9 @@ def make_shell_context():
         'Weapon': Weapon,
         'User': User,
     }
+    
 if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=10000)
+    # create the database if it doesn't exist
+    print(os.environ.get("FLASK_ENV"))
     print('Running the application!')

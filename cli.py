@@ -3,9 +3,8 @@
 
 import os
 import click
+from click import echo
 from app.extensions import db
-from app import create_app
-app = create_app()
 # Register the custom commands with the application
 
 
@@ -15,30 +14,38 @@ def register(app):
         """Custom database commands."""
         pass
 
-    @custom_db.command("create")
+    @app.cli.command("create")
     def create_db():
         """Create the database."""
         db.create_all()
         print('Database created.')
 
-    @custom_db.command("drop")
+    @app.cli.command("drop")
     def drop_db():
         """Drop the database."""
         db.drop_all()
         print('Database dropped.')
 
-    @custom_db.command("print")
+    @app.cli.command("print")
     def print_db():
         """Print the database."""
         print(db)
 
-    @custom_db.command("init")
+    @app.cli.command("init")
     def init_db():
         """Initialize the database."""
+        click.echo("Initializing the database.")
         db.create_all()
-        print('Database initialized.')
+        click.echo("Database initialized.")
+            
+    @app.cli.command('init_db')
+    def initialize_database():
+        """Initialize the database."""
+        db.drop_all()
+        db.create_all()
+        echo('Initialized the database!')
         
-    @custom_db.command("drop")
+    @app.cli.command("drop")
     @click.argument('table_name')  # Import 'click' for argument handling
     def drop_db(table_name):
         """Drop a specific table from the database."""
