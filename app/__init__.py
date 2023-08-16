@@ -8,7 +8,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from app.extensions import db, migrate, login_manager, oauth, sa, ma
 from config import Config
-from app.helper import configure_logging, connect_db
+from app.helpers import configure_logging, connect_db
 from app.models.models import User
 
 def create_app(config_class=Config):
