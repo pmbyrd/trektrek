@@ -70,6 +70,6 @@ def make_shell_context():
         'User': User,
     }
 if __name__ == '__main__':
-    app.run(host=host, port=port)
+    # app.run(host=host, port=port)
     print(os.environ.get("FLASK_ENV"))
     print('Running the application!')

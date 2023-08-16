@@ -16,6 +16,10 @@ def create_app(config_class=Config):
     # Configure the Flask application
     config_type = os.getenv('CONFIG_TYPE', default='config.DevelopmentConfig')
     app.config.from_object(config_type)
+    # app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('CONFIG_TYPE', default='config.DevelopmentConfig')
+    # app.config['SQLALCHEMY_BINDS'] = {
+    #     'users': f"postgresql://{app.config['SQLALCHEMY_DATABASE_URI']}/users"
+    # }   
 
     
     db.init_app(app)
@@ -23,16 +27,17 @@ def create_app(config_class=Config):
     migrate.init_app(app, db)
     login_manager.init_app(app)
     oauth.init_app(app)
-    configure_logging(app)
-    engine = sa.create_engine(app.config['SQLALCHEMY_DATABASE_URI'])
-    inspector = sa.inspect(engine)
-    if 'users' not in inspector.get_table_names():
-        with app.app_context():
-            db.create_all()
+    # configure_logging(app)
+    # engine = sa.create_engine(app.config['SQLALCHEMY_DATABASE_URI'])
+    # inspector = sa.inspect(engine)
+    # if 'users' not in inspector.get_table_names():
+    #     with app.app_context():
+    #         db.create_all()
+        
     
-    @login_manager.user_loader
-    def load_user(user_id):
-        return User.query.get(int(user_id))
+    # @login_manager.user_loader
+    # def load_user(user_id):
+    #     return User.query.get(int(user_id))
     
     from app.main import bp as main_bp
     app.register_blueprint(main_bp)
@@ -46,7 +51,7 @@ def create_app(config_class=Config):
         return User.query.filter(User.id == int(user_id)).first()
 
     # print(app.config)
-    print("app created")
-    print(os.environ.get("FLASK_ENV"))
-    print('Running the application!')
+    # print("app created")
+    # print(os.environ.get("FLASK_ENV"))
+    # print('Running the application!')
     return app
