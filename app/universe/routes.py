@@ -6,7 +6,7 @@ from flask import jsonify
 from app.universe import universe
 from flask import render_template, jsonify, request
 from app.models.star_trek_models import Animal, Material, Title, AstronomicalObject, Character,Food, Element, Location, Conflict, Occupation, Organization, SpacecraftClass, Spacecraft, Species, Technology, Weapon
-# from app.schemas.animal_schema import AnimalSchema
+from app.schemas.animal_schema import AnimalSchema
 # from app.schemas.astronomical_objects_schema import AstronomicalObjectSchema
 # from app.schemas.occupation_schema import OccupationSchema
 # from app.schemas.character_schema import CharacterSchema
@@ -36,6 +36,14 @@ def index():
 #     """Returns all animals in the database"""
 #     animals = Animal.query.order_by(Animal.name.asc()).all()
 #     return render_template('animals.html', animals=animals, title='Animals')
+
+@universe.route('/api/animals')
+def api_animals():
+    """Returns all animals in the database"""
+    animals = Animal.query.all()
+    animal_schema = AnimalSchema(many=True)
+    output = animal_schema.dump(animals)
+    return jsonify({'animals': output})
 
 @universe.route('/animals')
 def animals():

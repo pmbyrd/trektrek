@@ -6,7 +6,7 @@ from flask import Flask
 # Add the parent directory of the 'app' module to sys.path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from app.extensions import db, migrate, login_manager, oauth, sa
+from app.extensions import db, migrate, login_manager, oauth, sa, ma
 from config import Config
 from app.helper import configure_logging
 from app.models.models import User
@@ -19,10 +19,13 @@ def create_app(config_class=Config):
     # app.config['SQLALCHEMY_BINDS'] = {
     #     'users': f"postgresql://{app.config['SQLALCHEMY_DATABASE_URI']}/users"
     # }   
+    port = int(os.environ.get("PORT", 10000))
+    host = os.environ.get("HOST", "0.0.0.0")
 
     
     db.init_app(app)
     # NOTE schemas must be initialized after db
+    ma.init_app(app)
     migrate.init_app(app, db)
     login_manager.init_app(app)
     oauth.init_app(app)
@@ -54,3 +57,8 @@ def create_app(config_class=Config):
     # print(os.environ.get("FLASK_ENV"))
     # print('Running the application!')
     return app
+
+if __name__ == '__main__':
+    app.run(host=host, port=port)
+    print(os.environ.get("FLASK_ENV"))
+    print('Running the application!')
