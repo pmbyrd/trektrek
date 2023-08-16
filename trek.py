@@ -74,7 +74,5 @@ def make_shell_context():
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=10000)
     # create the database if it doesn't exist
-    app.cli.invoke(args=['print'])
-    app.cli.invoke(args=['init_db'])
     print(os.environ.get("FLASK_ENV"))
     print('Running the application!')
