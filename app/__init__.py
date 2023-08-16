@@ -26,12 +26,12 @@ def create_app(config_class=Config):
     migrate.init_app(app, db)
     login_manager.init_app(app)
     oauth.init_app(app)
-    # configure_logging(app)
-    # engine = sa.create_engine(app.config['SQLALCHEMY_DATABASE_URI'])
-    # inspector = sa.inspect(engine)
-    # if 'users' not in inspector.get_table_names():
-    #     with app.app_context():
-    #         db.create_all()
+    configure_logging(app)
+    engine = sa.create_engine(app.config['SQLALCHEMY_DATABASE_URI'])
+    inspector = sa.inspect(engine)
+    if 'users' not in inspector.get_table_names():
+        with app.app_context():
+            db.create_all()
         
     
     # @login_manager.user_loader
