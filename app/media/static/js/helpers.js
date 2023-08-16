@@ -1,5 +1,5 @@
 console.log("hello from inside the models.js file");
-const OMDBAPI = "http://www.omdbapi.com/?i=tt3896198&apikey=";
+const OMDBAPI = "https://www.omdbapi.com/?i=tt3896198&apikey=";
 // const TMDB = "https://api.themoviedb.org/3/movie/550?api_key="
 // https://api.themoviedb.org/3/movie/150540?api_key=###&append_to_response=credits
 const TMDB = "https://api.themoviedb.org/3/movie/"
