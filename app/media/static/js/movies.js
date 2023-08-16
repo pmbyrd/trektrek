@@ -36,7 +36,7 @@ async function displayMovies() {
                 <div class="card-body">
                     <p class="card-text">${movieData.plot}</p>
                     <p class="card-text">Genres: ${movieData.genre}</p>
-                    <p class="card-text">Directo: ${movieData.director}</p>
+                    <p class="card-text">Director: ${movieData.director}</p>
                     <p class="card-text">Release date: ${movieData.released}</p>
                     <p class="card-text">Runtime: ${movieData.runtime}</p>
                     <p class="card-text">Metascore: ${movieData.metascore}/100</p>

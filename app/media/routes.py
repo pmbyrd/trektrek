@@ -11,11 +11,7 @@ from app.models.star_trek_models import Series, Movie, Staff, Season, Episode, C
 from app.helpers import MemoryAlphaScraper, replace_space
 
 @media.route('/')
-<<<<<<< HEAD
-def media_index():
-=======
 def index():
->>>>>>> development
     """This page shows all media related to the Star Trek Universe."""
     return render_template('media.html')
 
@@ -31,12 +27,7 @@ def movies():
 def movie(title):
     """Return a single movie."""
     movie = Movie.query.filter_by(title=title).first()
-<<<<<<< HEAD
-    review_form = ReviewForm()
-    return render_template('movie.html', movie=movie, title=title, form=review_form)
-=======
     return render_template('movie.html', movie=movie, title=title)
->>>>>>> development
     
 @media.route('/shows')
 def shows():
