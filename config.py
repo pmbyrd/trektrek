@@ -10,7 +10,7 @@ class Config(object):
     SECRET_KEY = os.getenv('SECRET_KEY', default='BAD_SECRET_KEY')
     # Since SQLAlchemy 1.4.x has removed support for the 'postgres://' URI scheme,
     # update the URI to the postgres database to use the supported 'postgresql://' scheme
-    if os.getenv('DATABASE_URL'):
+    if os.getenv('DATABASE_URI'):
         SQLALCHEMY_DATABASE_URI = os.getenv('DATABASE_URL').replace("postgres://", "postgresql://", 1)
     else:
         SQLALCHEMY_DATABASE_URI = f"sqlite:///{os.path.join(BASEDIR, 'instance', 'app.db')}"
