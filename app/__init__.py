@@ -1,5 +1,6 @@
 import os
 import sys
+from click import echo
 from flask import Flask
 
 
@@ -36,7 +37,7 @@ def create_app(config_class=Config):
         with app.app_context():
             db.create_all()
             print('Database created.')
-    
+
     
     # @login_manager.user_loader
     # def load_user(user_id):
@@ -52,10 +53,18 @@ def create_app(config_class=Config):
     @login_manager.user_loader
     def load_user(user_id):
         return User.query.filter(User.id == int(user_id)).first()
+    
+    @app.cli.command('init_db')
+    def initialize_database():
+        """Initialize the database."""
+        db.drop_all()
+        db.create_all()
+        echo('Initialized the database!')
+
 
     # print(app.config)
     # print("app created")
-    print(os.environ.get("FLASK_ENV"))
+    echo(f"Running the application in {app.config['FLASK_ENV']} environment.")
     # print('Running the application!')
     return app
 
