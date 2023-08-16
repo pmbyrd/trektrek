@@ -21,7 +21,8 @@ class Config(object):
     # update the URI to the postgres database to use the supported 'postgresql://' scheme
     if os.getenv('DATABASE_URL'):
         SQLALCHEMY_DATABASE_URI = os.getenv('DATABASE_URL').replace("postgres://", "postgresql://", 1)
-    # else:
+    else:
+        SQLALCHEMY_DATABASE_URI = f"sqlite:///{os.path.join(BASEDIR, 'instance', 'app.db')}"
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     # Logging
     LOG_WITH_GUNICORN = os.getenv('LOG_WITH_GUNICORN', default=False)
@@ -31,8 +32,8 @@ class ProductionConfig(Config):
     FLASK_ENV = 'production'
     
 class DevelopmentConfig(Config):
+    FLASK_ENV = 'development'
     DEBUG = True
-    SQLALCHEMY_DATABASE_URI = f"sqlite:///{os.path.join(BASEDIR, 'instance', 'app.db')}"
 
 class TestingConfig(Config):
     TESTING = True

@@ -16,7 +16,6 @@ def create_app(config_class=Config):
     # Configure the Flask application
     config_type = os.getenv('CONFIG_TYPE', default='config.DevelopmentConfig')
     app.config.from_object(config_type)
-    # app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('CONFIG_TYPE', default='config.DevelopmentConfig')
     # app.config['SQLALCHEMY_BINDS'] = {
     #     'users': f"postgresql://{app.config['SQLALCHEMY_DATABASE_URI']}/users"
     # }   
