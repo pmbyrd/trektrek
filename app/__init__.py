@@ -37,6 +37,8 @@ def create_app(config_filename=None):
     app.register_blueprint(auth)
     from app.universe import universe
     app.register_blueprint(universe)
+    from app.media import media
+    app.register_blueprint(media)
     
     @login_manager.user_loader
     def load_user(user_id):
