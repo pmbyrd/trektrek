@@ -27,13 +27,7 @@ from app.models.star_trek_models import (
     Weapon
     )
 
-<<<<<<< HEAD
-app = create_app('flask.cfg')
-app.app_context().push()
-# Register the custom commands with the application
-=======
 app = create_app()
->>>>>>> something
 cli.register(app)
 app.app_context().push()
 app.logger.info("Database tables created")

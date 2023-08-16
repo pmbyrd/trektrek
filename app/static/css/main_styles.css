@@ -99,3 +99,28 @@ p,
     width: auto;
     object-fit: contain;
 }
+
+.pagination {
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+
+  .pagination li {
+    margin: 0;
+    padding: 0;
+  }
+
+  .pagination li a {
+    display: block;
+    padding: 5px 10px;
+    margin: 0;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-right: 5px;
+  }
+
+  .pagination .current {
+    font-weight: bold;
+  }
