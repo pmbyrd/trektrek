@@ -11,7 +11,7 @@ class Config(object):
     # Since SQLAlchemy 1.4.x has removed support for the 'postgres://' URI scheme,
     # update the URI to the postgres database to use the supported 'postgresql://' scheme
     if os.getenv('DATABASE_URI'):
-        SQLALCHEMY_DATABASE_URI = os.getenv('DATABASE_URL').replace("postgres://", "postgresql://", 1)
+        SQLALCHEMY_DATABASE_URI = os.getenv('DATABASE_URI').replace("postgres://", "postgresql://", 1)
     else:
         SQLALCHEMY_DATABASE_URI = f"sqlite:///{os.path.join(BASEDIR, 'instance', 'app.db')}"
     SQLALCHEMY_TRACK_MODIFICATIONS = False
