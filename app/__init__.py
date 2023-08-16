@@ -3,7 +3,6 @@ import sys
 from click import echo
 from flask import Flask
 
-
 # Add the parent directory of the 'app' module to sys.path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
