@@ -1,12 +1,13 @@
 console.log("hello from inside the models.js file");
-const OMDBAPI = "https://www.omdbapi.com/?i=tt3896198&apikey=";
+const OMDB = "https://www.omdbapi.com/?i=tt3896198&apikey=";
 // const TMDB = "https://api.themoviedb.org/3/movie/550?api_key="
 // https://api.themoviedb.org/3/movie/150540?api_key=###&append_to_response=credits
 const TMDB = "https://api.themoviedb.org/3/movie/"
 const TMDB_CREDITS = "&append_to_response=credits"
 const POSTER_URL = "https://image.tmdb.org/t/p/original/"
-async function getAPIKey() {
-	console.debug("getAPIKey");
+
+async function omdbAPIKey() {
+	console.debug("omdbAPIKey");
 	try {
 		const res = await axios.get("/api/OMDB_API_KEY");
 		const API_KEY = res.data;
@@ -58,8 +59,8 @@ async function getActor(actorId) {
 async function getMovie(movieTitle) {
 	console.debug("getMovie");
 	try {
-		const API_KEY = await getAPIKey();
-		const res = await axios.get(`${OMDBAPI}${API_KEY}&t=${movieTitle}`);
+		const API_KEY = await omdbAPIKey();
+		const res = await axios.get(`${OMDB}${API_KEY}&t=${movieTitle}`);
 		let movie = res.data;
 		return (movie = {
 			title: movie.Title,
