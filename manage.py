@@ -1,6 +1,6 @@
 import os
 
-def deploy():
+def deploy(host, port):
 	"""Run deployment tasks."""
 	from app import create_app
 	from app.extensions import db
@@ -13,6 +13,7 @@ def deploy():
 	stamp()
 	migrate()
 	upgrade()
+	db.create_all()
 
 	
-deploy()
+deploy(host='0.0.0.0', port=10000)
