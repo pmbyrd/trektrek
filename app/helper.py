@@ -26,7 +26,6 @@ def configure_logging(app):
 
 def connect_db(app):
     """Connect this database to provided Flask app.
-
     You should call this in your Flask app.
     """
     db.app = app

@@ -17,7 +17,7 @@ def create_app(config_class=Config):
     # Configure the Flask application
     config_type = os.getenv('CONFIG_TYPE', default='config.DevelopmentConfig')
     app.config.from_object(config_type)
-    connect_db(app)
+    db.init_app(app)
     # NOTE schemas must be initialized after db
     ma.init_app(app)
     migrate.init_app(app, db)
@@ -43,12 +43,10 @@ def create_app(config_class=Config):
         return User.query.filter(User.id == int(user_id)).first()
     
     echo(f"Running the application in {app.config['FLASK_ENV']} environment.")
+    echo(f"Database URI: {app.config['SQLALCHEMY_DATABASE_URI']}")
+    echo(f"Database engine: {engine}")
+    echo(f"Database inspector: {inspector}")
     return app
 
-# def register_cli_commands(app):
-#     @app.cli.command('init_db')
-#     def initialize_database():
-#         """Initialize the database."""
-#         db.drop_all()
-#         db.create_all()
-#         echo('Initialized the database!')
+
+

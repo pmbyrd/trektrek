@@ -3,9 +3,8 @@
 
 import os
 import click
+from click import echo
 from app.extensions import db
-from app import create_app
-app = create_app()
 # Register the custom commands with the application
 
 
@@ -35,8 +34,16 @@ def register(app):
     @app.cli.command("init")
     def init_db():
         """Initialize the database."""
+        click.echo("Initializing the database.")
         db.create_all()
-        print('Database initialized.')
+        click.echo("Database initialized.")
+            
+    @app.cli.command('init_db')
+    def initialize_database():
+        """Initialize the database."""
+        db.drop_all()
+        db.create_all()
+        echo('Initialized the database!')
         
     @app.cli.command("drop")
     @click.argument('table_name')  # Import 'click' for argument handling

@@ -49,8 +49,9 @@ def api_animals():
 def animals():
     """Returns all animals in the database"""
     page = request.args.get('page', 1, type=int)
-    animals = AnimalSchema(many=True).dump(animals)
-    # animals = Animal.query.order_by(Animal.name.asc()).all()
+    # animals = AnimalSchema(many=True).dump(animals)
+    animals = Animal.query.order_by(Animal.name.asc()).all()
+    print(animals)
     paginated_animals = Animal.query.order_by(Animal.name.asc()).paginate(page=page, per_page=25)
     return render_template('animals.html', animals=animals, title='Animals', page=page, paginated_animals=paginated_animals)
 
