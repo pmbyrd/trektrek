@@ -1,4 +1,5 @@
 import logging
+from app.extensions import db
 from flask.logging import default_handler
 from logging.handlers import RotatingFileHandler
 
@@ -21,3 +22,12 @@ def configure_logging(app):
     app.logger.removeHandler(default_handler)
 
     app.logger.info('Starting the TrekTrek App...')
+    
+
+def connect_db(app):
+    """Connect this database to provided Flask app.
+
+    You should call this in your Flask app.
+    """
+    db.app = app
+    db.init_app(app)
