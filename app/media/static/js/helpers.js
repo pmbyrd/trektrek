@@ -11,6 +11,7 @@ async function omdbAPIKey() {
 	try {
 		const res = await axios.get("/api/OMDB_API_KEY");
 		const API_KEY = res.data;
+		console.log(API_KEY)
 		return API_KEY;
 	} catch (error) {
 		console.error(error);
@@ -22,6 +23,7 @@ async function tmdbApiKey() {
     try {
         const res = await axios.get("/api/TMDB_API_KEY")
         const API_KEY = res.data
+		console.log(API_KEY)
         return API_KEY
     } catch (error) {
         console.error(error)
