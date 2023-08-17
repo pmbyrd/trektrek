@@ -1,8 +1,11 @@
 import os
+from dotenv import load_dotenv
 from flask import jsonify
 from app.api import api
 from app.schemas.movie_schema import MovieSchema
 from app.models.star_trek_models import Movie
+
+load_dotenv()
 
 @api.route('/api/test')
 def testing():
@@ -13,13 +16,13 @@ def testing():
 def omdb_api_key():
     """Returns the OMDB_API_KEY"""
     OMDB_API_KEY = os.environ.get('OMDB_API_KEY')
-    return jsonify({'OMDB_API_KEY': 'OMDB_API_KEY'})
+    return jsonify({'OMDB_API_KEY': OMDB_API_KEY})
     
 @api.route('/api/TMDB_API_KEY')
 def tmdb_api_key():
     """Returns the TMDB_API_KEY"""
     TMDB_API_KEY = os.environ.get('TMDB_API_KEY')
-    return jsonify({'TMDB_API_KEY': 'TMDB_API_KEY'})
+    return jsonify({'TMDB_API_KEY': TMDB_API_KEY})
 
 @api.route('/api/movies')
 def json_movies():
