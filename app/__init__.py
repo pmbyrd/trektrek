@@ -6,7 +6,16 @@ from flask import Flask
 # Add the parent directory of the 'app' module to sys.path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from app.extensions import db, migrate, login_manager, oauth, sa, ma
+from app.extensions import (
+    db,
+    migrate,
+    login_manager,
+    oauth,
+    sa,
+    ma,
+    CORS
+    )
+
 from config import Config
 from app.helpers import configure_logging, connect_db
 from app.models.models import User
@@ -17,12 +26,15 @@ def create_app(config_filename=None):
     config_type = os.getenv('CONFIG_TYPE', default='config.DevelopmentConfig')
     print(f"Using config class: {config_type}")
     app.config.from_object(config_type)
+    
+    # ********* Initialize extensions *********
     db.init_app(app)
     # NOTE schemas must be initialized after db
     ma.init_app(app)
     migrate.init_app(app, db)
     login_manager.init_app(app)
     oauth.init_app(app)
+    CORS.init_app(app)
     configure_logging(app)
     engine = sa.create_engine(app.config['SQLALCHEMY_DATABASE_URI'])
     inspector = sa.inspect(engine)
