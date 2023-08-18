@@ -3,3 +3,4 @@
 **/__pycache__/**
 /.vscode
 client_secret.json
+*.log

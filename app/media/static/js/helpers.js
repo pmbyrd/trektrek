@@ -24,6 +24,10 @@ async function tmdbApiKey() {
         const res = await axios.get("/api/TMDB_API_KEY")
         const API_KEY = res.data
 		console.log(API_KEY)
+		console.log(typeof API_KEY)
+		console.log(API_KEY.key)
+		let key = API_KEY.key
+		console.log(key)
         return API_KEY
     } catch (error) {
         console.error(error)
