@@ -11,24 +11,22 @@ async function omdbAPIKey() {
 	try {
 		const res = await axios.get("/api/OMDB_API_KEY");
 		const API_KEY = res.data;
-		console.log(API_KEY)
-		return API_KEY;
+		// return only the value of the object
+		return Object.values(API_KEY);
 	} catch (error) {
 		console.error(error);
 	}
 }
+omdbAPIKey();
+tmdbApiKey();
 
 async function tmdbApiKey() {
     console.log("tmdbApiKey")
     try {
         const res = await axios.get("/api/TMDB_API_KEY")
         const API_KEY = res.data
-		console.log(API_KEY)
-		console.log(typeof API_KEY)
-		console.log(API_KEY.key)
 		let key = API_KEY.key
-		console.log(key)
-        return API_KEY
+		return Object.values(API_KEY);
     } catch (error) {
         console.error(error)
     };
@@ -55,7 +53,6 @@ async function getCast(movieTitle) {
         console.error(error)
     }
 }
-getCast("Star Trek Beyond")
 
 async function getActor(actorId) {
     console.debug("getActor")
