@@ -1,5 +1,15 @@
 {% extends "base.html" %}
 {% block title %}{{ title }}{% endblock %}
 {% block content %}
-  <h1>{{show.title}}</h1>
-{% endblock %}
+  <h1 id="show-title">{{show.title}}</h1>
+
+  <!-- content for this page does here -->
+  <div class="show-card-container">
+    <!-- show card -->
+  </div>
+
+  {% block scripts %}
+  <script src="{{ url_for('media.static', filename='/js/show.js') }}"></script>
+  <script src="{{ url_for('media.static', filename='/js/helpers.js')}}"></script>
+  {% endblock %} {% endblock %}
+  

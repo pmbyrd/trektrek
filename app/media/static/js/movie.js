@@ -24,8 +24,6 @@ async function displayCast(movieTitle) {
     console.debug("displayCast");
     try {
         let cast = await getCast(movieTitle);
-        $(".actor-cards").empty();
-        console.log(cast);
         for (let actor of cast) {
             let $actorCard = $(`
                 <li class="actor-card">
@@ -37,8 +35,8 @@ async function displayCast(movieTitle) {
                 </li>
             `);
             $(".actor-cards").append($actorCard);
+        }  
 
-        }        
     } catch (error) {
         console.error(error);
     }

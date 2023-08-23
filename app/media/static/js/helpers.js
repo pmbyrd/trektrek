@@ -103,24 +103,3 @@ async function getShows(showTitle) {
 	}
 }
 
-getShows("The Office");
-
-async function getShowsByTerm(searchQuery) {
-	// ADD: Remove placeholder & make request to TVMaze search shows API.
-	//the JSON will need to be parsed
-	const response = await axios.get(`http://api.tvmaze.com/search/shows?q=${searchQuery}`)
-	//I want to store the the key value pairs for each show to be handled later
-	// console.log(response)
-	const shows = response.data.map(function(value) {
-	  const show = value.show 
-	  return {
-		id: show.id,
-		name: show.name,
-		summary: show.summary,
-		image: show.image ? show.image.medium : defaultLink  //handle for if a link is no available
-	  }
-	  
-	})
-	return shows
-	console.log(shows)
-  }

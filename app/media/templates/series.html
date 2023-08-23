@@ -2,17 +2,15 @@
   content %}
   <link rel="stylesheet" href="{{ url_for('media.static', filename='/css/movies.css') }}">
   <h1>Series</h1>
-  <ul>
-    <!-- NOTE movie in this list should also correspond to each movie  -->
-    {% for show in series %}
-    <div class="series container">
+  <!-- NOTE movie in this list should also correspond to each movie  -->
+  <div class="series container">
+    <ul>
       <div class="series-list">
       </div>
+    </ul>
     </div>
       
     <!-- NOTE will try passing each title as a class that will be filled by the js -->
-    {% endfor %}
-  </ul>
  
   {% block scripts %}
   <script src="{{ url_for('media.static', filename='/js/series.js') }}"></script>
