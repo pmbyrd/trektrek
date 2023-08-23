@@ -1,25 +1,21 @@
 {% extends "base.html" %}
 {% block title %}{{ title }}{% endblock %}
 {% block content %}
+<link rel="stylesheet" href="{{ url_for('media.static', filename='/css/movies.css') }}">
+
 <h1 class="movie-title">{{movie.title}}</h1>
-
-<div class="container">
-  <div class="row justify-content-center">
-    <div class="col-md-6">
-      <div class="movie-card">
-        <!-- Insert js code here -->
-      </div>
-    </div>
-    
+<div class="content-container">
+  <div class="movie-card-container">
+    <!-- Insert js code here -->
   </div>
-</div>
-<div class="container">
   <h2 class="banner">Cast</h2>
-  <div class="mostly-customized-scrollbar actor-cards">
-    
-
+  <div class="scroll-list-container">
+    <ul class="actor-cards">
+      <!-- Insert js code here -->
+    </ul>
   </div>
 </div>
+
 <!-- insert a div to hold the characters scroll bar    -->
 
 {% block scripts %}

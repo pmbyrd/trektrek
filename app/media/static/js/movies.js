@@ -1,16 +1,11 @@
 console.log('movies.js loaded');
 
-const $moviesContainer = $(".movies")
-let $movieCard = $(".movie-card")
-const $moviesList = $(".movies-list")
-
 async function getMovies() {
     try {
         //this call is to my own backend
         const res = await axios.get('/api/movies')
         const movies = res.data
         const titles = movies.map(movie => movie.title)
-        print(titles)
         return titles
     } catch (error) {
         console.log(error)
@@ -25,17 +20,16 @@ async function displayMovies() {
         for (let movieTitle of movies) {
             let movieData = await getMovie(movieTitle)
             $movieCard = $(`
-            <div class="card mb-4" style="width: 18rem;">
+            <div class="movie-card">
+            <h3> <a href="/media/movie/${movieData.title}" class="btn btn-primary">${movieData.title}</a></h3>
                 <img src="${movieData.poster}" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <p class="card-text">${movieData.plot}</p>
+                    <p class="plot-text">${movieData.plot}</p>
                     <p class="card-text">Genres: ${movieData.genre}</p>
                     <p class="card-text">Director: ${movieData.director}</p>
                     <p class="card-text">Release date: ${movieData.released}</p>
                     <p class="card-text">Runtime: ${movieData.runtime}</p>
                     <p class="card-text">Metascore: ${movieData.metascore}/100</p>
-                   
-                    <a href="/media/movie/${movieData.title}" class="btn btn-primary">${movieData.title}</a>
                 </div>
             </div>
             `)
@@ -46,7 +40,10 @@ async function displayMovies() {
     }
 }
 
-$(document).ready(displayMovies())
+
+$(document).ready(async () => {
+    await displayMovies()
+})
 
 
 

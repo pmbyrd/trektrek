@@ -12,13 +12,13 @@ from app.helpers import MemoryAlphaScraper, replace_space
 
 @media.route('/')
 def index():
-    """This page shows all media related to the Star Trek Universe."""
+    """This page series all media related to the Star Trek Universe."""
     return render_template('media.html')
 
 
 @media.route('/movies')
 def movies():
-    """This page shows all the movies in the database."""
+    """This page series all the movies in the database."""
     movies = Movie.query.all()
     print(Movie.query.first())
     return render_template('movies.html', movies=movies, title="Movies")
@@ -29,11 +29,11 @@ def movie(title):
     movie = Movie.query.filter_by(title=title).first()
     return render_template('movie.html', movie=movie, title=title)
     
-@media.route('/shows')
-def shows():
-    """Shows an index of shows in the database."""
-    shows = Series.query.all()
-    return render_template('shows.html', shows=shows, title="Shows")
+@media.route('/series')
+def series():
+    """series an index of series in the database."""
+    series = Series.query.all()
+    return render_template('series.html', series=series, title="Series")
 
 @media.route('/show/<title>')
 def show(title):

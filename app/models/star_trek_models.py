@@ -914,7 +914,7 @@ class Season(db.Model):
     
     def __repr__(self):
         
-        return f"<Season #{self.uid} title = {self.title}, seasonNumber = {self.seasonNumber}>"
+        return f"<Series: #{self.series}, Season #{self.uid} title = {self.title}, seasonNumber = {self.seasonNumber}>"
     
     
 class Episode(db.Model):

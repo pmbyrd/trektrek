@@ -1,10 +1,9 @@
-console.log("hello from inside the models.js file");
+
 const OMDB = "https://www.omdbapi.com/?i=tt3896198&apikey=";
-// const TMDB = "https://api.themoviedb.org/3/movie/550?api_key="
-// https://api.themoviedb.org/3/movie/150540?api_key=###&append_to_response=credits
 const TMDB = "https://api.themoviedb.org/3/movie/"
 const TMDB_CREDITS = "&append_to_response=credits"
 const POSTER_URL = "https://image.tmdb.org/t/p/original/"
+const defaultLink = "http://tinyurl.com/missing-tv"
 
 async function omdbAPIKey() {
 	console.debug("omdbAPIKey");
@@ -17,8 +16,6 @@ async function omdbAPIKey() {
 		console.error(error);
 	}
 }
-omdbAPIKey();
-tmdbApiKey();
 
 async function tmdbApiKey() {
     console.log("tmdbApiKey")
@@ -54,11 +51,6 @@ async function getCast(movieTitle) {
     }
 }
 
-async function getActor(actorId) {
-    console.debug("getActor")
-    // use this function to look up an actor by their id to see other and shows that they have been in
-}
-
 async function getMovie(movieTitle) {
 	console.debug("getMovie");
 	try {
@@ -86,11 +78,49 @@ async function getMovie(movieTitle) {
 	}
 }
 
-async function getActors(title) {
-	console.debug("getActors");
+async function getShows(showTitle) {
+	console.debug("getShows");
 	try {
-        
+		const API_KEY = await tmdbApiKey();
+		const res = await axios.get(`https://api.themoviedb.org/3/search/tv?api_key=${API_KEY}&query=${showTitle}`);
+		let show = res.data
+		return show = {
+			title : show.name,
+				poster : `${POSTER_URL}${show.poster_path}`,
+				overview : show.overview,
+				first_air_date : show.first_air_date,
+				genre_ids : show.genre_ids,
+				id : show.id,
+				original_language : show.original_language,
+				original_name : show.original_name,
+				origin_country : show.origin_country,
+				popularity : show.popularity,
+				vote_average : show.vote_average,
+				vote_count : show.vote_count
+		}
 	} catch (error) {
-        console.error(error);
-    }
+		console.log(error);
+	}
 }
+
+getShows("The Office");
+
+async function getShowsByTerm(searchQuery) {
+	// ADD: Remove placeholder & make request to TVMaze search shows API.
+	//the JSON will need to be parsed
+	const response = await axios.get(`http://api.tvmaze.com/search/shows?q=${searchQuery}`)
+	//I want to store the the key value pairs for each show to be handled later
+	// console.log(response)
+	const shows = response.data.map(function(value) {
+	  const show = value.show 
+	  return {
+		id: show.id,
+		name: show.name,
+		summary: show.summary,
+		image: show.image ? show.image.medium : defaultLink  //handle for if a link is no available
+	  }
+	  
+	})
+	return shows
+	console.log(shows)
+  }

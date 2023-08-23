@@ -6,16 +6,13 @@ content %}
 	<!-- NOTE movie in this list should also correspond to each movie  -->
 	{% for movie in movies %}
 	<div class="movies container">
-		<div class="movies-list d-flex flex-wrap">
+		<div class="movies-list">
 		</div>
 	</div>
 		
 	<!-- NOTE will try passing each title as a class that will be filled by the js -->
 	{% endfor %}
 </ul>
-<div class="container movies">
-	
-</div>
 {% block scripts %}
 <script src="{{ url_for('media.static', filename='/js/movies.js') }}"></script>
 <script src="{{ url_for('media.static', filename='/js/helpers.js')}}"></script>
