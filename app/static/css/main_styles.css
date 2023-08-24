@@ -124,3 +124,8 @@ p,
   .pagination .current {
     font-weight: bold;
   }
+
+  /* have no bullets for all list */
+    ul {
+        list-style-type: none;
+    }

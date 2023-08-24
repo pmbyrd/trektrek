@@ -1,19 +1,21 @@
 {% extends "base.html" %}
 {% block title %}{{ title }}{% endblock %}
-{% block content %}
 <link rel="stylesheet" href="{{ url_for('media.static', filename='/css/show.css') }}">
-  <h1 id="show-title">{{show.title}}</h1>
-
-  <!-- content for this page does here -->
+{% block content %}
+<h1 id="show-title">{{show.title}}</h1>
+<!-- content for this page does here -->
+<div class="content-container">
   <div class="show-card-container">
     <!-- show card -->
   </div>
-  <div class="cast-card-container">
-    
+  <h2 class="banner">Cast</h2>
+  <div class="scroll-list-container">
+    <ul class="actor-cards">
+      <!-- Insert js code here -->
+    </ul>
   </div>
-
-  {% block scripts %}
-  <script src="{{ url_for('media.static', filename='/js/show.js') }}"></script>
-  <script src="{{ url_for('media.static', filename='/js/helpers.js')}}"></script>
-  {% endblock %} {% endblock %}
-  
+</div>
+{% block scripts %}
+<script src="{{ url_for('media.static', filename='/js/show.js') }}"></script>
+<script src="{{ url_for('media.static', filename='/js/helpers.js')}}"></script>
+{% endblock %} {% endblock %}

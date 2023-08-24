@@ -85,21 +85,23 @@ async function displayCast(title) {
     console.debug("displayCast");
     try {
         let cast = await getCastTvMaze(title);
-        let $castCard = $(`
-            <li class="actor-cast-card">
-                <div class="actor-card-container">
-                    <div class="actor-img-container">
-                        <img src="${cast.image}" class="card-img-top" alt="...">
-                        <p class="actor-name">Actor: ${cast.name}</p>
+        for (let actor of cast) {
+            let $castCard = $(`
+                <li class="actor-cast-card">
+                    <div class="actor-card-container">
+                        <div class="actor-img-container">
+                            <img src="${actor.image}" class="card-img-top" alt="...">
+                            <p class="actor-name">Actor: <a href="/media/performer/${actor.name}">${actor.name}</p>
+                        </div>
+                        <div class="actor-img-container">
+                        <img src="${actor.characterImage}" class="card-img-top" alt="...">
+                        <p class="actor-name">Character: <a href="/universe/character/${actor.name}">${actor.character}</p>
                     </div>
-                    <div class="actor-img-container">
-                    <img src="${cast.characterImage}" class="card-img-top" alt="...">
-                    <p class="actor-name">Character: ${cast.character}</p>
-                </div>
-                </div>
-            </li>
-        `)
-        $(".cast-card-container").append($castCard)
+                    </div>
+                </li>
+            `)
+            $(".actor-cards").append($castCard)
+        }
     } catch (error) {
         console.error(error);
     }
