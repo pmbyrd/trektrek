@@ -53,8 +53,8 @@ def seasons(title):
 def season(title, season_number):
     """Return a single season."""
     show = Series.query.filter_by(title=title).first()
-    season = Season.query.filter_by(series_id=show.id, season_number=season_number).first()
-    return render_template('season.html', season=season, title=title)
+    
+    return render_template('season.html', show=show)
 
 @media.route('/show/<title>/season/<season_number>/episodes')
 def episodes(title, season_number):
