@@ -28,15 +28,16 @@ async function getShowsByTerm(searchQuery) {
   }
 
 
-async function getCast(showId) {
+async function getCastTvMaze(id) {
     const res = await getShowsByTerm(title)
-    const id = res.id
+    id = res.id
     const response = await axios.get(`http://api.tvmaze.com/shows/${id}/cast`)
     const cast = response.data.map(function(value) {
         return {
             name: value.person.name,
             character: value.character.name,
-            image: value.person.image ? value.person.image.medium : defaultLink
+            image: value.person.image ? value.person.image.medium : defaultLink,
+            characterImage: value.character.image ? value.character.image.medium : defaultLink
         }
     })
     return cast
@@ -48,9 +49,10 @@ async function getSeasons(id) {
     const response = await axios.get(`http://api.tvmaze.com/shows/${id}/seasons`)
     const seasons = response.data.map(function(value) {
         return {
-            name: value.name,
             number: value.number,
-            image: value.image ? value.image.medium : defaultLink
+            image: value.image ? value.image.medium : defaultLink,
+            premiereDate: value.premiereDate,
+            endDate: value.endDate
         }
     })
     console.log(seasons)
@@ -79,7 +81,34 @@ async function displayShow(title) {
     }
 }
 
+async function displayCast(title) {
+    console.debug("displayCast");
+    try {
+        let cast = await getCastTvMaze(title);
+        let $castCard = $(`
+            <li class="actor-cast-card">
+                <div class="actor-card-container">
+                    <div class="actor-img-container">
+                        <img src="${cast.image}" class="card-img-top" alt="...">
+                        <p class="actor-name">Actor: ${cast.name}</p>
+                    </div>
+                    <div class="actor-img-container">
+                    <img src="${cast.characterImage}" class="card-img-top" alt="...">
+                    <p class="actor-name">Character: ${cast.character}</p>
+                </div>
+                </div>
+            </li>
+        `)
+        $(".cast-card-container").append($castCard)
+    } catch (error) {
+        console.error(error);
+    }
+}
+
+
+                    
+
 $(document).ready(() => {
     displayShow(title)
-    getSeasons()
+    displayCast(title)
 })

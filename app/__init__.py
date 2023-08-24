@@ -36,6 +36,7 @@ def create_app(config_filename=None):
     oauth.init_app(app)
     CORS.init_app(app)
     configure_logging(app)
+
     engine = sa.create_engine(app.config['SQLALCHEMY_DATABASE_URI'])
     inspector = sa.inspect(engine)
     if 'users' not in inspector.get_table_names():

@@ -3,10 +3,38 @@ import json
 from csv import DictReader
 from app.extensions import db
 from app.models.models import User
-from app.models.star_trek_models import Animal, Title, Location, AstronomicalObject, Character, Performer, Element, Conflict, Weapon, Food, Technology, Company, Staff, Species, Organization, Occupation, SpacecraftClass, Spacecraft, Material, Movie, Series, Season, Episode
+from app.models.star_trek_models import (Animal, 
+                                         Title,
+                                         Location,
+                                         AstronomicalObject, 
+                                         Character,
+                                         Performer,
+                                         Element,
+                                         Conflict,
+                                         Weapon,
+                                         Food,
+                                         Technology,
+                                         Company,
+                                         Staff,
+                                         Species,
+                                         Organization,
+                                         Occupation,
+                                         SpacecraftClass,
+                                         Spacecraft,
+                                         Material,
+                                         Movie,
+                                         Series,
+                                         Season,
+                                         Episode,
+                                         Show
+)
 
 
 def seed_all():
+    # flush any bad data
+    db.session.flush()
+    db.create_all()
+    
     try:
         seed_users()
     except Exception as e:

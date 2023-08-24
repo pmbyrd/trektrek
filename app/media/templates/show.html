@@ -1,11 +1,15 @@
 {% extends "base.html" %}
 {% block title %}{{ title }}{% endblock %}
 {% block content %}
+<link rel="stylesheet" href="{{ url_for('media.static', filename='/css/show.css') }}">
   <h1 id="show-title">{{show.title}}</h1>
 
   <!-- content for this page does here -->
   <div class="show-card-container">
     <!-- show card -->
+  </div>
+  <div class="cast-card-container">
+    
   </div>
 
   {% block scripts %}
