@@ -82,3 +82,45 @@ class User(db.Model, UserMixin):
             return user
         else:
             return False
+        
+class Post(db.Model):
+    __tablename__ = "posts"
+    
+    id = db.Column(db.Integer, primary_key=True)
+    title = db.Column(db.String(255), nullable=False)
+    body = db.Column(db.Text)
+    created_at = db.Column(db.DateTime, default=datetime.utcnow)
+    user_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False)
+    # should refrence also the users table
+    user = db.relationship('User', backref='posts')
+    def __repr__(self):
+        return f"<Post #{self.id}: {self.title}, {self.created_at}>"
+    
+    @classmethod
+    def create(cls, title, body, user_id):
+        new_post = cls(
+            title=title,
+            body=body,
+            user_id=user_id
+        )
+        db.session.add(new_post)
+        db.session.commit()
+        return new_post
+    
+class Tag(db.Model):
+    __tablename__ = "tags"
+    
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(64), nullable=False, unique=True)
+    
+    def __repr__(self):
+        return f"<Tag #{self.id}: {self.name}>"
+    
+    @classmethod
+    def create(cls, name):
+        new_tag = cls(
+            name=name
+        )
+        db.session.add(new_tag)
+        db.session.commit()
+        return new_tag

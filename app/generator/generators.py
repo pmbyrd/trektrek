@@ -8,11 +8,12 @@ import random
 import requests
 from datetime import datetime
 import string
-from json_trek import JSONTrek 
+from json_trek import JSONTrek
 
-
+POSTS_CSV_HEADERS = ['title', 'body', 'user_id']
 USERS_CSV_HEADERS = ['email', 'username', 'profile_pic', 'bio', 'first_name', 'last_name', 'location']
 NUM_USERS = 1000
+NUM_POST = 5000
 
 trek = JSONTrek()
 
@@ -23,6 +24,14 @@ def generate_users_csv(file_path):
         for i in range(count)
     ]
 
+    # if the file already exists, then exit
+    try:
+        with open(file_path, 'r') as users_csv:
+            print("File already exists, exiting.")
+            return
+    except FileNotFoundError:
+        pass
+    
     with open(file_path, 'w') as users_csv:
         users_writer = csv.DictWriter(users_csv, fieldnames=USERS_CSV_HEADERS)
         users_writer.writeheader()
@@ -43,6 +52,29 @@ def generate_users_csv(file_path):
                 last_name=last_name,
                 location=city
             ))
+            
+def generate_posts_csv(file_path):
+    # if the file already exists, then exit
+    
+    try:
+        with open(file_path, 'r') as posts_csv:
+            print("File already exists, exiting.")
+            return
+    except FileNotFoundError:
+        pass
+    with open(file_path, 'w') as posts_csv:
+        posts_writer = csv.DictWriter(posts_csv, fieldnames=POSTS_CSV_HEADERS)
+        posts_writer.writeheader()
+        for i in range(5000):
+            random_user = random.randint(1, NUM_USERS + 1)
+            title = trek.ipsum(10)
+            body = random.randint(1, 10) * trek.ipsum(100)
+            posts_writer.writerow(dict(
+                title=title,
+                body=body,
+                user_id=random_user,
+            ))
 
 if __name__ == '__main__':
-    generate_users_csv('app/seed/users.csv')
+    generate_users_csv('app/seeds/users.csv')
+    generate_posts_csv('app/seeds/posts.csv')
