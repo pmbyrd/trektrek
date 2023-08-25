@@ -34,6 +34,14 @@ class User(db.Model, UserMixin):
         else:
             full_name = f"{self.first_name} {self.last_name}"
             return full_name
+        
+    @property
+    def username(self):
+        """Returns a user's username."""
+        if self.username is None:
+            return "Anonymous"
+        else:
+            return self.username
     
     def __repr__(self):
         return f"<User #{self.id}: {self.username}, {self.email}>"
@@ -75,10 +83,78 @@ class User(db.Model, UserMixin):
             return new_user
         
     @classmethod
-    def authenticate(cls, email, pwd):
+    def authenticate(cls, email):
         """Find a user with the given email and password."""
         user = cls.query.filter_by(email=email).first()
         if user:
             return user
         else:
             return False
+        
+class Post(db.Model):
+    __tablename__ = "posts"
+    
+    id = db.Column(db.Integer, primary_key=True)
+    title = db.Column(db.String(255), nullable=False)
+    body = db.Column(db.Text)
+    created_at = db.Column(db.DateTime, default=datetime.utcnow)
+    user_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False)
+    # should refrence also the users table
+    user = db.relationship('User', backref='posts')
+    
+    def __repr__(self):
+        return f"<Post #{self.id}: {self.title}, {self.created_at}>"
+    
+    @classmethod
+    def create(cls, title, body, user_id):
+        new_post = cls(
+            title=title,
+            body=body,
+            user_id=user_id
+        )
+        db.session.add(new_post)
+        db.session.commit()
+        return new_post
+    
+class Tag(db.Model):
+    __tablename__ = "tags"
+    
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(64), nullable=False, unique=True)
+    posts = db.relationship('Post', 
+                            secondary='posts_tags',
+                            backref='tags',
+                            cascade='all, delete'
+                            )
+    
+    def __repr__(self):
+        return f"<Tag #{self.id}: {self.name}>"
+    
+    @classmethod
+    def create(cls, name):
+        new_tag = cls(
+            name=name
+        )
+        db.session.add(new_tag)
+        db.session.commit()
+        return new_tag
+    
+class PostTag(db.Model):
+    __tablename__ = "posts_tags"
+    
+    post_id = db.Column(db.Integer, db.ForeignKey('posts.id'), primary_key=True)
+    tag_id = db.Column(db.Integer, db.ForeignKey('tags.id'), primary_key=True)
+    
+    def __repr__(self):
+        return f"<PostTag post_id={self.post_id}, tag_id={self.tag_id}>"
+    
+    @classmethod
+    def create(cls, post_id, tag_id):
+        new_post_tag = cls(
+            post_id=post_id,
+            tag_id=tag_id
+        )
+        db.session.add(new_post_tag)
+        db.session.commit()
+        return new_post_tag
+

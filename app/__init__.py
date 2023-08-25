@@ -54,6 +54,8 @@ def create_app(config_filename=None):
     app.register_blueprint(media)
     from app.api import api
     app.register_blueprint(api)
+    from app.users import users
+    app.register_blueprint(users)
         
     @login_manager.user_loader
     def load_user(user_id):
