@@ -34,6 +34,14 @@ class User(db.Model, UserMixin):
         else:
             full_name = f"{self.first_name} {self.last_name}"
             return full_name
+        
+    @property
+    def username(self):
+        """Returns a user's username."""
+        if self.username is None:
+            return "Anonymous"
+        else:
+            return self.username
     
     def __repr__(self):
         return f"<User #{self.id}: {self.username}, {self.email}>"
@@ -113,6 +121,11 @@ class Tag(db.Model):
     
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(64), nullable=False, unique=True)
+    posts = db.relationship('Post', 
+                            secondary='posts_tags',
+                            backref='tags',
+                            cascade='all, delete'
+                            )
     
     def __repr__(self):
         return f"<Tag #{self.id}: {self.name}>"

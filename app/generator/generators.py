@@ -138,13 +138,6 @@ def generate_post_tags_csv(file_path):
     # Modify weights to create a roulette-like distribution
     for i in range(total_tags):
         tags_weights[i] = total_tags - i 
-    # try:
-    #     with open(file_path, 'r') as tags_csv:
-    #         print("File already exists, exiting.")
-    #         return
-    # except FileNotFoundError:
-    #     pass
-    
     with open(file_path, 'w') as tags_csv:
         tags_writer = csv.DictWriter(tags_csv, fieldnames=TAGS_CSV_HEADERS)
         tags_writer.writeheader()
