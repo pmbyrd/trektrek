@@ -24,7 +24,8 @@ from app.models.star_trek_models import (
     Occupation,
     Species,
     Title,
-    Weapon
+    Weapon,
+    Show
     )
 
 app = create_app()
@@ -39,6 +40,8 @@ if os.environ.get("FLASK_ENV") == "production":
     print("Creating the database instance for the application.")
     db.create_all()
     print("Database instance created.")
+    
+
 
 @app.cli.command('print')
 
@@ -69,6 +72,7 @@ def make_shell_context():
         'Title': Title,
         'Weapon': Weapon,
         'User': User,
+        'Show': Show
     }
     
 if __name__ == '__main__':

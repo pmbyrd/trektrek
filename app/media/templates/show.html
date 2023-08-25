@@ -1,15 +1,34 @@
 {% extends "base.html" %}
 {% block title %}{{ title }}{% endblock %}
+<link rel="stylesheet" href="{{ url_for('media.static', filename='/css/show.css') }}">
 {% block content %}
-  <h1 id="show-title">{{show.title}}</h1>
-
-  <!-- content for this page does here -->
+<h1 id="show-title">{{show.title}}</h1>
+<!-- content for this page does here -->
+<div class="content-container">
   <div class="show-card-container">
     <!-- show card -->
   </div>
-
-  {% block scripts %}
-  <script src="{{ url_for('media.static', filename='/js/show.js') }}"></script>
-  <script src="{{ url_for('media.static', filename='/js/helpers.js')}}"></script>
-  {% endblock %} {% endblock %}
-  
+  <div class="seasons">
+    <h2 class="banner">Seasons</h2>
+    <div class="scroll-list-container">
+      <ul class="season-cards">
+        <!-- Insert js code here -->
+      </ul>
+    </div>
+    <!-- <div class="episodes-container">
+      <ul class="episodes-ul">
+        inject javascript for episodes list here -->
+      <!-- </ul>
+    </div> -->
+  </div>
+  <h2 class="banner">Cast</h2>
+  <div class="scroll-list-container">
+    <ul class="actor-cards">
+      <!-- Insert js code here -->
+    </ul>
+  </div>
+</div>
+{% block scripts %}
+<script src="{{ url_for('media.static', filename='/js/show.js') }}"></script>
+<script src="{{ url_for('media.static', filename='/js/helpers.js')}}"></script>
+{% endblock %} {% endblock %}
