@@ -1,8 +1,9 @@
 import os
 import json
 from csv import DictReader
+from app.generator.generators import tags_list
 from app.extensions import db
-from app.models.models import User
+from app.models.models import User, Post, Tag, PostTag
 from app.models.star_trek_models import (Animal, 
                                          Title,
                                          Location,
@@ -26,7 +27,7 @@ from app.models.star_trek_models import (Animal,
                                          Series,
                                          Season,
                                          Episode,
-                                         Show
+                                         Show, 
 )
 
 
@@ -39,6 +40,21 @@ def seed_all():
         seed_users()
     except Exception as e:
         print(f"Error seeding users: {e}")
+        
+    try:
+        seed_post()
+    except Exception as e:
+        print(f"Error seeding posts: {e}")
+        
+    try:
+        seed_tags()
+    except Exception as e:
+        print(f"Error seeding tags: {e}")
+        
+    try:
+        seed_post_tags()
+    except Exception as e:
+        print(f"Error seeding post_tags: {e}")
     
     try:
         seed_animals()
@@ -154,6 +170,9 @@ def seed_all():
         seed_episode()
     except Exception as e:
         print(f"Error seeding episodes: {e}")
+        
+    
+    
 
     # db.session.commit()
 
@@ -171,16 +190,76 @@ def seed_users():
             email = user_dict['email']
             username = user_dict['username']
             if User.query.filter_by(email=email).first() is not None:
-                print(f"Skipping user {username} with email {email}: email already exists")
+                continue  # Skip insertion if the record already exists                
             elif User.query.filter_by(username=username).first() is not None:
-                print(f"Skipping user {username} with email {email}: username already exists")
+                continue  # Skip insertion if the record already exists                
             else:
                 user = User(**user_dict)
                 db.session.add(user)
                 print(f"Added user {username} with email {email}")
         db.session.commit()
 
-
+def seed_post():
+    post_csv = os.path.join(os.path.dirname(__file__), '..', 'seeds', 'posts.csv')
+    with open(post_csv) as posts:
+        post_dicts = list(DictReader(posts))
+        for post_dict in post_dicts:
+            title = post_dict['title']
+            body = post_dict['body']
+            user_id = post_dict['user_id']
+            if user_id is None:
+                print(f"Skipping post {title} with body {body}: user_id is None")
+                continue  # Skip this iteration and move to the next post
+            
+            user = User.query.get(user_id)
+            
+            if user is None:
+                print(f"Skipping post {title} with body {body}: user_id {user_id} doesn't exist")
+                continue  # Skip this iteration and move to the next post
+            
+            post = Post(**post_dict)
+            db.session.add(post)
+            db.session.commit()      
+    print("Post data added to the database.")
+    
+def seed_tags():
+    """Gets the tags list and adds the tags data to the database"""
+    try:
+        for tag in tags_list:
+            existing_tag = Tag.query.filter_by(name=tag).first()
+            if existing_tag:
+                continue  # Skip insertion if the record already exists
+            else:
+                tag = Tag.create(tag)
+        print("Tag data added to the database.")
+    except Exception as e:
+        print(f"Error occurred while seeding tags: {e}")
+        
+def seed_post_tags():
+    """Reads the csv file and adds the post_tag data to the database"""
+    try: 
+        post_tags_csv = os.path.join(os.path.dirname(__file__), '..', 'seeds', 'post_tags.csv')
+        with open(post_tags_csv) as post_tags:
+            post_tag_dicts = list(DictReader(post_tags))
+            for post_tag_dict in post_tag_dicts:
+                post_id = post_tag_dict['post_id']
+                tag_id = post_tag_dict['tag_id']
+                if post_id is None:
+                    print(f"Skipping post_tag with tag_id {tag_id}: post_id is None")
+                    continue  # Skip this iteration and move to the next post_tag
+                
+                post = Post.query.get(post_id)
+                
+                if post is None:
+                    print(f"Skipping post_tag with tag_id {tag_id}: post_id {post_id} doesn't exist")
+                    continue  # Skip this iteration and move to the next post_tag
+                
+                post_tag = PostTag(**post_tag_dict)
+                db.session.add(post_tag)
+                db.session.commit() 
+        print("PostTag data added to the database.")
+    except Exception as e:
+        print(f"Error occurred while seeding post_tags: {e}")     
 
 def seed_animals():
     """Gets the JSON file and adds the data to the database"""
@@ -225,9 +304,13 @@ def seed_location():
         with open('app/data/location.json') as json_file:
             data = json.load(json_file)
             for location_data in data:
-                location = Location(**location_data)
-                db.session.add(location)
-                db.session.commit()
+                existing_location = Location.query.filter_by(uid=location_data['uid']).first()
+                if existing_location:
+                    continue
+                else:
+                    location = Location(**location_data)
+                    db.session.add(location)
+                    db.session.commit()
 
         print("Location data added to the database.")
     except Exception as e:

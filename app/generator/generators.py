@@ -12,8 +12,63 @@ from json_trek import JSONTrek
 
 POSTS_CSV_HEADERS = ['title', 'body', 'user_id']
 USERS_CSV_HEADERS = ['email', 'username', 'profile_pic', 'bio', 'first_name', 'last_name', 'location']
+TAGS_CSV_HEADERS = ['post_id', 'tag_id']
 NUM_USERS = 1000
 NUM_POST = 5000
+POST_TAGS = 10000
+tags_list = [
+    "Starfleet",
+    "Warp",
+    "Captain",
+    "Enterprise",
+    "Phaser",
+    "Transporter",
+    "Alien",
+    "Federation",
+    "Klingon",
+    "Spock",
+    "Vulcan",
+    "Communicator",
+    "Tribble",
+    "Tricorder",
+    "Borg",
+    "Holodeck",
+    "Romulan",
+    "Warp Core",
+    "Redshirt",
+    "Q",
+    "Tribble",
+    "Holodeck",
+    "Trill",
+    "Cardassian",
+    "Ferengi",
+    "Andorian",
+    "Bajoran",
+    "Gorn",
+    "Jem'Hadar",
+    "Klingon Bird-of-Prey",
+    "Vorta",
+    "Xenomorph",
+    "Zefram Cochrane",
+    "Kobayashi Maru",
+    "Prime Directive",
+    "Omega Particle",
+    "Temporal Prime Directive",
+    "Ketracel White",
+    "Dilithium",
+    "Latinum",
+    "PADD",
+    "Starship",
+    "Phaser Array",
+    "Pon Farr",
+    "Trill Symbiont",
+    "Gamma Quadrant",
+    "Delta Quadrant",
+    "Neutral Zone",
+    "Wormhole",
+    "Chroniton",
+    "Qapla'",
+]
 
 trek = JSONTrek()
 
@@ -74,7 +129,37 @@ def generate_posts_csv(file_path):
                 body=body,
                 user_id=random_user,
             ))
+            
+import random
+
+def generate_post_tags_csv(file_path):
+    total_tags = len(tags_list)
+    tags_weights = [1] * total_tags # Equal weights to start
+    # Modify weights to create a roulette-like distribution
+    for i in range(total_tags):
+        tags_weights[i] = total_tags - i 
+    # try:
+    #     with open(file_path, 'r') as tags_csv:
+    #         print("File already exists, exiting.")
+    #         return
+    # except FileNotFoundError:
+    #     pass
+    
+    with open(file_path, 'w') as tags_csv:
+        tags_writer = csv.DictWriter(tags_csv, fieldnames=TAGS_CSV_HEADERS)
+        tags_writer.writeheader()
+        
+        for i in range(1000000):
+            post_id = random.randint(1, NUM_POST + 1)
+            
+            tag_id = random.choices(range(1, total_tags + 1), weights=tags_weights)[0]
+            
+            tags_writer.writerow(dict(
+                post_id=post_id,
+                tag_id=tag_id
+            ))
 
 if __name__ == '__main__':
     generate_users_csv('app/seeds/users.csv')
     generate_posts_csv('app/seeds/posts.csv')
+    generate_post_tags_csv('app/seeds/post_tags.csv')

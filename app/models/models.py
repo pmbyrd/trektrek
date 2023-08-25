@@ -75,7 +75,7 @@ class User(db.Model, UserMixin):
             return new_user
         
     @classmethod
-    def authenticate(cls, email, pwd):
+    def authenticate(cls, email):
         """Find a user with the given email and password."""
         user = cls.query.filter_by(email=email).first()
         if user:
@@ -93,6 +93,7 @@ class Post(db.Model):
     user_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False)
     # should refrence also the users table
     user = db.relationship('User', backref='posts')
+    
     def __repr__(self):
         return f"<Post #{self.id}: {self.title}, {self.created_at}>"
     
@@ -124,3 +125,23 @@ class Tag(db.Model):
         db.session.add(new_tag)
         db.session.commit()
         return new_tag
+    
+class PostTag(db.Model):
+    __tablename__ = "posts_tags"
+    
+    post_id = db.Column(db.Integer, db.ForeignKey('posts.id'), primary_key=True)
+    tag_id = db.Column(db.Integer, db.ForeignKey('tags.id'), primary_key=True)
+    
+    def __repr__(self):
+        return f"<PostTag post_id={self.post_id}, tag_id={self.tag_id}>"
+    
+    @classmethod
+    def create(cls, post_id, tag_id):
+        new_post_tag = cls(
+            post_id=post_id,
+            tag_id=tag_id
+        )
+        db.session.add(new_post_tag)
+        db.session.commit()
+        return new_post_tag
+

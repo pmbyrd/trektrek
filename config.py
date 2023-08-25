@@ -27,6 +27,8 @@ class ProductionConfig(Config):
 class DevelopmentConfig(Config):
     FLASK_ENV = 'development'
     DEBUG = True
+    SQLALCHEMY_DATABASE_URI = "postgresql://postgres:postgres@localhost:5432/trektrek"
+    
 
 class TestingConfig(Config):
     TESTING = True

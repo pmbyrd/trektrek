@@ -2,7 +2,7 @@ from app import create_app
 import cli
 import os
 from app.extensions import db
-from app.models.models import User
+from app.models.models import User, Post, Tag, PostTag
 from app.models.star_trek_models import (
     Animal,
     AstronomicalObject, 
@@ -25,7 +25,7 @@ from app.models.star_trek_models import (
     Species,
     Title,
     Weapon,
-    Show
+    Show, 
     )
 
 app = create_app()
@@ -72,7 +72,10 @@ def make_shell_context():
         'Title': Title,
         'Weapon': Weapon,
         'User': User,
-        'Show': Show
+        'Show': Show,
+        'Post': Post,
+        'Tag': Tag,
+        'PostTag': PostTag,
     }
     
 if __name__ == '__main__':
