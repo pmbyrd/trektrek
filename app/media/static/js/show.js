@@ -95,7 +95,6 @@ async function getEpisodes(seasonId) {
 					guestcast: guestcastCharacters, // Set guestcast to the array of character names
 				};
 			});
-			console.log(episodes);
 			return episodes;
 		}
 	} catch (error) {
@@ -156,7 +155,7 @@ async function displaySeasons(title) {
 		let seasons = await getSeasons(title);
 		for (let season of seasons) {
 			let $seasonCard = $(`
-                <li class="season-li">
+                <li class="season-li" data-id=${season.id}>
                 <h3 class="season-number"">Season ${season.number}</h3>
                 <img src="${season.image}" class="card-img-top" alt="...">
                 <p>Premiere Date: ${season.premiereDate}</p>
@@ -164,11 +163,9 @@ async function displaySeasons(title) {
                 <div class="episodes-container" data-id=${season.id}>
                 <div class="button"><a href="">Episodes</a></div>
                 </div>
-                <ul class="episodes-ul">
+                <ul class="episodes-ul" data-id=${season.id}>
                 </ul>
                 </li>
-
-      </div>
                 `);
 			$(".season-cards").append($seasonCard);
 		}
@@ -186,24 +183,64 @@ async function displayEpisodes() {
 		console.log(seasonId);
 		// if the button is clicked on pass in the season id to get the episodes
 		let episodes = await getEpisodes(seasonId);
-		console.log(episodes);
+		// get the cast for each episode
+
 		$(".episodes-ul").empty();
 		for (let episode of episodes) {
 			let $episode = $(`
                 <li class="episode-li" data-id=${episode.id}>
+                    <p class="episode-name">
                     <span>Episode ${episode.number}: </span>
-                    <span class="episode-name"><b>${episode.name}<b></span>
+                    <span class="episode-name" data-id=${episode.id}><b>${episode.name}<b></span>
+                    </p>
+                    <p>Airdate: ${episode.airdate}</p>
+                    <img src="${episode.image}" class="card-img-top" alt="...">
+                    <p>${episode.summary}</p>
+                    </li>
             `);
-			if (seasonId === $(evt.target).closest(".episodes-container").data("id")) {
+            console.log(seasonId);
+            console.log($(".episodes-ul").data("id"));
+			if (seasonId !== $(".episodes-ul").data("id")) return;
+            if (seasonId === $(".episodes-ul").data("id")) {
 				$(".episodes-ul").append($episode);
+				// add the cast to the episode
+				for (let cast of episode.guestcast) {
+					let $cast = $(`
+                    <li class="cast-li">
+                    <p>Guest Cast: <a href=/universe/characters/${cast}>${cast}</p>
+                    </li>
+                    `);
+					$episode.append($cast);
+				}
 			}
+			// Only append to the season that was clicked on not all seasons
 		}
 	});
 }
+
+function episodeClickHandler() {
+	$(".episodes-ul").on("click", ".episode-li", function () {
+		console.log($(this).text());
+		console.log($(this).data("id"));
+	});
+}
+
+// when a user clicks on an episode display episode details under the episode
+
+episodeClickHandler();
+
+$(".episodes-ul").on("click", ".episode-li", function () {
+	console.log($(this).text());
+	console.log($(this).data("id"));
+});
 
 $(document).ready(() => {
 	displayShow(title);
 	displaySeasons(title);
 	displayCast(title);
 	displayEpisodes();
+	$(".episodes-ul").on("click", ".episode-li", function () {
+		console.log($(this).text());
+		console.log($(this).data("id"));
+	});
 });
