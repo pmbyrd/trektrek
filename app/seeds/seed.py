@@ -210,13 +210,10 @@ def seed_post():
             if user_id is None:
                 print(f"Skipping post {title} with body {body}: user_id is None")
                 continue  # Skip this iteration and move to the next post
-            
             user = User.query.get(user_id)
-            
             if user is None:
                 print(f"Skipping post {title} with body {body}: user_id {user_id} doesn't exist")
                 continue  # Skip this iteration and move to the next post
-            
             post = Post(**post_dict)
             db.session.add(post)
             db.session.commit()      
@@ -247,18 +244,19 @@ def seed_post_tags():
                 if post_id is None:
                     print(f"Skipping post_tag with tag_id {tag_id}: post_id is None")
                     continue  # Skip this iteration and move to the next post_tag
-                
                 post = Post.query.get(post_id)
-                
                 if post is None:
                     print(f"Skipping post_tag with tag_id {tag_id}: post_id {post_id} doesn't exist")
                     continue  # Skip this iteration and move to the next post_tag
-                
+                if not Tag.query.get(tag_id):
+                    print(f"Skipping post_tag with tag_id {tag_id}: tag_id {tag_id} doesn't exist")
+                    continue  # Skip this iteration and move to the next post_tag
                 post_tag = PostTag(**post_tag_dict)
                 db.session.add(post_tag)
                 db.session.commit() 
         print("PostTag data added to the database.")
     except Exception as e:
+        db.session.rollback()  # Rollback the transaction if an error occurs
         print(f"Error occurred while seeding post_tags: {e}")     
 
 def seed_animals():
