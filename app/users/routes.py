@@ -7,16 +7,18 @@ from app.models.models import User, Post, Tag, PostTag
 from app.helpers import MemoryAlphaScraper, replace_space
 from random import randint
 from app.schemas.user_schema import UserSchema
-
+from sqlalchemy import desc
 
 #****USER ROUTES****#
 # user flask login manager helper function
 @users.route('/users')
 def users_index():
     """This page lists all the users in the database."""
-    users = User.query.all()
-    
-    return render_template('users/users.html', users=users, title="Users")
+    page = request.args.get('page', 1, type=int)
+    ordered_users = User.query.join(User.posts).group_by(User).order_by(desc(db.func.count(User.posts)))
+    # Paginate the ordered_users
+    paginated_users = ordered_users.paginate(page=page, per_page=100)
+    return render_template('users/users.html', users=paginated_users, title="Users")
 # when clicking on a user profile, it will take you to the user profile page
 @users.route('/users/<int:user_id>')
 def user_profile(user_id):
