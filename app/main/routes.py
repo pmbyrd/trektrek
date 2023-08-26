@@ -18,5 +18,9 @@ def profile():
 @main.route('/test/')
 def test_page():
    return '<h1>Testing the Flask Application Factory Pattern</h1>'
+
+@main.route('/map')
+def map():
+    return render_template('map.html')
     
     
