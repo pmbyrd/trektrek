@@ -1,0 +1,35 @@
+{% extends "base.html"%}
+{% block title%}{{user.username}}{% endblock %}
+{% block content %}
+<div class="container">
+    <!-- make the ability to add be in a bar on the top of the page -->
+    <div class="form">
+        <!-- edit self -->
+        {% if user.id==current_user.id%}
+        <a href="{{url_for('users.edit_profile',user_id=user.id)}}">Edit Profile</a>
+        {% endif%}
+    </div>
+    <div class="content-container pics-left">
+
+        <div class="image">
+            <img src="{{user.profile_pic}}" alt="user image">
+        </div>
+        <div class="user">
+
+            <h2>{{user.username}}</h2>
+            <h4><b class=""></b> {{user.location}}</h4>
+            <p>{{user.bio}}</p>
+        </div>
+        <div class="user-posts">
+            <ul class="lcars-list">
+                {% if user.posts %}
+                {% for post in user.posts %}
+                <li>{{post.title}}</li>
+                {% endfor %}
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+
+</div>
+{% endblock %}

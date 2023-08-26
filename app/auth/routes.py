@@ -98,3 +98,11 @@ def google_auth():
 # @login_is_required
 # def protected_area():
 #     return 'This is a protected area'
+
+@auth.route('/google/auth/callback')
+def google_auth_callback():
+    token = oauth.google.authorize_access_token()
+    user = oauth.google.parse_id_token(token)
+    print(user)
+    return user
+

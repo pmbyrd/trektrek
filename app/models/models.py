@@ -35,8 +35,14 @@ class User(db.Model, UserMixin):
             full_name = f"{self.first_name} {self.last_name}"
             return full_name
         
+    # create a property to see the number of posts a user has
+    def post_count(self):
+        """Returns the number of posts a user has."""
+        return len(self.posts)
+    
+        
     @property
-    def username(self):
+    def get_username(self):
         """Returns a user's username."""
         if self.username is None:
             return "Anonymous"
@@ -91,6 +97,24 @@ class User(db.Model, UserMixin):
         else:
             return False
         
+    # create a class method that will create a user from the google auth data
+    @classmethod
+    def create_from_google(cls, data):
+        new_user = cls(
+            username=None,
+            first_name=data['given_name'],
+            last_name=data['family_name'],
+            email=data['email'],
+            profile_pic=data['picture'],
+            bio=None,
+            location=None,
+            joined_at=datetime.utcnow(),
+            pwd=None
+        )
+        db.session.add(new_user)
+        db.session.commit()
+        return new_user    
+
 class Post(db.Model):
     __tablename__ = "posts"
     
@@ -100,7 +124,7 @@ class Post(db.Model):
     created_at = db.Column(db.DateTime, default=datetime.utcnow)
     user_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False)
     # should refrence also the users table
-    user = db.relationship('User', backref='posts')
+    user = db.relationship('User', backref='posts', cascade='all, delete')
     
     def __repr__(self):
         return f"<Post #{self.id}: {self.title}, {self.created_at}>"
