@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 2023-08-24 21:48:37,203 INFO MainThread-139966221430784: Starting the TrekTrek App... [in helpers.py:27]
 2023-08-24 21:48:37,276 INFO MainThread-139966221430784: Database tables created [in trek.py:34]
 2023-08-24 21:50:18,186 INFO MainThread-140232184471552: Starting the TrekTrek App... [in helpers.py:27]
@@ -118,3 +119,14 @@
 2023-08-24 22:29:00,365 INFO MainThread-140423436476416: Database tables created [in trek.py:34]
 2023-08-25 19:36:44,887 INFO MainThread-139940911214592: Starting the TrekTrek App... [in helpers.py:27]
 2023-08-25 19:36:45,016 INFO MainThread-139940911214592: Database tables created [in trek.py:34]
+=======
+2023-08-25 01:55:04,697 INFO MainThread-139757184831488: Starting the TrekTrek App... [in helpers.py:27]
+2023-08-25 01:55:07,566 INFO MainThread-140158955507712: Starting the TrekTrek App... [in helpers.py:27]
+2023-08-25 01:55:10,423 INFO MainThread-140683705270272: Starting the TrekTrek App... [in helpers.py:27]
+2023-08-25 01:55:12,186 INFO MainThread-140709773877248: Starting the TrekTrek App... [in helpers.py:27]
+2023-08-25 01:55:15,986 INFO MainThread-140704413736960: Starting the TrekTrek App... [in helpers.py:27]
+2023-08-25 01:55:18,731 INFO MainThread-139892881944576: Starting the TrekTrek App... [in helpers.py:27]
+2023-08-25 01:55:18,807 INFO MainThread-139892881944576: Database tables created [in trek.py:34]
+>>>>>>> something
+2023-08-25 19:37:09,985 INFO MainThread-140165990793216: Starting the TrekTrek App... [in helpers.py:27]
+2023-08-25 19:37:10,083 INFO MainThread-140165990793216: Database tables created [in trek.py:34]

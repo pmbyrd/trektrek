@@ -1,0 +1,12 @@
+{% extends "base.html" %}{% block title %} {{title}} {% endblock %}{% block content %}
+<!-- create a form for a searchbar -->
+<div class="container">
+    <form action="" class="map-search">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+    <!-- create a div to hold an image of the map -->
+    <div class="map-pdf">
+        <object data="{{ url_for('static', filename='images/ufpmain.pdf')}}" type="application/pdf" style="min-height:100vh;width:100%"></object>    </div>
+</div>
+{% endblock %}
