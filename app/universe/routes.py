@@ -19,13 +19,6 @@ def index():
 
 
 
-@universe.route('/api/animals')
-def api_animals():
-    """Returns all animals in the database"""
-    animals = Animal.query.all()
-    animal_schema = AnimalSchema(many=True)
-    output = animal_schema.dump(animals)
-    return jsonify({'animals': output})
 
 @universe.route('/animals')
 def animals():

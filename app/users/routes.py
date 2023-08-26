@@ -6,7 +6,23 @@ from app.extensions import db
 from app.models.models import User, Post, Tag, PostTag
 from app.helpers import MemoryAlphaScraper, replace_space
 from random import randint
+from app.schemas.user_schema import UserSchema
 
+
+#****USER ROUTES****#
+# user flask login manager helper function
+@users.route('/users')
+def users_index():
+    """This page lists all the users in the database."""
+    users = User.query.all()
+    
+    return render_template('users/users.html', users=users, title="Users")
+# when clicking on a user profile, it will take you to the user profile page
+@users.route('/users/<int:user_id>')
+def user_profile(user_id):
+    """This page displays a user's profile."""
+    user = User.query.get_or_404(user_id)
+    return render_template('users/user_profile.html', user=user, title="User Profile")
 
 # Start with the post routes for now since at the moment they do not require a user to be logged in.
 @users.route('/posts')
