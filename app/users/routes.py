@@ -26,6 +26,8 @@ def user_profile(user_id):
     user = User.query.get_or_404(user_id)
     return render_template('users/user_profile.html', user=user, title="User Profile")
 
+@users.route('/')
+
 # Start with the post routes for now since at the moment they do not require a user to be logged in.
 @users.route('/posts')
 def posts():

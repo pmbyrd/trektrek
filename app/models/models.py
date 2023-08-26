@@ -25,6 +25,19 @@ class User(db.Model, UserMixin):
     joined_at = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
     pwd = db.Column(db.Text, nullable=True)
     
+    # Authentication methods
+    def is_authenticated(self):
+        return True
+
+    def is_active(self):   
+        return True           
+
+    def is_anonymous(self):
+        return False          
+
+    def get_id(self):         
+        return str(self.id)
+    
     @property
     # create a property that returns the full name of the user
     def full_name(self):
