@@ -8,6 +8,7 @@ from app.helpers import MemoryAlphaScraper, replace_space
 from random import randint
 from app.schemas.user_schema import UserSchema
 from sqlalchemy import desc
+from app.forms.form import UserForm
 
 #****USER ROUTES****#
 # user flask login manager helper function
@@ -26,7 +27,41 @@ def user_profile(user_id):
     user = User.query.get_or_404(user_id)
     return render_template('users/user_profile.html', user=user, title="User Profile")
 
-@users.route('/')
+# Make a route to create a new user and add it to the database
+@users.route('/new', methods=['GET', 'POST'])
+def create_user():
+    """Handles form submission for creating a new user."""
+    form = UserForm(request.form)
+    if form.validate_on_submit():
+        try:
+            new_user = User.create(
+                username=form.username.data,
+                first_name=form.first_name.data, 
+                last_name=form.last_name.data,
+                email=form.email.data,
+                profile_pic=form.profile_pic.data or User.DEFAULT_IMAGE_URL,
+                bio=form.bio.data or None,
+                location=form.location.data or None,
+                pwd=form.pwd.data
+            )
+            flash(f"User {new_user.full_name} added.")
+            # if the user has been successfully added to the database, authenticate the user and log them in using the login_user() function
+            login_user(new_user)
+            # make the redirect go to the user profile page
+            return redirect(url_for('users.user_profile', user_id=new_user.id))
+        except Exception as e:
+            # If form validation fails, you can handle the errors here
+            if User.query.filter_by(username=form.username.data).first():
+                flash("Username already exists.", "error")
+            if User.query.filter_by(email=form.email.data).first():
+                flash("Email already exists.", "error")
+            # For example, you can flash the error messages to the user
+            for field, errors in form.errors.items():
+                for error in errors:
+                    flash(f"Error in {field}: {error}", "error")
+            return redirect("/users/new")  # Redirect back to the form page with error messages
+    else:
+        return render_template('users/new_user.html', form=form, title="New User")
 
 # Start with the post routes for now since at the moment they do not require a user to be logged in.
 @users.route('/posts')
