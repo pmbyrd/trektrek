@@ -5,6 +5,7 @@ from app.extensions import db
 from datetime import datetime
 from flask_login import UserMixin
 from flask import session
+from app.extensions import bcrypt
 
 
 DEFAULT_IMAGE_URL = "https://loading.io/icon/tpi8gu"
@@ -66,29 +67,22 @@ class User(db.Model, UserMixin):
         return f"<User #{self.id}: {self.username}, {self.email}>"
      
     @classmethod
-    def create(cls, sub, name, email, picture):
-        """
-        Create a new User instance based on Google authentication data.
-        
-        :param sub: Subject identifier from Google response (sub field).
-        :param name: User's name from Google response (name field).
-        :param email: User's email from Google response (email field).
-        :param picture: User's profile picture URL from Google response (picture field).
-        :return: New User instance.
-        """
-        new_user = cls(
-            username=None,  # You might set this based on your app's logic
-            first_name=None,  # You might set this based on your app's logic
-            last_name=None,  # You might set this based on your app's logic
+    def create(cls, username, first_name, last_name, email, pwd, profile_pic = DEFAULT_IMAGE_URL, bio = "", location = ""):
+        """Create a new user."""
+        hashed_pwd = bcrypt.generate_password_hash(pwd).decode('UTF-8')
+        new_user = User(
+            username=username,
+            first_name=first_name,
+            last_name=last_name,
             email=email,
-            profile_pic=picture,
-            bio=None,  # You might set this based on your app's logic
-            location=None,  # You might set this based on your app's logic
+            profile_pic=profile_pic,
+            bio=bio,
+            location=location,
             joined_at=datetime.utcnow(),
-            pwd=None,  # You might set this based on your app's logic
+            pwd=hashed_pwd
         )
         db.session.add(new_user)
-        db.session.commit()
+    
         return new_user
     
     @classmethod

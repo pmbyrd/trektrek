@@ -6,7 +6,6 @@
     <div class="form">
         <!-- edit self -->
         {% if user.id==current_user.id%}
-        <a href="{{url_for('users.edit_profile',user_id=user.id)}}">Edit Profile</a>
         {% endif%}
     </div>
     <div class="content-container pics-left">
