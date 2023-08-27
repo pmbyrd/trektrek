@@ -27,3 +27,10 @@ class UserForm(FlaskForm):
         user = User.query.filter_by(email=email.data).first()
         if user:
             raise ValidationError('Email already exists.')
+        
+class LoginForm(FlaskForm):
+    """Form for logging in a user."""
+    email = StringField('Email', validators=[InputRequired(), Email(), Length(min=1, max=64)])
+    pwd = PasswordField('Password', validators=[InputRequired(), Length(min=1, max=64)])
+    remember = BooleanField('Remember Me')
+    

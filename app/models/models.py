@@ -8,7 +8,7 @@ from flask import session
 from app.extensions import bcrypt
 
 
-DEFAULT_IMAGE_URL = "https://loading.io/icon/tpi8gu"
+DEFAULT_IMAGE_URL = "app/static/images/default-pic.png"
 
 class User(db.Model, UserMixin):
     """User in the system."""
@@ -39,6 +39,9 @@ class User(db.Model, UserMixin):
     def get_id(self):         
         return str(self.id)
     
+    def to_json(self):
+        return {"username": self.username,
+                "email": self.email}
     @property
     # create a property that returns the full name of the user
     def full_name(self):
@@ -96,11 +99,14 @@ class User(db.Model, UserMixin):
             return new_user
         
     @classmethod
-    def authenticate(cls, email):
+    def authenticate(cls, email, pwd):
         """Find a user with the given email and password."""
         user = cls.query.filter_by(email=email).first()
+        
         if user:
-            return user
+            is_auth = bcrypt.check_password_hash(user.pwd, pwd)
+            if is_auth:
+                return user
         else:
             return False
         

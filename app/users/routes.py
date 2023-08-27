@@ -8,7 +8,7 @@ from app.helpers import MemoryAlphaScraper, replace_space
 from random import randint
 from app.schemas.user_schema import UserSchema
 from sqlalchemy import desc
-from app.forms.form import UserForm
+from app.forms.form import UserForm, LoginForm
 from sqlalchemy.exc import IntegrityError
 
 
@@ -23,7 +23,7 @@ def users_index():
     paginated_users = ordered_users.paginate(page=page, per_page=100)
     return render_template('users/users.html', users=paginated_users, title="Users")
 # when clicking on a user profile, it will take you to the user profile page
-@users.route('/users/<int:user_id>')
+@users.route('/<int:user_id>')
 def user_profile(user_id):
     """This page displays a user's profile."""
     user = User.query.get_or_404(user_id)
@@ -57,6 +57,46 @@ def create_user():
             return render_template('users/new_user.html', form=form, title="New User")
     return render_template('users/new_user.html', form=form, title="New User")
 
+@users.route('/login', methods=['GET', 'POST'])
+def user_login():
+    """Login a user."""
+    if current_user.is_authenticated:
+        return redirect(url_for('users.user_profile', user_id=current_user.id))
+    # import pdb; pdb.set_trace()
+    form = LoginForm(request.form)
+    if form.validate_on_submit():
+        try:
+            user = User.authenticate(form.email.data,
+                                     form.pwd.data)
+            # import pdb; pdb.set_trace()
+            print(user)
+            if user:
+                login_user(user, remember=form.remember.data)
+                flash(f"Welcome back, {user.full_name}!")
+                print(user)
+                return redirect(url_for('users.user_profile', user_id=user.id))
+        except IntegrityError:
+            flash("Invalid email or password.")
+            return render_template('users/login.html', form=form, title="Login")
+    print("last line in login route")
+    return render_template('users/login.html', form=form, title="Login")
+
+@users.route('/logout')
+@login_required
+def user_logout():
+    """Logout a user."""
+    logout_user()
+    return redirect(url_for('main.index'))
+
+@users.route('/user_info', methods=['GET'])
+def user_info():
+    if current_user.is_authenticated:
+        resp = {"result": 200,
+                "data": current_user.to_json()}
+    else:
+        resp = {"result": 401,
+                "data": {"message": "user no login"}}
+    return jsonify(**resp)
 
 # Start with the post routes for now since at the moment they do not require a user to be logged in.
 @users.route('/posts')
