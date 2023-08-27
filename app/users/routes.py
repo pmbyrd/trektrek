@@ -42,9 +42,11 @@ def edit_user(user_id):
         user.profile_pic = form.profile_pic.data
         user.bio = form.bio.data
         user.location = form.location.data
-        pwd = form.pwd.data
+        user.pwd = form.pwd.data
         if current_user.is_authenticated:
+            db.session.add(user)
             db.session.commit()
+            print(user.profile_pic)
             flash("User profile updated.")
             return redirect(url_for('users.user_profile', user_id=user.id))
     return render_template('users/edit.html', user=user, form=form, title="Edit User")
@@ -66,11 +68,10 @@ def create_user():
                 location=form.location.data or None,
                 pwd=form.pwd.data
             )
-            flash(f"User {new_user.full_name} added.")
             # if the user has been successfully added to the database, authenticate the user and log them in using the login_user() function
-            
             db.session.commit()
             login_user(new_user)    
+            flash(f"User {new_user.full_name} added.")
             return redirect(url_for('users.user_profile', user_id=new_user.id))
         except IntegrityError:
             flash("Username or email already exists.")
