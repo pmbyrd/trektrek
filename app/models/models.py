@@ -88,15 +88,6 @@ class User(db.Model, UserMixin):
     
         return new_user
     
-    @classmethod
-    def authenticate_session_user(cls, user):
-        if 'user' in session:
-            new_user = cls(
-                email = user['email']
-            )
-            db.session.add(new_user)
-            db.session.commit()
-            return new_user
         
     @classmethod
     def authenticate(cls, email, pwd):

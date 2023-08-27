@@ -8,7 +8,7 @@ from app.helpers import MemoryAlphaScraper, replace_space
 from random import randint
 from app.schemas.user_schema import UserSchema
 from sqlalchemy import desc
-from app.forms.form import UserForm, LoginForm
+from app.forms.form import UserForm, LoginForm, EditUserForm
 from sqlalchemy.exc import IntegrityError
 
 
@@ -27,7 +27,27 @@ def users_index():
 def user_profile(user_id):
     """This page displays a user's profile."""
     user = User.query.get_or_404(user_id)
+    
     return render_template('users/user_profile.html', user=user, title="User Profile")
+
+@users.route('/<int:user_id>/edit', methods=['GET', 'POST'])
+@login_required
+def edit_user(user_id):
+    """This page allows a user to edit their profile."""
+    user = User.query.get_or_404(user_id)
+    form = EditUserForm(obj=user)
+    if form.validate_on_submit():
+        user.first_name = form.first_name.data
+        user.last_name = form.last_name.data
+        user.profile_pic = form.profile_pic.data
+        user.bio = form.bio.data
+        user.location = form.location.data
+        pwd = form.pwd.data
+        if current_user.is_authenticated:
+            db.session.commit()
+            flash("User profile updated.")
+            return redirect(url_for('users.user_profile', user_id=user.id))
+    return render_template('users/edit.html', user=user, form=form, title="Edit User")
 
 # Make a route to create a new user and add it to the database
 @users.route('/new', methods=['GET', 'POST'])

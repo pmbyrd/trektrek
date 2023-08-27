@@ -34,3 +34,23 @@ class LoginForm(FlaskForm):
     pwd = PasswordField('Password', validators=[InputRequired(), Length(min=1, max=64)])
     remember = BooleanField('Remember Me')
     
+class EditUserForm(FlaskForm):
+    """Allows a user to edit their profile."""
+    first_name = StringField('First Name', validators=[InputRequired(), Length(min=1, max=64)])
+    last_name = StringField('Last Name', validators=[InputRequired(), Length(min=1, max=64)])
+    profile_pic = StringField('Profile Picture', validators=[Optional(), URL(), Length(min=1, max=500)])
+    bio = TextAreaField('Bio', validators=[Optional(), Length(min=1, max=500)])
+    location = StringField('Location', validators=[Optional(), Length(min=1, max=64)])
+    pwd = PasswordField('Password', validators=[InputRequired(), Length(min=1, max=64)])
+    
+    def validate_username(self, username):
+        """Validate that the username is unique."""
+        user = User.query.filter_by(username=username.data).first()
+        if user:
+            raise ValidationError('Username already exists.')
+    
+    def validate_email(self, email):
+        """Validate that the email is unique."""
+        user = User.query.filter_by(email=email.data).first()
+        if user:
+            raise ValidationError('Email already exists.')    
