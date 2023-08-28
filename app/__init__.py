@@ -61,6 +61,8 @@ def create_app(config_filename=None):
     def load_user(user_id):
         return User.query.filter(User.id == int(user_id)).first()
     
+    # before each request, add the user to the g object
+   
     echo(f"Running the application in {app.config['FLASK_ENV']} environment.")
     echo(f"Database URI: {app.config['SQLALCHEMY_DATABASE_URI']}")
     echo(f"Database engine: {engine}")

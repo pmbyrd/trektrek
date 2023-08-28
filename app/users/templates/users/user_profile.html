@@ -3,12 +3,17 @@
 {% block content %}
 <div class="container">
     <!-- make the ability to add be in a bar on the top of the page -->
-    <div class="form">
+
         <!-- edit self -->
         {% if user.id==current_user.id%}
-        <a href="{{url_for('users.edit_profile',user_id=user.id)}}">Edit Profile</a>
+        <div class="lcars-text-bar">
+           <span> <a href="{{ url_for('users.edit_user', user_id=user.id) }}">Edit Profile</a></span>
+          </div>
+          <div class="lcars-text-bar c58">
+            <span><a href="{{ url_for('users.delete_user', user_id=user.id) }}">Delete</a></span>
+          </div>
         {% endif%}
-    </div>
+    
     <div class="content-container pics-left">
 
         <div class="image">
@@ -23,8 +28,9 @@
         <div class="user-posts">
             <ul class="lcars-list">
                 {% if user.posts %}
+                Your Posts:
                 {% for post in user.posts %}
-                <li>{{post.title}}</li>
+                <a href="{{url_for('users.post', post_id=post.id)}}"><li>{{post.title}}</li></a>
                 {% endfor %}
                 {% endif %}
             </ul>

@@ -4,7 +4,7 @@
     <h1 class="banner">{{title}}</h1>
     <div class="form">
         <!-- make sure the form has the crsf tokens -->
-        <form method="POST" id="edit_form">
+        <form method="POST" id="post_edit_form">
             {{ form.hidden_tag() }} <!--add type=hidden form fields -->
             {% for field in form
                    if field.widget.input_type != 'hidden' %}
@@ -18,7 +18,6 @@
             {% endfor %}
             <button>Submit</button>
         </form>
-
     </div>
 </div>
 

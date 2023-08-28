@@ -1,10 +1,12 @@
-{% extends "base.html" %} {% block title %} {{title}} {% endblock %} {% block content %}
+{% extends "base.html" %}
+{% block title %}{{title}}{% endblock %}
+{% block content %}
 
-<div class="edit-form">
+<div class="delete">
     <h1 class="banner">{{title}}</h1>
     <div class="form">
         <!-- make sure the form has the crsf tokens -->
-        <form method="POST" id="edit_form">
+        <form method="POST" id="delete_form">
             {{ form.hidden_tag() }} <!--add type=hidden form fields -->
             {% for field in form
                    if field.widget.input_type != 'hidden' %}
@@ -21,5 +23,3 @@
 
     </div>
 </div>
-
-{% endblock%}

@@ -5,7 +5,7 @@
 <h1>{{title}}</h1>
 <div class="form">
     <!-- make sure the form has the crsf tokens -->
-    <form method="POST" class="signup-form">
+    <form method="POST" action="">
         {{ form.hidden_tag() }} <!--add type=hidden form fields -->
         {% for field in form
                if field.widget.input_type != 'hidden' %}
@@ -17,8 +17,8 @@
             {% endfor %}
           </p>
         {% endfor %}
-      </form>
-      <button class="button">Signup</button>
+        <button class="buttons">Submit</button>
+    </form>
 
 </div>
 
