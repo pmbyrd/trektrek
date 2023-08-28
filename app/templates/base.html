@@ -33,8 +33,11 @@
         </div>
         <div class="left-frame-top">
             <div class="panel-1"><a href="/">HOME</a></div>
-
-            <div class="panel-2"><a href="{{url_for('main.profile')}}">PROFILE</a></div>
+            {% if current_user.is_authenticated %}
+            <div class="panel-2"><a href="{{url_for('users.user_profile', user_id=current_user.id)}}">PROFILE</a></div>
+            {% else %}
+            <div class="panel-2"><a href="{{url_for('users.user_login')}}">LOGIN</a></div>
+            {% endif %}
         </div>
         <div class="right-frame-top">
             <div class="banner">LCARS &#149; Online</div>

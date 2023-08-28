@@ -25,6 +25,7 @@ class User(db.Model, UserMixin):
     location = db.Column(db.Text, nullable=True)
     joined_at = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
     pwd = db.Column(db.Text, nullable=True)
+    posts = db.relationship('Post', backref='user', cascade='all, delete-orphan')
     
     # Authentication methods
     def is_authenticated(self):
@@ -126,9 +127,8 @@ class Post(db.Model):
     title = db.Column(db.String(255), nullable=False)
     body = db.Column(db.Text)
     created_at = db.Column(db.DateTime, default=datetime.utcnow)
+    # A post belongs to a user
     user_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False)
-    # should refrence also the users table
-    user = db.relationship('User', backref='posts', cascade='all, delete')
     
     def __repr__(self):
         return f"<Post #{self.id}: {self.title}, {self.created_at}>"

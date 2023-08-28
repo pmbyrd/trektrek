@@ -5,6 +5,35 @@ import urllib.request
 from bs4 import BeautifulSoup as Soup
 from app.extensions import db
 from flask.logging import default_handler
+from random import randint
+
+
+# ***************** Helper Datatypes *****************
+color_hex_values = [
+    "#ffaa00",
+    "#552255",
+    "#663366",
+    "#774477",
+    "#885588",
+    "#996699",
+    "#ff8800",
+    "#d0b0a0",
+    "#bbbbff",
+    "#99aa66",
+    "#00bb00",
+    "#33ff33",
+    "#ddffdd",
+    "#ffebde",
+    "#cc99cc",
+    "#f6eef6",
+    "#aa66aa",
+    "#dd88dd"
+]
+
+def get_random_color():
+    color = color_hex_values[randint(0, len(color_hex_values) - 1)]
+    return color
+
 
 def configure_logging(app):
     # Logging Configuration
