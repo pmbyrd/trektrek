@@ -70,7 +70,6 @@ class PostForm(FlaskForm):
     title = StringField('Title', validators=[InputRequired(), Length(min=1, max=64)])
     content = TextAreaField('Content', validators=[InputRequired(), Length(min=1)])
     # tags should be a select field that allows the user to select from a list of tags
-    create_tag = StringField('Create Tag', validators=[Optional(), Length(min=1, max=64)])
     tags = MultiCheckboxField('Tags', coerce=int)
     is_published = BooleanField('Publish Post?')
     
@@ -79,6 +78,5 @@ class PostEditForm(FlaskForm):
     title = StringField('Title', validators=[InputRequired(), Length(min=1, max=64)])
     content = TextAreaField('Content', validators=[InputRequired(), Length(min=1)])
     # tags should be a select field that allows the user to select from a list of tags
-    create_tag = StringField('Create Tag', validators=[Optional(), Length(min=1, max=64)])
     tags = MultiCheckboxField('Tags', coerce=int)
     is_published = BooleanField('Publish Post?')

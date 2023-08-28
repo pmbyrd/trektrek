@@ -177,19 +177,6 @@ def create_post():
                 user_id=current_user.id
             )
             # import pdb; pdb.set_trace()
-            if form.tags.data:
-                tags = form.tags.data.split(',')
-                for tag in tags:
-                    if tag.query.filter_by(name=tag).first():
-                        flash("Tag already exists.")
-                    tag = replace_space(tag)
-                    # import pdb; pdb.set_trace()
-                    new_tag = Tag.query.filter_by(name=tag).first()
-                    if new_tag:
-                        new_post_tag = PostTag.create(new_post.id, new_tag.id)
-                    else:
-                        new_tag = Tag.create(tag)
-                        new_post_tag = PostTag.create(new_post.id, new_tag.id)
             db.session.add(new_post)
             db.session.commit()
             flash("Post created.")
