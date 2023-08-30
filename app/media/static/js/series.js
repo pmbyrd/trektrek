@@ -21,7 +21,7 @@ async function displaySeries() {
         for (let showTitle of shows) {
             let showData = await getMovie(showTitle)
             $showCard = $(`
-            <div class="show-card">
+            <div class="show-card col">
             <h3> <a href="/media/show/${showData.title}" class="btn btn-primary">${showData.title}</a></h3>
             <img src="${showData.poster}" class="card-img-top" alt="...">
             <p>${showData.plot}</p>

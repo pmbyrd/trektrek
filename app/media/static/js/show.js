@@ -102,19 +102,39 @@ async function getEpisodes(seasonId) {
 	}
 }
 
+async function getEpisode(episodeId) {
+	try {
+		if (episodeId) {
+			let response = await axios.get(
+				`http://api.tvmaze.com/episodes/${episodeId}/guestcast`
+			);
+			let guestCast = response.data.map(function (value) {
+				return {
+					id: value.person.id,
+					name: value.person.name,
+					character: value.character.name,
+					image: value.person.image ? value.person.image.medium : defaultLink,
+					characterImage: value.character.image
+						? value.character.image.medium
+						: defaultLink,
+				};
+			});
+			return guestCast;
+		}
+	} catch (error) {
+		console.error(error);
+	}
+}
+
 async function displayShow(title) {
 	console.debug("displayShow");
 	try {
 		let show = await getShowsByTerm(title);
 		// debugger
 		let $showCard = $(`
-                <div class="card">
-                    <div class="img-conatiner">
-                        <img src="${show.image}" class="card-img-top" alt="...">
-                    </div>
-
-                    <div class="card-body-container">
-                        <p class="card-text">${show.summary}</p>
+                <div class="pics-left">
+                        <img src="${show.image}" class="" alt="${show.name}">
+                        <p class="caption">${show.summary}</p>
                     </div>
             `);
 		$(".show-card-container").append($showCard);
@@ -129,15 +149,12 @@ async function displayCast(title) {
 		let cast = await getCastTvMaze(title);
 		for (let actor of cast) {
 			let $castCard = $(`
-                <li class="actor-cast-card">
+                <li class="actor-cast-card col">
                     <div class="actor-card-container">
-                        <div class="actor-img-container">
-                            <img src="${actor.image}" class="card-img-top" alt="...">
-                            <p class="actor-name">Actor: <a href="/media/performer/${actor.name}">${actor.name}</p>
-                        </div>
-                        <div class="actor-img-container">
-                        <img src="${actor.characterImage}" class="card-img-top" alt="...">
-                        <p class="actor-name">Character: <a href="/universe/characters/${actor.name}">${actor.character}</p>
+							<div class="actor-img-container">
+							<img src="${actor.characterImage}" class="border pics" alt="...">
+                            <p class="actor-name caption">Actor: <a href="/media/performer/${actor.name}">${actor.name}</p>
+                        <p class="actor-name caption">Character: <a href="/universe/characters/${actor.name}">${actor.character}</p>
                     </div>
                     </div>
                 </li>
@@ -156,15 +173,15 @@ async function displaySeasons(title) {
 		for (let season of seasons) {
 			let $seasonCard = $(`
                 <li class="season-li" data-id=${season.id}>
-                <h3 class="season-number"">Season ${season.number}</h3>
-                <img src="${season.image}" class="card-img-top" alt="...">
-                <p>Premiere Date: ${season.premiereDate}</p>
-                <p>End Date: ${season.endDate}</p>
-                <div class="episodes-container" data-id=${season.id}>
-                <div class="button"><a href="">Episodes</a></div>
-                </div>
-                <ul class="episodes-ul" data-id=${season.id}>
-                </ul>
+					<div>
+                		<h3 class="season-number"">Season ${season.number}</h3>
+                		<img src="${season.image}" class="card-img-top" alt="...">
+                		<p>Premiere Date: ${season.premiereDate}</p>
+                		<p>End Date: ${season.endDate}</p>
+						<div class="button"><a href="">Episodes</a></div>
+                		<div class="episodes-container" season-data-id=${season.id}>
+                		</div>
+               		</div>
                 </li>
                 `);
 			$(".season-cards").append($seasonCard);
@@ -175,72 +192,63 @@ async function displaySeasons(title) {
 }
 
 async function displayEpisodes() {
-	console.debug("displayEpisodes");
-	// Show an episodes list when the user clicks on the episodes button
-	$(".season-cards").on("click", ".button", async function (evt) {
+    console.debug("displayEpisodes");
+    $(".season-cards").on("click", ".button", async function (evt) {
 		evt.preventDefault();
-		let seasonId = $(evt.target).closest(".episodes-container").data("id");
-		console.log(seasonId);
-		// if the button is clicked on pass in the season id to get the episodes
+		let seasonId = $(this).closest(".season-li").data("id"); // Use closest to find the closest ancestor with the specified class
+		$(".season-cards").removeClass("flexbox");
+		// test appending to the div that was clicked
 		let episodes = await getEpisodes(seasonId);
-		// get the cast for each episode
-
-		$(".episodes-ul").empty();
 		for (let episode of episodes) {
-			let $episode = $(`
-                <li class="episode-li" data-id=${episode.id}>
-                    <p class="episode-name">
-                    <span>Episode ${episode.number}: </span>
-                    <span class="episode-name" data-id=${episode.id}><b>${episode.name}<b></span>
-                    </p>
-                    <p>Airdate: ${episode.airdate}</p>
-                    <img src="${episode.image}" class="card-img-top" alt="...">
-                    <p>${episode.summary}</p>
-                    </li>
-            `);
-            console.log(seasonId);
-            console.log($(".episodes-ul").data("id"));
-			if (seasonId !== $(".episodes-ul").data("id")) return;
-            if (seasonId === $(".episodes-ul").data("id")) {
-				$(".episodes-ul").append($episode);
-				// add the cast to the episode
-				for (let cast of episode.guestcast) {
-					let $cast = $(`
-                    <li class="cast-li">
-                    <p>Guest Cast: <a href=/universe/characters/${cast}>${cast}</p>
-                    </li>
-                    `);
-					$episode.append($cast);
-				}
-			}
-			// Only append to the season that was clicked on not all seasons
+			let $episodeCard = $(`
+			<div class="episode pics-left flexbox" data-id="${episode.id}">
+				<img src="${episode.image}" class="border col" alt="Screenshot from ${episode.name}">
+				<div class="episode-info col">
+					<p class="caption">Episode ${episode.number}</p>
+					<p class="caption">${episode.name}</p>
+					<p class="caption">Airdate: ${episode.airdate}</p>
+					<p class="caption">${episode.summary}</p>
+					<div class="guest-cast-button button"><a href="">Guest Cast</a></div>
+					<div class="guest-cast-container" episode-data-id=${episode.id}>
+				</div>
+			</div>
+			
+			`)
+			$(this).closest(".season-li").addClass("flexbox");
+			$(this).closest(".season-li").append($episodeCard);
 		}
 	});
 }
 
-function episodeClickHandler() {
-	$(".episodes-ul").on("click", ".episode-li", function () {
-		console.log($(this).text());
-		console.log($(this).data("id"));
+async function displayGuestCast() {
+	console.debug("displayGuestCast");
+    $(".season-cards").on("click", ".guest-cast-button", async function (evt) {
+		console.log("guest cast button clicked");
+		evt.preventDefault();
+		console.log($(this).closest(".episode").data("id"));
+		let episodeId = $(this).closest(".episode").data("id");
+		let guestCast = await getEpisode(episodeId);
+		// console.log(guestCast); NOTE this is an array of objects
+		for (let actor of guestCast) {
+			let $guestCastCard = $(`
+			<div class="guest-cast-card">
+				<img src="${actor.characterImage}" class="border pics" alt="...">
+				<p class="caption">Actor: <a href="/media/performer/${actor.name}">${actor.name}</p>
+				<p class="caption">Character: <a href="/universe/characters/${actor.name}">${actor.character}</p>
+			</div>
+			`);
+			$(this).closest(".episode").addClass("flexbox");
+			$(this).closest(".episode").append($guestCastCard);
+		}
 	});
 }
 
-// when a user clicks on an episode display episode details under the episode
 
-episodeClickHandler();
-
-$(".episodes-ul").on("click", ".episode-li", function () {
-	console.log($(this).text());
-	console.log($(this).data("id"));
-});
 
 $(document).ready(() => {
 	displayShow(title);
 	displaySeasons(title);
 	displayCast(title);
 	displayEpisodes();
-	$(".episodes-ul").on("click", ".episode-li", function () {
-		console.log($(this).text());
-		console.log($(this).data("id"));
-	});
+	displayGuestCast();
 });

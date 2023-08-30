@@ -14,13 +14,15 @@ async function getMovies() {
 
 async function displayMovies() {
     console.debug('displayMovies');
+    $(".movies-list").empty()
     try {
         let movies = await getMovies();
         //map over each movie and create a card for each movie
         for (let movieTitle of movies) {
             let movieData = await getMovie(movieTitle)
+            
             $movieCard = $(`
-            <div class="movie-card">
+            <div class="movie-card col">
             <h3> <a href="/media/movie/${movieData.title}" class="btn btn-primary">${movieData.title}</a></h3>
                 <img src="${movieData.poster}" class="card-img-top" alt="...">
                 <div class="card-body">
