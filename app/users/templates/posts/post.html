@@ -19,11 +19,9 @@
 </div>
 <ul>
     {% if post.tags %}
-    {{post.tags}}
+    Tags:
     {% for tag in post.tags %}
-    <li>
-        {{tag.name}}
-    </li>
+    <a href="{{url_for('users.tag', tag_id=tag.id)}}">{{tag.name}}</a>
 </ul>
 {% endfor %}
 {% endif %}

@@ -5,9 +5,9 @@ from app.users import users
 from app.extensions import db
 from app.models.models import User, Post, Tag, PostTag, DEFAULT_IMAGE_URL
 from app.helpers import MemoryAlphaScraper, replace_space
-from random import randint
+from random import randint, sample
 from app.schemas.user_schema import UserSchema
-from sqlalchemy import desc
+from sqlalchemy import desc, func
 from app.forms.form import UserForm, LoginForm, EditUserForm, DeleteAccountForm, PostForm
 from sqlalchemy.exc import IntegrityError
 
@@ -144,10 +144,11 @@ def delete_user(user_id):
 @users.route('/posts')
 def posts():
     """This page lists all the posts in the database."""
-    posts_count = Post.query.count()
-    # Generate 25 random post IDs within the range of available IDs
-    random_post_ids = [randint(1, posts_count) for _ in range(25)]
-    # Query the database for the random posts using the generated IDs
+    tagged_posts = Post.query.filter(Post.tags.any()).all()
+    # Generate 25 random post IDs within the range of available tagged post IDs
+    random_tagged_post_ids = [post.id for post in tagged_posts]
+    random_post_ids = sample(random_tagged_post_ids, min(len(random_tagged_post_ids), 25))
+    # Query the database for the random tagged posts using the generated IDs
     random_posts = Post.query.filter(Post.id.in_(random_post_ids)).all()
     formatted_posts = [
         {
@@ -159,7 +160,12 @@ def posts():
         }
         for post in random_posts
     ]
-    return render_template('posts/posts.html', posts=formatted_posts, title="Posts")
+    print([post.tags for post in random_posts])
+    tags = Tag.query.all()
+    ordered_tags = sorted(tags, key=lambda tag: len(tag.posts), reverse=True)
+    # order the tags by the number of posts they are associated with
+
+    return render_template('posts/posts.html', posts=formatted_posts, title="Posts", tags=ordered_tags)
 
 @users.route('/posts/create', methods=['GET', 'POST'])
 @login_required
@@ -230,9 +236,7 @@ def delete_post(post_id):
         return redirect(url_for('users.posts'))
 
 #************** Tag Routes **************
-@users.route('/tags')
-def tags():
-    pass
+
 
 @users.route('/tags/create', methods=['GET', 'POST'])
 def create_tag():
@@ -240,7 +244,11 @@ def create_tag():
 
 @users.route('/tags/<int:tag_id>')
 def tag(tag_id):
-    pass
+    """Get a specific tag by id."""
+    tag = Tag.query.get_or_404(tag_id)
+    # Show all posts associated with a tag
+    
+    return render_template('tags/tag.html', tag=tag, title="Tag")
 
 @users.route('/tags/<int:tag_id>/edit', methods=['GET', 'POST'])
 def edit_tag(tag_id):

@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}{{title}}{% endblock %}
+{% block content %}
+
+<!-- Shows a tag with all post  -->
+<h1 class="banner">{{tag.name}}</h1>
+<div class="posts">
+    {% for post in tag.posts %}
+    <div class="">
+        <a href="{{url_for('users.post', post_id=post.id)}}"><h3>{{post.title}}</h3></a>
+        <p> Author: <a href="{{url_for('users.user_profile', user_id=post.user.id)}}">{{post.user.username}}</a>
+        </p>
+        {% endfor %}
+</div>
+{%endblock%}

@@ -3,12 +3,22 @@
 {%block content%}
 
 <div class="lcars-text-bar">
-            {% if current_user.is_authenticated %}
-            <span><a href="{{ url_for('users.create_post')}}">Make a post</a></span>
-            {% else %}
-            <a href="{{ url_for('users.user_login') }}">Login</a> To Create a Post
-            {% endif%}
-          </div>
+    {% if current_user.is_authenticated %}
+    <span><a href="{{ url_for('users.create_post')}}">Make a post</a></span>
+    {% else %}
+    <a href="{{ url_for('users.user_login') }}">Login</a> To Create a Post
+    {% endif%}
+</div>
+
+<div class="container">
+    <ul class="tags-list">
+        {% for tag_data in tags %}
+        <li>
+            <a href="{{url_for('users.tag', tag_id=tag_data.id)}}">{{ tag_data.name }}</a> ({{ tag_data.posts|length }} posts)
+        </li>
+        {% endfor %}
+    </ul>
+</div>
 
 <div class="container">
     <ul class="posts-ul">
@@ -16,15 +26,17 @@
         <li class="image-li-ships">
             <a href="{{url_for('users.post', post_id=post.id)}}">{{post.title}}</a>
         </li>
-        <!-- added in all tags associated with a post -->
-        {% if tag in post.tags %}
         <li class="image-li-ships">
+            <!-- Check if the post has any tags -->
+            {% if post.tags %}
+            Tags:
             {% for tag in post.tags %}
-            <a href="">{{tag.name}}</a>
+            <a href="">{{tag}}</a>{% if not loop.last %}, {% endif %}
             {% endfor %}
             {% endif %}
         </li>
-        {%endfor%}
+        {% endfor %}
     </ul>
 
-{%endblock%}
+
+    {%endblock%}
