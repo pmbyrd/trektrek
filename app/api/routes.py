@@ -4,7 +4,9 @@ from flask import jsonify
 from app.api import api
 from app.schemas.movie_schema import MovieSchema
 from app.schemas.series_schema import SeriesSchema
+from app.schemas.tag_schema import TagSchema
 from app.models.star_trek_models import Movie, Series
+from app.models.models import Tag, Post
 
 load_dotenv()
 
@@ -36,3 +38,9 @@ def json_series():
     """Returns all shows in the database"""
     series = SeriesSchema(many=True).dump(Series.query.all())
     return jsonify(series)
+
+@api.route('/api/tags')
+def json_tags():
+    """Returns all tags in the database"""
+    tags = TagSchema(many=True).dump(Tag.query.all())
+    return jsonify(tags)
