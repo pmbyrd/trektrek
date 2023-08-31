@@ -129,3 +129,26 @@ p,
     ul {
         list-style-type: none;
     }
+#search {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#search[type="text"] {
+    width: 300px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 0 10px;
+}
+
+.search-button {
+    /* no boarder */
+    background-color: #79d;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    height: 30px;
+    width: 100px;
+
+}

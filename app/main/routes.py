@@ -1,12 +1,16 @@
 from app.main import bp as main
-from flask import render_template, url_for, flash, redirect, request, session
-
+from flask import render_template, url_for, flash, redirect, request, session, jsonify
+from app.models.search import Search
+from app.models.star_trek_models import Character
+from fuzzywuzzy import fuzz
+from fuzzywuzzy import process
 
 
 @main.route('/')
 def index():
-    return render_template('index.html')    
-
+    return render_template('index.html', title='Home')
+    
+    
 @main.route('/profile')
 def profile():
     if session["user"]:

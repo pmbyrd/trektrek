@@ -5,8 +5,7 @@
 {% extends "base.html" %} 
 {% block title %} Trek {% endblock %} 
 
-{% block content
-%}
+{% block content%}
 <!-- Main content here -->
 <!-- make a div to hold an images of the whole galaxy -->
 <div class="tng-quote">
@@ -15,13 +14,13 @@
 
     </h3>
 </div>
-<div class="main-page">
+<div class="main-page flexbox">
     <div class="image galaxy">
-        <img class=large-image src="{{url_for('static', filename='images/galaxy.png')}}" alt="galaxy" width="400" height="400">
+        <img class="image-large border" src="{{url_for('static', filename='images/galaxy.png')}}" alt="galaxy" width="400" height="400">
         <a
         href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Galactic_Quadrant_Star_Trek.png/800px-Galactic_Quadrant_Star_Trek.png">Original</a>
     </div>
-    <div class="quotes">
+    <div class="quotes col">
         
     </div>
 </div>
