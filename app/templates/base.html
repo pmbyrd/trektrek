@@ -222,7 +222,8 @@
 
             <div class="content">
                 <div class="search">
-                    <form action="" id="search-form">
+                    <!-- Will need to search the database for those items that are searchable -->
+                    <form id="search-form">
                         <input type="text" name="search" id="search" placeholder="Search">
                         <button type="submit" class="search-button">Search</button>
                     </form>
@@ -243,6 +244,7 @@
             </div>
 
             <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+            <script src="{{url_for('static', filename='js/search.js')}}"></script>
 </body>
 
 </html>

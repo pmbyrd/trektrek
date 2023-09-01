@@ -2,6 +2,8 @@ from flask import current_app
 from sqlalchemy import or_, and_
 from sqlalchemy.orm import aliased
 from app.models.star_trek_models import Character
+from fuzzywuzzy import fuzz
+from fuzzywuzzy import process
 
 class Search:
     def __init__(self, query):
