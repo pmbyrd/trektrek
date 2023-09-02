@@ -1,12 +1,16 @@
-{% extends "base.hmtl" %}{% block title %} Trek {% endblock %}{% block content %}
-
-<!-- if there is result from the search show all results -->
-{% if results %}
-    <h2>Search Results</h2>
-    <ul>
-        {% for result in results %}
-            <li><a href="{{ result.url }}">{{ result.title }}</a></li>
+{%block content%}
+<form id="search">
+    {{ form.hidden_tag() }} <!--add type=hidden form fields -->
+    {% for field in form
+           if field.widget.input_type != 'hidden' %}
+    <p>
+        {{ field.label }}
+        {{ field }}
+        {% for error in field.errors %}
+        {{ error }}
         {% endfor %}
-    </ul>
-
+    </p>
+    {% endfor %}
+    <button type="submit" class="search-button">Search</button>
+</form>
 {%endblock%}

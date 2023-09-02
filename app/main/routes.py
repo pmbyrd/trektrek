@@ -1,7 +1,9 @@
 from app.main import bp as main
 from flask import render_template, url_for, flash, redirect, request, session, jsonify
-from app.models.search import Search
+from app import db
 from app.models.star_trek_models import Character
+from app.schemas.character_schema import CharacterSchema
+
 
 
 
@@ -14,16 +16,23 @@ def search():
     """A route to search for characters in the database. Jsonify is used to return a json object to the client."""
     # search = request.args["search"]
     # print(search)
-    x = request.args["search"]
-    print(x)
-    # import pdb; pdb.set_trace()
-    return jsonify({"search": x})
-    # if request.method == 'POST':
-    #     query = request.form['query']
-    #     search = Search(query)
-    #     results = search.search()
-    #     return jsonify(results)
-     
+    search = request.form['search']
+    # print(search)
+    choices = request.form.getlist('choices')
+    print(choices)
+    # get the choice from the form
+    # the query can be seen not to use it with the search class
+    # data = Character.query.filter(or_(Character.name.ilike(f'%{"data"}%')).all())
+    # Ue SQLAlchemy's filter method with the like operator
+    characters = Character.query.filter(Character.name.ilike(f"%{search}%")).all()
+    data = CharacterSchema(many=True).dump(characters)
+    
+    # print(data)
+    print(characters)
+    return jsonify({"results": search,
+                "status": 200,
+                "data": data})
+   
 @main.route('/profile')
 def profile():
     if session["user"]:

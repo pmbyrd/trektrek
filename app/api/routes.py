@@ -2,11 +2,14 @@ import os
 from dotenv import load_dotenv
 from flask import jsonify
 from app.api import api
-from app.schemas.movie_schema import MovieSchema
-from app.schemas.series_schema import SeriesSchema
-from app.schemas.tag_schema import TagSchema
-from app.models.star_trek_models import Movie, Series
-from app.models.models import Tag, Post
+from app.schemas import (
+    MovieSchema, 
+    SeriesSchema,
+    TagSchema,
+    CharacterSchema
+)
+from app.models.star_trek_models import Movie, Series, Character
+from app.models.models import Tag
 
 load_dotenv()
 
@@ -44,3 +47,9 @@ def json_tags():
     """Returns all tags in the database"""
     tags = TagSchema(many=True).dump(Tag.query.all())
     return jsonify(tags)
+
+@api.route('/api/characters')
+def json_characters():
+    """Returns all characters in the database"""
+    characters = CharacterSchema(many=True).dump(Character.query.all())
+    return jsonify(characters)

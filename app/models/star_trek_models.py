@@ -99,8 +99,15 @@ class Character(db.Model):
 
     def __repr__(self):
         return f"<Character #{self.uid}: name = {self.name}>"
-    #
-
+    
+    # create relationships to various tables
+    Species_uid = db.Column(db.String, db.ForeignKey('species.uid'), nullable=True)
+    species = db.relationship('Species', backref='characters', lazy=True)
+    
+    location_uid = db.Column(db.String, db.ForeignKey('locations.uid'), nullable=True)
+    location = db.relationship('Location', backref='characters', lazy=True)
+    
+    
 
 class Performer(db.Model):
     """Creates an instance of a performer for the database."""
@@ -152,6 +159,8 @@ class Performer(db.Model):
     def __repr__(self):
 
         return f"<Performer #{self.uid}: name = {self.name}>"
+    
+   
 
 
 class Title(db.Model):
@@ -643,6 +652,8 @@ class Species(db.Model):
     # *homeworld and quadrant must be referenced to the astronomicalObjects table when not null it is a foreign key the data is json and must handle the reading the data from the json object
     astronomicalObjects_uid = db.Column(
         db.String, db.ForeignKey('astronomicalObjects.uid'), nullable=True)
+    
+
 
     def __repr__(self):
 
@@ -762,6 +773,10 @@ class Spacecraft(db.Model):
     status = db.Column(db.Text, nullable=True)
 
     dateStatus = db.Column(db.Text, nullable=True)
+    
+    spacecraftClass_uid = db.Column(db.String, db.ForeignKey(SpacecraftClass.uid), nullable=True)
+
+    spacecraft_class = db.relationship('SpacecraftClass', backref='spacecraft', lazy=True)
 
     spacecraftClass = db.Column(db.JSON, nullable=True)
 
@@ -968,6 +983,12 @@ class Show(db.Model):
     __tablename__ = "shows"
     
     id = db.Column(db.Integer, primary_key=True)
+    
+    series_uid = db.Column(db.String, db.ForeignKey('series.uid'), nullable=True)
+    
+    series_name = db.Column(db.relationship('Series', backref='shows', lazy=True))
+    
+    
   
             
 

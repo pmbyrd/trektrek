@@ -14,9 +14,7 @@ async function search() {
                     search: term
                 }
             });
-
-            console.log(response.data);
-            console.log(term);
+			
 		});
 	} catch (error) {
 		console.error(error);
