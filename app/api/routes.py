@@ -2,7 +2,7 @@ import os
 from dotenv import load_dotenv
 from flask import jsonify
 from app.api import api
-from app.schemas import (
+from app.schemas.schemas import (
     MovieSchema, 
     SeriesSchema,
     TagSchema,

@@ -101,7 +101,7 @@ class Character(db.Model):
         return f"<Character #{self.uid}: name = {self.name}>"
     
     # create relationships to various tables
-    Species_uid = db.Column(db.String, db.ForeignKey('species.uid'), nullable=True)
+    species_uid = db.Column(db.String, db.ForeignKey('species.uid'), nullable=True)
     species = db.relationship('Species', backref='characters', lazy=True)
     
     location_uid = db.Column(db.String, db.ForeignKey('locations.uid'), nullable=True)
@@ -984,9 +984,8 @@ class Show(db.Model):
     
     id = db.Column(db.Integer, primary_key=True)
     
-    series_uid = db.Column(db.String, db.ForeignKey('series.uid'), nullable=True)
+    # series_uid = db.Column(db.String, db.ForeignKey('series.uid'), nullable=True)
     
-    series_name = db.Column(db.relationship('Series', backref='shows', lazy=True))
     
     
   

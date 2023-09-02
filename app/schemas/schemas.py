@@ -26,6 +26,22 @@ from flask_marshmallow.fields import URLFor, Hyperlinks
 
 
 # Define the Marshmallow schema for the User class
+
+class TagSchema(ma.SQLAlchemyAutoSchema):
+    class Meta:
+        model = Tag
+        include_fk = True
+        
+class UserSchema(ma.SQLAlchemyAutoSchema):
+    class Meta:
+        model = User
+        include_fk = True
+
+class MovieSchema(ma.SQLAlchemyAutoSchema):
+    class Meta:
+        model = Movie
+        include_fk = True
+
 class AstronomicalObjectSchema(ma.SQLAlchemyAutoSchema):
     class Meta:
         model = AstronomicalObject

@@ -6,7 +6,7 @@ from app.extensions import db
 from app.models.models import User, Post, Tag, PostTag, DEFAULT_IMAGE_URL
 from app.helpers import MemoryAlphaScraper, replace_space
 from random import randint, sample
-from app.schemas.user_schema import UserSchema
+from app.schemas.schemas import UserSchema, TagSchema
 from sqlalchemy import desc, func
 from app.forms.form import UserForm, LoginForm, EditUserForm, DeleteAccountForm, PostForm
 from sqlalchemy.exc import IntegrityError
