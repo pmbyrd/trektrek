@@ -42,6 +42,38 @@ class AstronomicalObject(db.Model):
     def __repr__(self):
         return f"<AstronomicalObject #{self.uid} name = {self.name}>, location = {self.location}>"
 
+    @classmethod
+    def get_all_alpha(cls):
+        # Query for all AstronomicalObjects with a location containing "Alpha Quadrant"
+        objects_in_alpha_quadrant = cls.query.filter(
+            cls.location.cast(db.Text).ilike('%Alpha Quadrant%') #ANCHOR - cast os used to cast the JSON object to a string
+        ).all()
+        return objects_in_alpha_quadrant
+    
+    @classmethod 
+    def get_all_beta(cls):
+        objects_in_beta_quadrant = cls.query.filter(
+            cls.location.cast(db.Text).ilike('%Beta Quadrant%')
+        ).all()
+        return objects_in_beta_quadrant
+    
+    @classmethod
+    def get_all_gamma(cls):
+        objects_in_gamma_quadrant = cls.query.filter(
+            cls.location.cast(db.Text).ilike('%Gamma Quadrant%')
+        ).all()
+        return objects_in_gamma_quadrant
+    
+    @classmethod
+    def get_all_delta(cls):
+        objects_in_delta_quadrant = cls.query.filter(
+            cls.location.cast(db.Text).ilike('%Delta Quadrant%')
+        ).all()
+        return objects_in_delta_quadrant
+    
+    
+            
+        
 
 class Character(db.Model):
     """Creates an instance of a character for the database."""

@@ -223,18 +223,28 @@
             <div class="content">
                 <div class="search">
                     <!-- Will need to search the database for those items that are searchable -->
-                    <form id="search-form">
+                    <form id="search-form" method="POST">
                         <input type="text" name="search" id="search" placeholder="Search">
                         <!-- list a field of choices -->
                         <select name="search_type" id="search_type">
                             <option value="all">Please Select a field</option>
                             <option value="characters">Characters</option>
-                            <option value="movies">Movies</option>
+                            <!-- <option value="movies">Movies</option> -->
                             <option value="performers">Performers</option>
-                            <option value="series">Series</option>
+                            <!-- <option value="series">Series</option> -->
                         </select>
                         <button type="submit" class="search-button">Search</button>
                     </form>
+                    <div class="messages">
+                        <div class="errors">
+
+                        </div>
+                        <div class="search">
+                            <ul class="results">
+
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 {% block content %}
                 <!-- Main content here -->
