@@ -1,4 +1,5 @@
 """Summary: This file contains the routes for the universe blueprint.
+
 """
 
 # Make sure to import the blueprint

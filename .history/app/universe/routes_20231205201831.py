@@ -1,7 +1,7 @@
 """Summary: This file contains the routes for the universe blueprint.
 """
 
-# Make sure to import the blueprint
+# Makjke sure to import the blueprint
 from flask import jsonify, render_template, request
 from app.helpers import MemoryAlphaScraper, replace_space
 from app.universe import universe

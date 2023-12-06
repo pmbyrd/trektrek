@@ -1,4 +1,7 @@
 """Summary: This file contains the routes for the universe blueprint.
+
+This file defines the routes for various endpoints related to the universe blueprint. It includes routes for testing, rendering templates, and retrieving data from the database for different entities such as animals, astronomical objects, characters, conflicts, elements, foods, locations, materials, occupations, and organizations.
+
 """
 
 # Make sure to import the blueprint

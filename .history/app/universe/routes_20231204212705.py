@@ -1,4 +1,5 @@
 """Summary: This file contains the routes for the universe blueprint.
+
 """
 
 # Make sure to import the blueprint
@@ -15,8 +16,7 @@ def testing():
 
 @universe.route('/')
 def index():
-    """Returns the index page"""
-    return render_template('universe.html')
+        return render_template('universe.html')
 
 @universe.route('/animals')
 def animals():

@@ -15,16 +15,21 @@ def testing():
 
 @universe.route('/')
 def index():
-    """Returns the index page"""
     return render_template('universe.html')
+
+
+
 
 @universe.route('/animals')
 def animals():
     """Returns all animals in the database"""
     page = request.args.get('page', 1, type=int)
+    # animals = AnimalSchema(many=True).dump(animals)
     animals = Animal.query.order_by(Animal.name.asc()).all()
+    print(animals)
     paginated_animals = Animal.query.order_by(Animal.name.asc()).paginate(page=page, per_page=25)
     return render_template('animals.html', animals=animals, title='Animals', page=page, paginated_animals=paginated_animals)
+
 
 @universe.route('/animal/<name>')
 def animal(name):
@@ -40,12 +45,14 @@ def animal(name):
             raise TypeError
     return render_template('animal.html', animal=animal, title=name)
 
+
 @universe.route('/astronomical_objects')
 def astronomical_objects():
     """Returns all astronomical objects in the database"""
     page = request.args.get('page', 1, type=int)
     astronomical_objects = AstronomicalObject.query.order_by(AstronomicalObject.name.asc()).all()
     paginated_astronomical_objects = AstronomicalObject.query.order_by(AstronomicalObject.name.asc()).paginate(page=page, per_page=25)
+    
     return render_template('astronomical_objects.html', astronomical_objects=astronomical_objects, title='Astronomical Objects', page=page, paginated_astronomical_objects=paginated_astronomical_objects)
 
 @universe.route('/astronomical_objects/<name>')
@@ -63,13 +70,16 @@ def astronomical_object(name):
                 raise TypeError
         except Exception as e:
             return "Error: " + str(e)
-
+    
+# FIXME - Characters needs a lot more work, the formatting is horrible for when popular characters
 @universe.route('/characters')
 def characters():
     """Returns all characters in the database"""
+    # characters = CharacterSchema(many=True).dump(Character.query.all())
     page = request.args.get('page', 1, type=int)
     characters = Character.query.order_by(Character.name.asc()).all()
     paginated_characters = Character.query.order_by(Character.name.asc()).paginate(page=page, per_page=25)
+    
     return render_template('characters.html', characters=characters, title='Characters', page=page, paginated_characters=paginated_characters)
 
 @universe.route('/characters/<name>')
@@ -84,9 +94,12 @@ def character(name):
         else:
             print("summary not found")
             raise TypeError
+    
     except Exception as e:
         return "Error: " + str(e)
-
+    
+            
+    
 @universe.route('/conflicts')
 def conflicts():
     """Returns all conflicts in the database"""
@@ -95,6 +108,7 @@ def conflicts():
     paginated_conflicts = Conflict.query.order_by(Conflict.name.asc()).paginate(page=page, per_page=25)
     return render_template('conflicts.html', conflict=conflict, title='Conflicts', page=page, paginated_conflicts=paginated_conflicts)
 
+#FIXME - Conflicts formatting is still weird
 @universe.route('/conflicts/<name>')
 def conflict(name):
     """Returns a single conflict from the database"""
@@ -182,7 +196,7 @@ def location(name):
                 raise TypeError
         except Exception as e:
             return "Error: " + str(e)
-
+    
 @universe.route('/materials')
 def materials():
     """Returns all materials in the database"""
@@ -206,7 +220,8 @@ def material(name):
                 raise TypeError
         except Exception as e:
             return "Error: " + str(e)
-
+   
+#NOTE: The occupations route is not working at the moment
 @universe.route('/occupations')
 def occupations():
     """Returns all occupations in the database"""
@@ -235,9 +250,6 @@ def occupation(name):
 def organizations():
     """Returns all organizations in the database"""
     page = request.args.get('page', 1, type=int)
-    organizations = Organization.query.order_by(Organization.name.asc()).all()
-    paginated_organizations = Organization.query.order_by(Organization.name.asc()).paginate(page=page, per_page=25)
-    return render_template('organizations.html', organizations=organizations, title='Organizations', page=page, paginated_organizations=paginated_organizations)
     organizations = Organization.query.all()
     paginated_organizations = Organization.query.order_by(Organization.name.asc()).paginate(page=page, per_page=25)
     return render_template('organizations.html', organizations=organizations, title='Organizations', page=page, paginated_organizations=paginated_organizations)

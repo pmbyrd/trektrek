@@ -1,4 +1,9 @@
 """Summary: This file contains the routes for the universe blueprint.
+
+This file defines the routes for various endpoints related to the universe blueprint.
+It includes routes for testing, rendering templates, and retrieving data from the database.
+Each route is responsible for rendering the appropriate template or returning the requested data.
+
 """
 
 # Make sure to import the blueprint
@@ -15,7 +20,7 @@ def testing():
 
 @universe.route('/')
 def index():
-    """Returns the index page"""
+    """Renders the index page"""
     return render_template('universe.html')
 
 @universe.route('/animals')

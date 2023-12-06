@@ -40,6 +40,7 @@ def animal(name):
             raise TypeError
     return render_template('animal.html', animal=animal, title=name)
 
+
 @universe.route('/astronomical_objects')
 def astronomical_objects():
     """Returns all astronomical objects in the database"""

@@ -1,4 +1,5 @@
 """This module contains the Star Trek models for the database."""
+# Copilot: @Kaleb
 
 from app.extensions import db
 
@@ -46,37 +47,37 @@ class AstronomicalObject(db.Model):
     def get_all_alpha(cls):
         # Query for all AstronomicalObjects with a location containing "Alpha Quadrant"
         objects_in_alpha_quadrant = cls.query.filter(
-            cls.location.cast(db.Text).ilike('%Alpha Quadrant%') #ANCHOR - cast os used to cast the JSON object to a string
+            cls.location.cast(db.Text).ilike(
+                "%Alpha Quadrant%"
+            )  # ANCHOR - cast os used to cast the JSON object to a string
         ).all()
         return objects_in_alpha_quadrant
-    
-    @classmethod 
+
+    @classmethod
     def get_all_beta(cls):
         objects_in_beta_quadrant = cls.query.filter(
-            cls.location.cast(db.Text).ilike('%Beta Quadrant%')
+            cls.location.cast(db.Text).ilike("%Beta Quadrant%")
         ).all()
         return objects_in_beta_quadrant
-    
+
     @classmethod
     def get_all_gamma(cls):
         objects_in_gamma_quadrant = cls.query.filter(
-            cls.location.cast(db.Text).ilike('%Gamma Quadrant%')
+            cls.location.cast(db.Text).ilike("%Gamma Quadrant%")
         ).all()
         return objects_in_gamma_quadrant
-    
+
     @classmethod
     def get_all_delta(cls):
         objects_in_delta_quadrant = cls.query.filter(
-            cls.location.cast(db.Text).ilike('%Delta Quadrant%')
+            cls.location.cast(db.Text).ilike("%Delta Quadrant%")
         ).all()
         return objects_in_delta_quadrant
-    
-    
-            
-        
+
 
 class Character(db.Model):
     """Creates an instance of a character for the database."""
+
     #
     __tablename__ = "characters"
     #
@@ -131,15 +132,14 @@ class Character(db.Model):
 
     def __repr__(self):
         return f"<Character #{self.uid}: name = {self.name}>"
-    
+
     # create relationships to various tables
-    species_uid = db.Column(db.String, db.ForeignKey('species.uid'), nullable=True)
-    species = db.relationship('Species', backref='characters', lazy=True)
-    
-    location_uid = db.Column(db.String, db.ForeignKey('locations.uid'), nullable=True)
-    location = db.relationship('Location', backref='characters', lazy=True)
-    
-    
+    species_uid = db.Column(db.String, db.ForeignKey("species.uid"), nullable=True)
+    species = db.relationship("Species", backref="characters", lazy=True)
+
+    location_uid = db.Column(db.String, db.ForeignKey("locations.uid"), nullable=True)
+    location = db.relationship("Location", backref="characters", lazy=True)
+
 
 class Performer(db.Model):
     """Creates an instance of a performer for the database."""
@@ -189,10 +189,7 @@ class Performer(db.Model):
     voyPerformer = db.Column(db.Boolean, nullable=False)
 
     def __repr__(self):
-
         return f"<Performer #{self.uid}: name = {self.name}>"
-    
-   
 
 
 class Title(db.Model):
@@ -275,7 +272,6 @@ class Location(db.Model):
     alternateReality = db.Column(db.Boolean, nullable=False)
 
     def __repr__(self):
-
         return f"<Location #{self.uid}: name = {self.name}>"
 
 
@@ -303,7 +299,6 @@ class Conflict(db.Model):
     alternateReality = db.Column(db.Boolean, nullable=False)
 
     def __repr__(self):
-
         return f"<Conflict #{self.uid}: name = {self.name}>, yearFrom = {self.yearFrom}, yearTo = {self.yearTo}>"
 
 
@@ -337,7 +332,6 @@ class Element(db.Model):
     worldSeries = db.Column(db.Boolean, nullable=False)
 
     def __repr__(self):
-
         return f"<Element #{self.uid}: name = {self.name}>, symbol = {self.symbol}, atomicNumber = {self.atomicNumber}, atomicWeight = {self.atomicWeight}>"
 
 
@@ -367,7 +361,6 @@ class Weapon(db.Model):
     alternateReality = db.Column(db.Boolean, nullable=False)
 
     def __repr__(self):
-
         return f"<Weapon #{self.uid}: name = {self.name}>"
 
 
@@ -401,7 +394,6 @@ class Food(db.Model):
     tea = db.Column(db.Boolean, nullable=False)
 
     def __repr__(self):
-
         return f"<Food #{self.uid}: name = {self.name}>"
 
 
@@ -455,7 +447,6 @@ class Technology(db.Model):
     transporterTechnology = db.Column(db.Boolean, nullable=False)
 
     def __repr__(self):
-
         return f"<Technology #{self.uid}: name = {self.name}>"
 
 
@@ -503,7 +494,6 @@ class Company(db.Model):
     videoGameCompany = db.Column(db.Boolean, nullable=False)
 
     def __repr__(self):
-
         return f"<Company #{self.uid}: name = {self.name}>"
 
 
@@ -639,15 +629,15 @@ class Staff(db.Model):
     writer = db.Column(db.Boolean, nullable=False)
 
     def __repr__(self):
-
         return f"<Staff #{self.uid}: name = {self.name}>"
 
 
 class Species(db.Model):
     """Creates an instance of a species from the Star Trek universe for the database"""
+
     # *homeworld must reference a planet in the Planets table, quadrant must also be a referenced to the astronomical quadrant of the planet
 
-    __tablename__ = 'species'
+    __tablename__ = "species"
 
     uid = db.Column(db.String, primary_key=True)
 
@@ -683,23 +673,20 @@ class Species(db.Model):
 
     # *homeworld and quadrant must be referenced to the astronomicalObjects table when not null it is a foreign key the data is json and must handle the reading the data from the json object
     astronomicalObjects_uid = db.Column(
-        db.String, db.ForeignKey('astronomicalObjects.uid'), nullable=True)
-    
-
+        db.String, db.ForeignKey("astronomicalObjects.uid"), nullable=True
+    )
 
     def __repr__(self):
-
         return f"<Species #{self.uid}: name = {self.name}>, homeworld = {self.homeworld}, quadrant = {self.quadrant}>"
 
     def get_species_by_quadrant(self):
-
         pass
 
 
 class Organization(db.Model):
     """Creates an instance of an organization from the Star Trek universe for the database"""
 
-    __tablename__ = 'organizations'
+    __tablename__ = "organizations"
 
     uid = db.Column(db.String, primary_key=True)
 
@@ -730,14 +717,13 @@ class Organization(db.Model):
     alternateReality = db.Column(db.Boolean, nullable=False)
 
     def __repr__(self):
-
         return f"<Organization #{self.uid}: name = {self.name}>, government = {self.government}"
 
 
 class Occupation(db.Model):
     """Creates an instance of an occupation from the Star Trek universe for the database"""
 
-    __tablename__ = 'occupations'
+    __tablename__ = "occupations"
 
     uid = db.Column(db.String, primary_key=True)
 
@@ -750,14 +736,13 @@ class Occupation(db.Model):
     scientificOccupation = db.Column(db.Boolean, nullable=False)
 
     def __repr__(self):
-
         return f"<Occupation #{self.uid}: name = {self.name}>"
 
 
 class SpacecraftClass(db.Model):
     """Creates an instance of a spacecraft class from the Star Trek universe for the database these classes are used to create the spacecraft table"""
 
-    __tablename__ = 'spacecraftClasses'
+    __tablename__ = "spacecraftClasses"
 
     uid = db.Column(db.String, primary_key=True)
 
@@ -775,8 +760,7 @@ class SpacecraftClass(db.Model):
 
     species = db.Column(db.JSON, nullable=True)
 
-    species_uid = db.Column(
-        db.String, db.ForeignKey('species.uid'), nullable=True)
+    species_uid = db.Column(db.String, db.ForeignKey("species.uid"), nullable=True)
 
     owner = db.Column(db.Text, nullable=True)
 
@@ -785,8 +769,8 @@ class SpacecraftClass(db.Model):
     affiliation = db.Column(db.Text, nullable=True)
 
     def __repr__(self):
-
         return f"<SpacecraftClass #{self.uid}: name = {self.name}>, species = {self.species}>, affiliation = {self.affiliation}>"
+
 
 # !critcal need to fix the Spacecraft class, overwrote the correct file with the incorrect file
 
@@ -794,7 +778,7 @@ class SpacecraftClass(db.Model):
 class Spacecraft(db.Model):
     """Creates an instance of a spacecraft from the Star Trek universe for the database"""
 
-    __tablename__ = 'spacecraft'
+    __tablename__ = "spacecraft"
 
     uid = db.Column(db.String, primary_key=True)
 
@@ -805,30 +789,34 @@ class Spacecraft(db.Model):
     status = db.Column(db.Text, nullable=True)
 
     dateStatus = db.Column(db.Text, nullable=True)
-    
-    spacecraftClass_uid = db.Column(db.String, db.ForeignKey(SpacecraftClass.uid), nullable=True)
 
-    spacecraft_class = db.relationship('SpacecraftClass', backref='spacecraft', lazy=True)
+    spacecraftClass_uid = db.Column(
+        db.String, db.ForeignKey(SpacecraftClass.uid), nullable=True
+    )
+
+    spacecraft_class = db.relationship(
+        "SpacecraftClass", backref="spacecraft", lazy=True
+    )
 
     spacecraftClass = db.Column(db.JSON, nullable=True)
 
     # !Owner and operator must be referenced to the organizations table when not null it is a foreign key the data is json and must handle the reading the data from the json object
     owner = db.Column(db.JSON, nullable=True)
 
-    orginization_uid = db.Column(db.String, db.ForeignKey(
-        'organizations.uid'), nullable=True)
+    orginization_uid = db.Column(
+        db.String, db.ForeignKey("organizations.uid"), nullable=True
+    )
 
     operator = db.Column(db.JSON, nullable=True)
 
     def __repr__(self):
-
         return f"<Spacecraft #{self.uid}: name = {self.name}>, registry = {self.registry}, status = {self.status}, dateStatus = {self.dateStatus}, spacecraftClass = {self.spacecraftClass}, owner = {self.owner}, operator = {self.operator}>"
 
 
 class Material(db.Model):
     """Creates an instance of a material from the Star Trek universe for the database"""
 
-    __tablename__ = 'materials'
+    __tablename__ = "materials"
 
     uid = db.Column(db.String, primary_key=True)
 
@@ -855,7 +843,6 @@ class Material(db.Model):
     preciousMaterial = db.Column(db.Boolean, nullable=False)
 
     def __repr__(self):
-
         return f"<Material #{self.uid} name = {self.name}> "
 
 
@@ -870,7 +857,7 @@ class Movie(db.Model):
 
     mainDirector = db.Column(db.JSON, nullable=True)
 
-    staff_uid = db.Column(db.String, db.ForeignKey('staff.uid'), nullable=True)
+    staff_uid = db.Column(db.String, db.ForeignKey("staff.uid"), nullable=True)
 
     titleBulgarian = db.Column(db.Text, nullable=True)
 
@@ -903,11 +890,11 @@ class Movie(db.Model):
     usReleaseDate = db.Column(db.Text, nullable=True)
 
     def __repr__(self):
-
         return f"<Movie #{self.uid} title = {self.title}, releaseDate = {self.usReleaseDate}>"
 
 
 # Todo load in the shows information by series, season episode in that order
+
 
 class Series(db.Model):
     """Creates an instance of a series from the Star Trek universe for the database, the series has a relationship with the company table as well as the seasons and episodes table"""
@@ -936,11 +923,9 @@ class Series(db.Model):
 
     originalBroadcaster = db.Column(db.JSON, nullable=True)
 
-    companies_uid = db.Column(
-        db.String, db.ForeignKey('companies.uid'), nullable=True)
+    companies_uid = db.Column(db.String, db.ForeignKey("companies.uid"), nullable=True)
 
     def __repr__(self):
-
         return f"<Series #{self.uid} title = {self.title}, abbreviation = {self.abbreviation}>"
 
 
@@ -953,15 +938,13 @@ class Season(db.Model):
 
     series = db.Column(db.JSON, nullable=True)
 
-    series_uid = db.Column(
-        db.String, db.ForeignKey('series.uid'), nullable=True)
+    series_uid = db.Column(db.String, db.ForeignKey("series.uid"), nullable=True)
 
     seasonNumber = db.Column(db.Integer, nullable=False)
 
     numberOfEpisodes = db.Column(db.Integer, nullable=True)
 
     def __repr__(self):
-
         return f"<Series: #{self.series}, Season #{self.uid} title = {self.title}, seasonNumber = {self.seasonNumber}>"
 
 
@@ -1002,27 +985,19 @@ class Episode(db.Model):
 
     finalScriptDate = db.Column(db.Text, nullable=True)
 
-    series_uid = db.Column(
-        db.String, db.ForeignKey('series.uid'), nullable=True)
+    series_uid = db.Column(db.String, db.ForeignKey("series.uid"), nullable=True)
 
     def __repr__(self):
-
         return f"<Episode #{self.uid} title = {self.title}, episodeNumber = {self.episodeNumber}>"
+
 
 # create a table that holds information about a show
 
+
 class Show(db.Model):
     __tablename__ = "shows"
-    
-    id = db.Column(db.Integer, primary_key=True)
-    
-    # series_uid = db.Column(db.String, db.ForeignKey('series.uid'), nullable=True)
-    
-    
-    
-  
-            
 
-    
-    
-    
+    id = db.Column(db.Integer, primary_key=True)
+
+    # series_uid = db.Column(db.String, db.ForeignKey('series.uid'), nullable=True)
+
