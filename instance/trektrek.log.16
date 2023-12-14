@@ -1,161 +1,173 @@
-2023-08-27 22:19:08,553 INFO MainThread-140016415461376: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-27 22:19:08,796 INFO MainThread-140016415461376: Database tables created [in trek.py:34]
-2023-08-27 22:31:51,063 INFO MainThread-139682893266944: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-27 22:31:51,150 INFO MainThread-139682893266944: Database tables created [in trek.py:34]
-2023-08-27 22:32:25,272 INFO MainThread-139661976428544: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-27 22:32:25,366 INFO MainThread-139661976428544: Database tables created [in trek.py:34]
-2023-08-27 22:32:36,083 INFO MainThread-140090750521344: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-27 22:32:36,169 INFO MainThread-140090750521344: Database tables created [in trek.py:34]
-2023-08-29 19:29:54,085 INFO MainThread-140605375971328: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-29 19:31:00,836 INFO MainThread-139954079031296: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-29 19:31:01,075 INFO MainThread-139954079031296: Database tables created [in trek.py:34]
-2023-08-29 19:31:02,091 INFO MainThread-140202690269184: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-29 19:31:02,254 INFO MainThread-140202690269184: Database tables created [in trek.py:34]
-2023-08-29 19:32:48,495 INFO MainThread-139795330818048: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-29 19:32:48,669 INFO MainThread-139795330818048: Database tables created [in trek.py:34]
-2023-08-29 19:32:50,255 INFO MainThread-140720064167936: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-29 19:32:50,677 INFO MainThread-140720064167936: Database tables created [in trek.py:34]
-2023-08-29 19:46:32,598 INFO MainThread-140220161294336: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-29 19:46:32,681 INFO MainThread-140220161294336: Database tables created [in trek.py:34]
-2023-08-29 19:46:48,477 INFO MainThread-139996713021440: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-29 19:46:48,562 INFO MainThread-139996713021440: Database tables created [in trek.py:34]
-2023-08-29 19:56:20,598 INFO MainThread-140132573917184: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-29 19:56:20,690 INFO MainThread-140132573917184: Database tables created [in trek.py:34]
-2023-08-29 19:56:21,181 INFO MainThread-140407486451712: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-29 19:56:21,262 INFO MainThread-140407486451712: Database tables created [in trek.py:34]
-2023-08-29 19:57:15,150 INFO MainThread-140673305321472: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-29 19:57:15,233 INFO MainThread-140673305321472: Database tables created [in trek.py:34]
-2023-08-29 19:58:26,274 INFO MainThread-140379795095552: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-29 19:58:26,361 INFO MainThread-140379795095552: Database tables created [in trek.py:34]
-2023-08-29 20:08:01,394 INFO MainThread-140079717797888: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-29 20:08:01,479 INFO MainThread-140079717797888: Database tables created [in trek.py:34]
-2023-08-29 20:15:52,453 INFO MainThread-140327174250496: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-29 20:15:52,543 INFO MainThread-140327174250496: Database tables created [in trek.py:34]
-2023-08-29 20:15:53,068 INFO MainThread-139808625422336: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-29 20:15:53,160 INFO MainThread-139808625422336: Database tables created [in trek.py:34]
-2023-08-29 20:16:20,633 INFO MainThread-139945705840640: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-29 20:16:20,750 INFO MainThread-139945705840640: Database tables created [in trek.py:34]
-2023-08-29 20:16:59,923 INFO MainThread-139741242298368: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-29 20:17:02,763 INFO MainThread-139793152266240: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-29 20:17:06,585 INFO MainThread-140600076554240: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-29 20:17:11,431 INFO MainThread-140435311706112: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-29 20:17:12,353 INFO MainThread-139693426909184: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-29 20:17:30,582 INFO MainThread-140097942986752: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-29 20:17:43,509 INFO MainThread-140309651095552: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-29 20:18:02,481 INFO MainThread-140212250976256: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-29 20:18:27,493 INFO MainThread-140517954134016: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-29 20:18:27,595 INFO MainThread-140517954134016: Database tables created [in trek.py:34]
-2023-08-29 20:18:29,342 INFO MainThread-140023357906944: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-29 20:18:29,435 INFO MainThread-140023357906944: Database tables created [in trek.py:34]
-2023-08-29 20:18:36,273 INFO MainThread-140084041551872: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-29 20:18:36,383 INFO MainThread-140084041551872: Database tables created [in trek.py:34]
-2023-08-29 20:18:39,367 INFO MainThread-139697894363136: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-29 20:18:42,317 INFO MainThread-140043636379648: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-29 20:18:42,401 INFO MainThread-140043636379648: Database tables created [in trek.py:34]
-2023-08-29 20:18:44,320 INFO MainThread-140532903235584: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-29 20:18:44,414 INFO MainThread-140532903235584: Database tables created [in trek.py:34]
-2023-08-29 20:18:55,255 INFO MainThread-139838084882432: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-29 20:18:55,342 INFO MainThread-139838084882432: Database tables created [in trek.py:34]
-2023-08-29 20:19:04,161 INFO MainThread-139704209821696: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-29 20:19:04,252 INFO MainThread-139704209821696: Database tables created [in trek.py:34]
-2023-08-29 20:19:06,149 INFO MainThread-140641692332032: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-29 20:19:10,163 INFO MainThread-139626477072384: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-29 20:19:10,251 INFO MainThread-139626477072384: Database tables created [in trek.py:34]
-2023-08-29 20:34:35,024 INFO MainThread-140513231486976: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-29 20:34:35,141 INFO MainThread-140513231486976: Database tables created [in trek.py:34]
-2023-08-29 20:34:39,023 INFO MainThread-140569326084096: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-29 20:34:39,112 INFO MainThread-140569326084096: Database tables created [in trek.py:34]
-2023-08-29 20:34:42,941 INFO MainThread-139784948383744: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-29 20:34:43,038 INFO MainThread-139784948383744: Database tables created [in trek.py:34]
-2023-08-29 20:34:47,293 INFO MainThread-140336676446208: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-29 20:34:47,612 INFO MainThread-140336676446208: Database tables created [in trek.py:34]
-2023-08-29 20:34:50,448 INFO MainThread-139977974325248: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-29 20:34:50,536 INFO MainThread-139977974325248: Database tables created [in trek.py:34]
-2023-08-29 20:37:31,638 INFO MainThread-139975158034432: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-29 20:37:35,548 INFO MainThread-139751687839744: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-29 20:37:35,644 INFO MainThread-139751687839744: Database tables created [in trek.py:34]
-2023-08-29 20:37:38,605 INFO MainThread-139839664381952: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-29 20:37:38,718 INFO MainThread-139839664381952: Database tables created [in trek.py:34]
-2023-08-29 20:37:40,440 INFO MainThread-140671501778944: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-29 20:37:40,526 INFO MainThread-140671501778944: Database tables created [in trek.py:34]
-2023-08-29 20:37:43,286 INFO MainThread-139772349947904: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-29 20:37:43,380 INFO MainThread-139772349947904: Database tables created [in trek.py:34]
-2023-08-29 20:49:54,279 INFO MainThread-139868824121344: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-29 20:49:54,408 INFO MainThread-139868824121344: Database tables created [in trek.py:34]
-2023-08-29 20:50:03,289 INFO MainThread-139701078167552: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-29 20:50:03,397 INFO MainThread-139701078167552: Database tables created [in trek.py:34]
-2023-08-29 20:50:28,403 INFO MainThread-140183008874496: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-29 20:50:28,504 INFO MainThread-140183008874496: Database tables created [in trek.py:34]
-2023-08-29 20:53:55,221 INFO MainThread-139720154787840: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-29 20:53:59,152 INFO MainThread-140276873994240: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-29 20:53:59,242 INFO MainThread-140276873994240: Database tables created [in trek.py:34]
-2023-08-29 20:54:05,070 INFO MainThread-139853205479424: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-29 20:54:05,208 INFO MainThread-139853205479424: Database tables created [in trek.py:34]
-2023-08-29 20:54:06,996 INFO MainThread-139965518565376: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-29 20:54:07,146 INFO MainThread-139965518565376: Database tables created [in trek.py:34]
-2023-08-29 20:54:33,336 INFO MainThread-140412546867200: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-29 20:54:33,430 INFO MainThread-140412546867200: Database tables created [in trek.py:34]
-2023-08-29 20:55:43,931 INFO MainThread-140682378035200: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-29 20:55:44,042 INFO MainThread-140682378035200: Database tables created [in trek.py:34]
-2023-08-29 20:55:46,895 INFO MainThread-140292326580224: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-29 20:55:46,993 INFO MainThread-140292326580224: Database tables created [in trek.py:34]
-2023-08-29 20:55:49,757 INFO MainThread-140071750107136: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-29 20:55:49,855 INFO MainThread-140071750107136: Database tables created [in trek.py:34]
-2023-08-29 20:55:56,709 INFO MainThread-140595771604992: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-29 20:55:56,798 INFO MainThread-140595771604992: Database tables created [in trek.py:34]
-2023-08-29 20:56:08,866 INFO MainThread-140407937622016: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-29 20:56:08,964 INFO MainThread-140407937622016: Database tables created [in trek.py:34]
-2023-08-29 20:56:35,169 INFO MainThread-140674242605056: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-29 20:56:35,264 INFO MainThread-140674242605056: Database tables created [in trek.py:34]
-2023-08-29 20:56:39,103 INFO MainThread-140638939160576: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-29 20:56:39,224 INFO MainThread-140638939160576: Database tables created [in trek.py:34]
-2023-08-29 20:59:06,282 INFO MainThread-139942047236096: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-29 20:59:06,371 INFO MainThread-139942047236096: Database tables created [in trek.py:34]
-2023-08-29 20:59:10,260 INFO MainThread-140333612118016: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-29 20:59:10,346 INFO MainThread-140333612118016: Database tables created [in trek.py:34]
-2023-08-29 20:59:14,195 INFO MainThread-140533734133760: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-29 20:59:14,285 INFO MainThread-140533734133760: Database tables created [in trek.py:34]
-2023-08-29 21:05:27,397 INFO MainThread-140622347206656: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-29 21:05:27,518 INFO MainThread-140622347206656: Database tables created [in trek.py:34]
-2023-08-29 21:05:30,476 INFO MainThread-139873302745088: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-29 21:05:30,567 INFO MainThread-139873302745088: Database tables created [in trek.py:34]
-2023-08-29 21:05:32,368 INFO MainThread-139629875789824: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-29 21:05:32,464 INFO MainThread-139629875789824: Database tables created [in trek.py:34]
-2023-08-29 21:05:39,307 INFO MainThread-140511745163264: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-29 21:05:39,397 INFO MainThread-140511745163264: Database tables created [in trek.py:34]
-2023-08-29 21:05:42,173 INFO MainThread-140408621682688: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-29 21:05:42,270 INFO MainThread-140408621682688: Database tables created [in trek.py:34]
-2023-08-29 21:05:48,250 INFO MainThread-140422844571648: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-29 21:05:48,342 INFO MainThread-140422844571648: Database tables created [in trek.py:34]
-2023-08-29 21:25:27,945 INFO MainThread-140446417281024: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-29 21:25:28,059 INFO MainThread-140446417281024: Database tables created [in trek.py:34]
-2023-08-29 21:25:32,961 INFO MainThread-139867100639232: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-29 21:25:33,053 INFO MainThread-139867100639232: Database tables created [in trek.py:34]
-2023-08-30 15:21:23,615 INFO MainThread-140072929685504: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-30 15:21:23,814 INFO MainThread-140072929685504: Database tables created [in trek.py:34]
-2023-08-30 15:21:29,943 INFO MainThread-139928838586368: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-30 15:21:30,048 INFO MainThread-139928838586368: Database tables created [in trek.py:34]
-2023-08-30 15:21:34,439 INFO MainThread-139721249112064: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-30 15:21:34,597 INFO MainThread-139721249112064: Database tables created [in trek.py:34]
-2023-08-30 15:21:41,662 INFO MainThread-140148567064576: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-30 15:21:41,760 INFO MainThread-140148567064576: Database tables created [in trek.py:34]
-2023-08-30 15:21:50,688 INFO MainThread-140295766061056: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-30 15:21:50,783 INFO MainThread-140295766061056: Database tables created [in trek.py:34]
-2023-08-30 15:22:29,921 INFO MainThread-140159353835520: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-30 15:22:33,637 INFO MainThread-139977108566016: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-30 15:22:37,708 INFO MainThread-139625232900096: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-30 15:22:40,820 INFO MainThread-140528119169024: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-30 15:22:43,958 INFO MainThread-139889525878784: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-30 15:22:50,238 INFO MainThread-140047088029696: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-30 15:22:54,362 INFO MainThread-139660718067712: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-30 15:23:03,537 INFO MainThread-140146270322688: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-30 15:23:06,682 INFO MainThread-139807443161088: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-30 15:23:06,787 INFO MainThread-139807443161088: Database tables created [in trek.py:34]
-2023-08-30 15:23:15,632 INFO MainThread-139798318071808: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-30 15:23:15,810 INFO MainThread-139798318071808: Database tables created [in trek.py:34]
-2023-08-30 15:23:18,908 INFO MainThread-139686933430272: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-30 15:23:19,010 INFO MainThread-139686933430272: Database tables created [in trek.py:34]
-2023-08-30 15:23:47,636 INFO MainThread-139955104485376: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-30 15:23:47,784 INFO MainThread-139955104485376: Database tables created [in trek.py:34]
-2023-08-30 15:23:52,961 INFO MainThread-139826185388032: Starting the TrekTrek App... [in helpers.py:56]
-2023-08-30 15:23:56,467 INFO MainThread-140492508626944: Starting the TrekTrek App... [in helpers.py:56]
+2023-12-03 21:38:57,277 ERROR Thread-31 (process_request_thread)-139927100536384: Exception on /media/movies [GET] [in app.py:1414]
+Traceback (most recent call last):
+  File "/home/pmbyrd/Projects/trektrek/venv/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1965, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/pmbyrd/Projects/trektrek/venv/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 921, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.UndefinedTable: relation "movies" does not exist
+LINE 2: FROM movies
+             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/pmbyrd/Projects/trektrek/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/pmbyrd/Projects/trektrek/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/pmbyrd/Projects/trektrek/venv/lib/python3.10/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/pmbyrd/Projects/trektrek/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/pmbyrd/Projects/trektrek/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/pmbyrd/Projects/trektrek/app/media/routes.py", line 22, in movies
+    movies = Movie.query.all()
+  File "/home/pmbyrd/Projects/trektrek/venv/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 2692, in all
+    return self._iter().all()  # type: ignore
+  File "/home/pmbyrd/Projects/trektrek/venv/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 2846, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+  File "/home/pmbyrd/Projects/trektrek/venv/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 2246, in execute
+    return self._execute_internal(
+  File "/home/pmbyrd/Projects/trektrek/venv/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 2141, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+  File "/home/pmbyrd/Projects/trektrek/venv/lib/python3.10/site-packages/sqlalchemy/orm/context.py", line 293, in orm_execute_statement
+    result = conn.execute(
+  File "/home/pmbyrd/Projects/trektrek/venv/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1412, in execute
+    return meth(
+  File "/home/pmbyrd/Projects/trektrek/venv/lib/python3.10/site-packages/sqlalchemy/sql/elements.py", line 483, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/home/pmbyrd/Projects/trektrek/venv/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1635, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/home/pmbyrd/Projects/trektrek/venv/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1844, in _execute_context
+    return self._exec_single_context(
+  File "/home/pmbyrd/Projects/trektrek/venv/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1984, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/home/pmbyrd/Projects/trektrek/venv/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2339, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/pmbyrd/Projects/trektrek/venv/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1965, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/pmbyrd/Projects/trektrek/venv/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 921, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedTable) relation "movies" does not exist
+LINE 2: FROM movies
+             ^
+
+[SQL: SELECT movies.uid AS movies_uid, movies.title AS movies_title, movies."mainDirector" AS "movies_mainDirector", movies.staff_uid AS movies_staff_uid, movies."titleBulgarian" AS "movies_titleBulgarian", movies."titleCatalan" AS "movies_titleCatalan", movies."titleChineseTraditional" AS "movies_titleChineseTraditional", movies."titleGerman" AS "movies_titleGerman", movies."titleItalian" AS "movies_titleItalian", movies."titleJapanese" AS "movies_titleJapanese", movies."titlePolish" AS "movies_titlePolish", movies."titleRussian" AS "movies_titleRussian", movies."titleSerbian" AS "movies_titleSerbian", movies."titleSpanish" AS "movies_titleSpanish", movies."stardateFrom" AS "movies_stardateFrom", movies."stardateTo" AS "movies_stardateTo", movies."yearFrom" AS "movies_yearFrom", movies."yearTo" AS "movies_yearTo", movies."usReleaseDate" AS "movies_usReleaseDate" 
+FROM movies]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2023-12-03 21:40:02,175 INFO MainThread-140021926166528: Starting the TrekTrek App... [in helpers.py:56]
+2023-12-03 21:40:02,249 INFO MainThread-140021926166528: Database tables created [in trek.py:34]
+2023-12-03 21:40:02,618 INFO MainThread-140159847723008: Starting the TrekTrek App... [in helpers.py:56]
+2023-12-03 21:40:02,697 INFO MainThread-140159847723008: Database tables created [in trek.py:34]
+2023-12-03 21:40:48,450 INFO MainThread-140190878097408: Starting the TrekTrek App... [in helpers.py:56]
+2023-12-03 21:41:03,775 INFO MainThread-140655716712448: Starting the TrekTrek App... [in helpers.py:56]
+2023-12-03 21:41:36,572 INFO MainThread-140366933553152: Starting the TrekTrek App... [in helpers.py:56]
+2023-12-03 21:45:02,422 INFO MainThread-139958212177920: Starting the TrekTrek App... [in helpers.py:56]
+2023-12-03 21:45:11,152 INFO MainThread-140620903526400: Starting the TrekTrek App... [in helpers.py:56]
+2023-12-03 21:45:23,172 INFO MainThread-140286631190528: Starting the TrekTrek App... [in helpers.py:56]
+2023-12-03 21:45:39,541 INFO MainThread-140379288125440: Starting the TrekTrek App... [in helpers.py:56]
+2023-12-03 21:46:04,522 INFO MainThread-140036717174784: Starting the TrekTrek App... [in helpers.py:56]
+2023-12-03 21:46:45,073 INFO MainThread-140498266574848: Starting the TrekTrek App... [in helpers.py:56]
+2023-12-04 20:44:49,285 INFO MainThread-140691772870656: Starting the TrekTrek App... [in helpers.py:56]
+2023-12-04 20:44:49,358 INFO MainThread-140691772870656: Database tables created [in trek.py:34]
+2023-12-04 20:44:49,723 INFO MainThread-139751297318912: Starting the TrekTrek App... [in helpers.py:56]
+2023-12-04 20:44:49,796 INFO MainThread-139751297318912: Database tables created [in trek.py:34]
+2023-12-04 20:46:16,399 INFO MainThread-139956578168832: Starting the TrekTrek App... [in helpers.py:56]
+2023-12-04 20:46:42,324 INFO MainThread-140208391360512: Starting the TrekTrek App... [in helpers.py:56]
+2023-12-04 20:52:08,235 INFO MainThread-140102999830528: Starting the TrekTrek App... [in helpers.py:56]
+2023-12-04 20:52:08,307 INFO MainThread-140102999830528: Database tables created [in trek.py:34]
+2023-12-04 20:52:22,738 INFO MainThread-140568669241344: Starting the TrekTrek App... [in helpers.py:56]
+2023-12-04 20:52:22,812 INFO MainThread-140568669241344: Database tables created [in trek.py:34]
+2023-12-04 20:52:33,743 ERROR Thread-17 (process_request_thread)-140568563820096: Exception on /universe/characters [GET] [in app.py:1414]
+Traceback (most recent call last):
+  File "/home/pmbyrd/Projects/trektrek/venv/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1965, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/pmbyrd/Projects/trektrek/venv/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 921, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.UndefinedTable: relation "characters" does not exist
+LINE 2: FROM characters ORDER BY characters.name ASC
+             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/pmbyrd/Projects/trektrek/venv/lib/python3.10/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/pmbyrd/Projects/trektrek/venv/lib/python3.10/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/pmbyrd/Projects/trektrek/venv/lib/python3.10/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/pmbyrd/Projects/trektrek/venv/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/pmbyrd/Projects/trektrek/venv/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/pmbyrd/Projects/trektrek/app/universe/routes.py", line 80, in characters
+    characters = Character.query.order_by(Character.name.asc()).all()
+  File "/home/pmbyrd/Projects/trektrek/venv/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 2692, in all
+    return self._iter().all()  # type: ignore
+  File "/home/pmbyrd/Projects/trektrek/venv/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 2846, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+  File "/home/pmbyrd/Projects/trektrek/venv/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 2246, in execute
+    return self._execute_internal(
+  File "/home/pmbyrd/Projects/trektrek/venv/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 2141, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+  File "/home/pmbyrd/Projects/trektrek/venv/lib/python3.10/site-packages/sqlalchemy/orm/context.py", line 293, in orm_execute_statement
+    result = conn.execute(
+  File "/home/pmbyrd/Projects/trektrek/venv/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1412, in execute
+    return meth(
+  File "/home/pmbyrd/Projects/trektrek/venv/lib/python3.10/site-packages/sqlalchemy/sql/elements.py", line 483, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/home/pmbyrd/Projects/trektrek/venv/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1635, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/home/pmbyrd/Projects/trektrek/venv/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1844, in _execute_context
+    return self._exec_single_context(
+  File "/home/pmbyrd/Projects/trektrek/venv/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1984, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/home/pmbyrd/Projects/trektrek/venv/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2339, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/pmbyrd/Projects/trektrek/venv/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1965, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/pmbyrd/Projects/trektrek/venv/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 921, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedTable) relation "characters" does not exist
+LINE 2: FROM characters ORDER BY characters.name ASC
+             ^
+
+[SQL: SELECT characters.uid AS characters_uid, characters.name AS characters_name, characters.gender AS characters_gender, characters."yearOfBirth" AS "characters_yearOfBirth", characters."monthOfBirth" AS "characters_monthOfBirth", characters."dayOfBirth" AS "characters_dayOfBirth", characters."placeOfBirth" AS "characters_placeOfBirth", characters."yearOfDeath" AS "characters_yearOfDeath", characters."monthOfDeath" AS "characters_monthOfDeath", characters."dayOfDeath" AS "characters_dayOfDeath", characters."placeOfDeath" AS "characters_placeOfDeath", characters.height AS characters_height, characters.weight AS characters_weight, characters.deceased AS characters_deceased, characters."bloodType" AS "characters_bloodType", characters."maritalStatus" AS "characters_maritalStatus", characters."serialNumber" AS "characters_serialNumber", characters."hologramActivationDate" AS "characters_hologramActivationDate", characters."hologramStatus" AS "characters_hologramStatus", characters.hologram AS characters_hologram, characters."fictionalCharacter" AS "characters_fictionalCharacter", characters.mirror AS characters_mirror, characters."alternateReality" AS "characters_alternateReality", characters."hologramDateStatus" AS "characters_hologramDateStatus", characters.species_uid AS characters_species_uid, characters.location_uid AS characters_location_uid 
+FROM characters ORDER BY characters.name ASC]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2023-12-04 20:52:43,757 INFO MainThread-140568585662464: Starting the TrekTrek App... [in helpers.py:56]
+2023-12-04 20:54:09,696 INFO MainThread-140568585662464: Starting the TrekTrek App... [in helpers.py:56]
+2023-12-04 20:54:09,696 INFO MainThread-140568585662464: Starting the TrekTrek App... [in helpers.py:56]
+2023-12-04 20:54:09,728 INFO MainThread-140568585662464: Database tables created [in trek.py:34]
+2023-12-04 20:54:09,728 INFO MainThread-140568585662464: Database tables created [in trek.py:34]
+2023-12-04 21:00:12,251 INFO MainThread-139731231551488: Starting the TrekTrek App... [in helpers.py:56]
+2023-12-04 21:00:12,323 INFO MainThread-139731231551488: Database tables created [in trek.py:34]
+2023-12-04 21:00:17,950 INFO MainThread-139628811735040: Starting the TrekTrek App... [in helpers.py:56]
+2023-12-04 21:00:26,051 INFO MainThread-139707154153472: Starting the TrekTrek App... [in helpers.py:56]
+2023-12-04 21:00:44,215 INFO MainThread-139743118831616: Starting the TrekTrek App... [in helpers.py:56]
+2023-12-04 21:00:44,291 INFO MainThread-139743118831616: Database tables created [in trek.py:34]
+2023-12-04 21:00:44,663 INFO MainThread-140307212922880: Starting the TrekTrek App... [in helpers.py:56]
+2023-12-04 21:00:44,739 INFO MainThread-140307212922880: Database tables created [in trek.py:34]
+2023-12-04 21:35:32,031 INFO MainThread-139694119366656: Starting the TrekTrek App... [in helpers.py:56]
+2023-12-04 21:35:32,108 INFO MainThread-139694119366656: Database tables created [in trek.py:34]
+2023-12-04 21:35:32,482 INFO MainThread-139955753529344: Starting the TrekTrek App... [in helpers.py:56]
+2023-12-04 21:35:32,558 INFO MainThread-139955753529344: Database tables created [in trek.py:34]
+2023-12-04 22:04:18,790 INFO MainThread-139624059744256: Starting the TrekTrek App... [in helpers.py:56]
+2023-12-04 22:04:18,866 INFO MainThread-139624059744256: Database tables created [in trek.py:34]
+2023-12-05 20:10:19,241 INFO MainThread-140426638929920: Starting the TrekTrek App... [in helpers.py:56]
+2023-12-05 20:10:19,315 INFO MainThread-140426638929920: Database tables created [in trek.py:34]
+2023-12-05 20:10:26,896 INFO MainThread-140569698394112: Starting the TrekTrek App... [in helpers.py:56]
+2023-12-05 20:10:26,972 INFO MainThread-140569698394112: Database tables created [in trek.py:34]
+2023-12-05 20:10:30,468 INFO MainThread-139945765498880: Starting the TrekTrek App... [in helpers.py:56]
+2023-12-05 20:10:30,542 INFO MainThread-139945765498880: Database tables created [in trek.py:34]
+2023-12-05 20:10:34,072 INFO MainThread-139803082412032: Starting the TrekTrek App... [in helpers.py:56]
+2023-12-05 20:10:34,146 INFO MainThread-139803082412032: Database tables created [in trek.py:34]
+2023-12-05 20:10:36,664 INFO MainThread-140243138650112: Starting the TrekTrek App... [in helpers.py:56]
+2023-12-05 20:10:36,738 INFO MainThread-140243138650112: Database tables created [in trek.py:34]
+2023-12-05 20:10:42,290 INFO MainThread-140450934534144: Starting the TrekTrek App... [in helpers.py:56]
+2023-12-05 20:10:42,364 INFO MainThread-140450934534144: Database tables created [in trek.py:34]
+2023-12-05 20:10:44,864 INFO MainThread-140122732724224: Starting the TrekTrek App... [in helpers.py:56]
