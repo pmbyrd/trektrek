@@ -1,5 +1,5 @@
 """This module contains the Star Trek models for the database."""
-# Copilot: @Kaleb
+
 
 from app.extensions import db
 
