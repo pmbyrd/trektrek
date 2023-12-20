@@ -1,8 +1,10 @@
 {% extends "base.html" %}
 {% block title %} {{title}}{% endblock %}
-{% block content %}
-
+{% block content%}
 <h1 class="banner">{{ title }}</h1>
+<ul class="series-list">
+***********This is where the series list will go for more popular characters by series***********
+</ul>
 <ul>
 	{% for character in paginated_characters.items %}
 </ul>
@@ -26,5 +28,4 @@
 	<li><a href="{{ url_for(request.endpoint, page=paginated_characters.next_num) }}">Next</a></li>
 {% endif %}
 </div>
-
 {% endblock %}

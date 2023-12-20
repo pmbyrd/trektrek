@@ -1,5 +1,6 @@
 import os
 import sys
+import logging
 from click import echo
 from flask import Flask
 
@@ -20,7 +21,11 @@ from config import Config
 from app.helpers import configure_logging, connect_db
 from app.models.models import User
 
+
+# logging.config.fileConfig('app/logging.conf')
+
 def create_app(config_filename=None):
+    # Create the Flask application
     app = Flask(__name__)
     # Configure the Flask application
     config_type = os.getenv('CONFIG_TYPE', default='config.DevelopmentConfig')

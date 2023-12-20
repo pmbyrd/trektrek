@@ -5,8 +5,9 @@
 from flask import jsonify, render_template, request
 from app.helpers import MemoryAlphaScraper, replace_space
 from app.universe import universe
-from app.models.star_trek_models import Animal, Material, Title, AstronomicalObject, Character,Food, Element, Location, Conflict, Occupation, Organization, SpacecraftClass, Spacecraft, Species, Technology, Weapon
-
+from app.models.star_trek_models import Animal, Material, Title, AstronomicalObject, Character,Food, Element, Location, Conflict, Occupation, Organization, SpacecraftClass, Spacecraft, Species, Technology, Weapon, Series
+from app.schemas.series_schema import SeriesSchema
+from app.helpers.scarper import Scraper
 
 @universe.route('/test')
 def testing():
@@ -67,14 +68,17 @@ def astronomical_object(name):
 @universe.route('/characters')
 def characters():
     """Returns all characters in the database"""
+    titles = Series.get_series_titles()
+
     page = request.args.get('page', 1, type=int)
     characters = Character.query.order_by(Character.name.asc()).all()
     paginated_characters = Character.query.order_by(Character.name.asc()).paginate(page=page, per_page=25)
-    return render_template('characters.html', characters=characters, title='Characters', page=page, paginated_characters=paginated_characters)
+    return render_template('characters.html', titles=titles,characters=characters, title='Characters', page=page, paginated_characters=paginated_characters)
 
 @universe.route('/characters/<name>')
 def character(name):
-    """Returns a single character from the database"""
+    """Returns a single charact# dax.get_aside_section()
+# dax.test_toc()er from the database"""
     character = Character.query.filter_by(name=name).first()
     try:
         scrapped_character = MemoryAlphaScraper(replace_space(name))

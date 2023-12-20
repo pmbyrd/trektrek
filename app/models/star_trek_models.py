@@ -928,7 +928,32 @@ class Series(db.Model):
     def __repr__(self):
         return f"<Series #{self.uid} title = {self.title}, abbreviation = {self.abbreviation}>"
 
+    @classmethod
+    def get_series_titles(cls):
+        """Returns a list of all series titles"""
+        return [Series.title for Series in Series.query.all()]
+    
+    @classmethod
+    def get_series_abbreviations(cls):
+        """Returns a list of all series abbreviations"""
+        return [Series.abbreviation for Series in Series.query.all()]
 
+    
+   # def get_series_abbreviations():
+    #     """Returns a list of all series abbreviations"""
+    #     series_list = []
+    #     series = Series.query.all()
+    #     for series_item in series:
+    #         series_list.append(series_item.abbreviation)
+    #     return series_list
+    
+    # #NOTE get the series main characters to be persistent throughout the application
+    # def get_series_main_characters():
+    #     """Generates a list of all the main characters in the serie
+
+    #     Returns:
+    #         lst : A list of all the main characters in the series by reading a json file
+    #     """
 class Season(db.Model):
     """Creates an instance of a season based off of the series table"""
 

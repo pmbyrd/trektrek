@@ -1,4 +1,4 @@
-# import
+    # import
 from app.extensions import ma
 from app.models.star_trek_models import Series
 from flask_marshmallow.fields import URLFor, Hyperlinks
@@ -16,3 +16,4 @@ class SeriesSchema(ma.SQLAlchemyAutoSchema):
             self.dump_only = ()
             self.exclude = ()
             self.additional = ()
+
