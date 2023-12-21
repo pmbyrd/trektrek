@@ -7,7 +7,8 @@ from app.helpers import MemoryAlphaScraper, replace_space
 from app.universe import universe
 from app.models.star_trek_models import Animal, Material, Title, AstronomicalObject, Character,Food, Element, Location, Conflict, Occupation, Organization, SpacecraftClass, Spacecraft, Species, Technology, Weapon, Series
 from app.schemas.series_schema import SeriesSchema
-from app.helpers.scarper import Scraper
+from app.helpers_modules.scarper import MemoryAlphaScraperModule
+
 
 @universe.route('/test')
 def testing():
@@ -77,14 +78,25 @@ def characters():
 
 @universe.route('/characters/<name>')
 def character(name):
-    """Returns a single charact# dax.get_aside_section()
-# dax.test_toc()er from the database"""
+    """Returns a single character from the database"""
     character = Character.query.filter_by(name=name).first()
+    print(character.name)
     try:
-        scrapped_character = MemoryAlphaScraper(replace_space(name))
-        summary = scrapped_character.get_summary()
+        # scrapped_character = MemoryAlphaScraperModule(replace_space(name))
+        # print("scrapped_character: {scrapped_character}")
+        scrapped_character = MemoryAlphaScraperModule(replace_space(character.name))
+        print(scrapped_character)
+        print(scrapped_character.name)
+        scrapped_character.get_table_of_contents()
+        summary = "summary will do here"
         if summary:
-            return render_template('character.html', character=character, summary=summary, title=name)
+            # return render_template('character.html', character=old_scrapped_character, summary=summary, title=name)
+            
+            return jsonify({'summary': summary,
+                            'scraped_character': scrapped_character.name,
+                            'url': scrapped_character.base_url + scrapped_character.name,
+                            })
+
         else:
             print("summary not found")
             raise TypeError
@@ -105,7 +117,7 @@ def conflict(name):
     conflict = Conflict.query.filter_by(name=name).first()
     if conflict:
         try:
-            scrapped_conflict = MemoryAlphaScraper(replace_space(name))
+            scrapped_conflict = MemoryAlphaScraperModule(replace_space(name))
             summary = scrapped_conflict.get_summary()
             if summary:
                 return render_template('conflict.html', conflict=conflict, summary=summary, title=name)

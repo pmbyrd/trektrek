@@ -141,6 +141,7 @@ class Character(db.Model):
     location = db.relationship("Location", backref="characters", lazy=True)
 
 
+
 class Performer(db.Model):
     """Creates an instance of a performer for the database."""
 
